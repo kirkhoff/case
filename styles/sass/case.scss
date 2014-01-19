@@ -7,19 +7,22 @@
 
 body {
   font-size: 14px; // 1em == 14px
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 a,
 a:hover,
 a:visited,
 a:active {
-  @include transition(color, $animate-color-speed);
+  @include transition(color $animate-color-speed, background $animate-color-speed);
   text-decoration: none;
 }
 
 h1 {
   color: #000;
   font-family: 'NeutraText';
+  font-weight: normal;
   line-height: 1.5em;
   text-transform: uppercase;
 }
@@ -27,6 +30,23 @@ h1 {
 mark {
   background: none;
   font-weight: bold;
+}
+
+header > p {
+  color: #000;
+  font-family: 'Avenir';
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 1.8em;
+  margin: 0 auto;
+  max-width: 570px;
+  > span {
+    display: block;
+    margin: auto;
+    &:first-child {
+      border-top: 0;
+    }
+  }
 }
 
 .page {
@@ -140,3 +160,4 @@ mark {
 }
 
 @import 'imports/our-work';
+@import 'imports/our-people';

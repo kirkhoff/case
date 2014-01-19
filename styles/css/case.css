@@ -69,7 +69,7 @@
   display: inline-block;
   font-family: 'Avenir';
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   line-height: 100%;
   padding: 6px 10px 5px;
@@ -88,7 +88,7 @@
   display: inline-block;
   font-family: 'Avenir';
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
   line-height: 100%;
   padding: 6px 10px 5px;
@@ -103,35 +103,58 @@
 /* line 8, ../sass/case.scss */
 body {
   font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 15, ../sass/case.scss */
+/* line 17, ../sass/case.scss */
 a,
 a:hover,
 a:visited,
 a:active {
-  -webkit-transition: color, 100ms;
-  -moz-transition: color, 100ms;
-  -o-transition: color, 100ms;
-  transition: color, 100ms;
+  -webkit-transition: color 200ms, background 200ms;
+  -moz-transition: color 200ms, background 200ms;
+  -o-transition: color 200ms, background 200ms;
+  transition: color 200ms, background 200ms;
   text-decoration: none;
 }
 
-/* line 20, ../sass/case.scss */
+/* line 22, ../sass/case.scss */
 h1 {
   color: #000;
   font-family: 'NeutraText';
+  font-weight: normal;
   line-height: 1.5em;
   text-transform: uppercase;
 }
 
-/* line 27, ../sass/case.scss */
+/* line 30, ../sass/case.scss */
 mark {
   background: none;
   font-weight: bold;
 }
 
-/* line 32, ../sass/case.scss */
+/* line 35, ../sass/case.scss */
+header > p {
+  color: #000;
+  font-family: 'Avenir';
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 1.8em;
+  margin: 0 auto;
+  max-width: 570px;
+}
+/* line 43, ../sass/case.scss */
+header > p > span {
+  display: block;
+  margin: auto;
+}
+/* line 46, ../sass/case.scss */
+header > p > span:first-child {
+  border-top: 0;
+}
+
+/* line 52, ../sass/case.scss */
 .page {
   *zoom: 1;
   max-width: 90em;
@@ -148,43 +171,43 @@ mark {
   clear: both;
 }
 
-/* line 36, ../sass/case.scss */
+/* line 56, ../sass/case.scss */
 #main-header {
   height: 150px;
   padding: 20px 90px;
   position: relative;
 }
-/* line 40, ../sass/case.scss */
+/* line 60, ../sass/case.scss */
 #main-header .case-logo {
   float: left;
   height: 62px;
   margin: 40px 0 0;
   vertical-align: bottom;
 }
-/* line 46, ../sass/case.scss */
+/* line 66, ../sass/case.scss */
 #main-header > nav {
   clear: right;
   float: right;
   text-align: right;
 }
-/* line 50, ../sass/case.scss */
+/* line 70, ../sass/case.scss */
 #main-header > nav ul {
   margin: 0;
 }
-/* line 53, ../sass/case.scss */
+/* line 73, ../sass/case.scss */
 #main-header > nav li {
   display: inline-block;
 }
-/* line 55, ../sass/case.scss */
+/* line 75, ../sass/case.scss */
 #main-header > nav li > a {
   text-transform: uppercase;
 }
 
-/* line 64, ../sass/case.scss */
+/* line 84, ../sass/case.scss */
 #external-links ul {
   display: inline-block;
 }
-/* line 67, ../sass/case.scss */
+/* line 87, ../sass/case.scss */
 #external-links li > a {
   color: #373737;
   display: block;
@@ -196,26 +219,26 @@ mark {
   margin: 0 9px;
   position: relative;
 }
-/* line 77, ../sass/case.scss */
+/* line 97, ../sass/case.scss */
 #external-links li > a:hover {
   color: #db2a38;
 }
-/* line 81, ../sass/case.scss */
+/* line 101, ../sass/case.scss */
 #external-links .chat-btn {
   margin-left: 30px;
   position: relative;
 }
-/* line 85, ../sass/case.scss */
+/* line 105, ../sass/case.scss */
 #external-links .chat-btn:after {
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
   border-top: 4px solid lightgrey;
   height: 0;
   width: 0;
-  -webkit-transition: border-color, 100ms;
-  -moz-transition: border-color, 100ms;
-  -o-transition: border-color, 100ms;
-  transition: border-color, 100ms;
+  -webkit-transition: border-color, 200ms;
+  -moz-transition: border-color, 200ms;
+  -o-transition: border-color, 200ms;
+  transition: border-color, 200ms;
   content: '';
   display: block;
   left: 50%;
@@ -223,11 +246,11 @@ mark {
   position: absolute;
   top: 100%;
 }
-/* line 95, ../sass/case.scss */
+/* line 115, ../sass/case.scss */
 #external-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 99, ../sass/case.scss */
+/* line 119, ../sass/case.scss */
 #external-links .icon-phone {
   bottom: -1px;
   height: 1.4em;
@@ -235,11 +258,11 @@ mark {
   right: -15px;
 }
 
-/* line 107, ../sass/case.scss */
+/* line 127, ../sass/case.scss */
 #internal-links {
   margin-top: 63px;
 }
-/* line 109, ../sass/case.scss */
+/* line 129, ../sass/case.scss */
 #internal-links li > a {
   color: #db2a38;
   font-family: 'Avenir';
@@ -249,11 +272,11 @@ mark {
   margin: 0 10px;
   position: relative;
 }
-/* line 117, ../sass/case.scss */
+/* line 137, ../sass/case.scss */
 #internal-links li > a:hover {
   color: #373737;
 }
-/* line 122, ../sass/case.scss */
+/* line 142, ../sass/case.scss */
 #internal-links li a:before {
   color: #a8a8a8;
   content: '/';
@@ -263,83 +286,29 @@ mark {
   position: absolute;
   top: 0;
 }
-/* line 132, ../sass/case.scss */
+/* line 152, ../sass/case.scss */
 #internal-links li:first-child a:before,
 #internal-links li .schedule-btn:before {
   content: '';
 }
-/* line 136, ../sass/case.scss */
+/* line 156, ../sass/case.scss */
 #internal-links .schedule-btn {
   margin: 0 0 0 5px;
 }
 
 /* line 1, ../sass/imports/_our-work.scss */
-.our-work-container {
+.our-work-content {
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.75);
   background: url(/img/our-work-bg-sm.jpg) no-repeat 0 0;
   height: 788px;
+  position: relative;
   text-align: center;
   width: 100%;
 }
-/* line 6, ../sass/imports/_our-work.scss */
-.our-work-container h1 {
-  font-family: 'Avenir';
-  font-size: 66px;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-}
-/* line 12, ../sass/imports/_our-work.scss */
-.our-work-container header > p {
-  color: #000;
-  font-family: 'Avenir';
-  font-size: 17px;
-  font-weight: lighter;
-  line-height: 1.8em;
-  margin: 0 auto;
-  max-width: 570px;
-}
-/* line 20, ../sass/imports/_our-work.scss */
-.our-work-container header > p > span {
-  border-top: 1px solid #b3b3b3;
-  display: block;
-  margin: auto;
-}
-/* line 24, ../sass/imports/_our-work.scss */
-.our-work-container header > p > span:first-child {
-  border-top: 0;
-}
-/* line 29, ../sass/imports/_our-work.scss */
-.our-work-container .signature {
-  margin: 25px auto 0;
-  text-transform: uppercase;
-}
-/* line 32, ../sass/imports/_our-work.scss */
-.our-work-container .signature > img {
-  width: 240px;
-}
-/* line 36, ../sass/imports/_our-work.scss */
-.our-work-container .signature .name,
-.our-work-container .signature .title {
-  margin: 0;
-}
-/* line 39, ../sass/imports/_our-work.scss */
-.our-work-container .signature .name {
-  color: #db2a38;
-  font-family: 'Sentinel';
-  font-size: 12px;
-  font-weight: bolder;
-  letter-spacing: 3px;
-  margin-top: 10px;
-}
-/* line 47, ../sass/imports/_our-work.scss */
-.our-work-container .signature .title {
-  color: #000;
-  font-family: 'Avenir';
-  font-size: 9px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
 
-/* line 57, ../sass/imports/_our-work.scss */
+/* line 10, ../sass/imports/_our-work.scss */
 .our-promise {
   background: #db2a38;
   color: #fff;
@@ -353,18 +322,18 @@ mark {
   text-transform: uppercase;
 }
 
-/* line 70, ../sass/imports/_our-work.scss */
+/* line 23, ../sass/imports/_our-work.scss */
 .red-ribbon {
   background: #db2a38;
   background: rgba(200, 0, 10, 0.7);
   margin-top: 140px;
   padding: 7px 0;
 }
-/* line 75, ../sass/imports/_our-work.scss */
+/* line 28, ../sass/imports/_our-work.scss */
 .red-ribbon > li {
   display: inline-block;
 }
-/* line 77, ../sass/imports/_our-work.scss */
+/* line 30, ../sass/imports/_our-work.scss */
 .red-ribbon > li > a {
   color: #fff;
   font-family: 'Avenir';
@@ -374,7 +343,7 @@ mark {
   padding: 5px 8px;
   text-transform: uppercase;
 }
-/* line 86, ../sass/imports/_our-work.scss */
+/* line 39, ../sass/imports/_our-work.scss */
 .red-ribbon > li:before {
   color: #000;
   content: '|';
@@ -382,7 +351,154 @@ mark {
   position: relative;
   top: 1px;
 }
-/* line 93, ../sass/imports/_our-work.scss */
+/* line 46, ../sass/imports/_our-work.scss */
 .red-ribbon > li:first-child:before {
   content: '';
+}
+
+/* line 52, ../sass/imports/_our-work.scss */
+#our-work {
+  overflow-x: hidden;
+}
+/* line 54, ../sass/imports/_our-work.scss */
+#our-work h1 {
+  font-family: 'Avenir';
+  font-size: 66px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: .67em;
+}
+/* line 61, ../sass/imports/_our-work.scss */
+#our-work header > p > span {
+  border-top: 1px solid #b3b3b3;
+}
+/* line 63, ../sass/imports/_our-work.scss */
+#our-work header > p > span:first-child {
+  border-top: 0;
+}
+/* line 67, ../sass/imports/_our-work.scss */
+#our-work .signature {
+  margin: 25px auto 0;
+  text-transform: uppercase;
+}
+/* line 70, ../sass/imports/_our-work.scss */
+#our-work .signature > img {
+  width: 240px;
+}
+/* line 74, ../sass/imports/_our-work.scss */
+#our-work .signature .name,
+#our-work .signature .title {
+  margin: 0;
+}
+/* line 77, ../sass/imports/_our-work.scss */
+#our-work .signature .name {
+  color: #db2a38;
+  font-family: 'Sentinel';
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+/* line 85, ../sass/imports/_our-work.scss */
+#our-work .signature .title {
+  color: #000;
+  font-family: 'Avenir';
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* line 93, ../sass/imports/_our-work.scss */
+#our-work .parallax {
+  height: 560px;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+/* line 1, ../sass/imports/_our-people.scss */
+#our-people {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+/* line 4, ../sass/imports/_our-people.scss */
+#our-people header {
+  padding-top: 3em;
+}
+/* line 7, ../sass/imports/_our-people.scss */
+#our-people h1 {
+  font-size: 3.85em;
+  letter-spacing: -0.05em;
+}
+/* line 11, ../sass/imports/_our-people.scss */
+#our-people nav li {
+  display: inline-block;
+  height: 495px;
+  margin: 8px;
+  position: relative;
+  width: 285px;
+}
+/* line 17, ../sass/imports/_our-people.scss */
+#our-people nav li > a:hover .people-pic {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 20, ../sass/imports/_our-people.scss */
+#our-people nav li .people-pic {
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  transition: opacity 400ms;
+  height: 100%;
+  width: 100%;
+}
+/* line 24, ../sass/imports/_our-people.scss */
+#our-people nav li .people-pic.project-developers {
+  background-image: url(/img/our-people-project-developers.jpg);
+}
+/* line 25, ../sass/imports/_our-people.scss */
+#our-people nav li .people-pic.project-managers {
+  background-image: url(/img/our-people-project-managers.jpg);
+}
+/* line 26, ../sass/imports/_our-people.scss */
+#our-people nav li .people-pic.designers {
+  background-image: url(/img/our-people-designers.jpg);
+}
+/* line 27, ../sass/imports/_our-people.scss */
+#our-people nav li .people-pic.craftsmen {
+  background-image: url(/img/our-people-craftsmen.jpg);
+}
+/* line 29, ../sass/imports/_our-people.scss */
+#our-people nav li .people-tag {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #db2a38;
+  bottom: 25px;
+  color: #fff;
+  font-family: 'Sentinel';
+  font-size: 18px;
+  font-weight: bold;
+  left: 0;
+  letter-spacing: -.03em;
+  line-height: 2em;
+  padding: 0 1.3em;
+  position: absolute;
+  text-align: left;
+  width: 93%;
+  z-index: 1;
+}
+/* line 45, ../sass/imports/_our-people.scss */
+#our-people nav li .people-tag > .the {
+  font-family: 'Avenir';
+  font-size: .65em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+/* line 50, ../sass/imports/_our-people.scss */
+#our-people nav li .people-tag > .the:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+  opacity: 0.25;
+  color: #000;
+  content: ' | ';
+  font-size: 22px;
+  font-weight: 100;
 }

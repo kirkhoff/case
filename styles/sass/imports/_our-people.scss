@@ -1,0 +1,60 @@
+#our-people {
+  background-color: #f2f2f2;
+  text-align: center;
+  header {
+    padding-top: 3em;
+  }
+  h1 {
+    font-size: 3.85em;
+    letter-spacing: -0.05em;
+  }
+  nav li {
+    display: inline-block;
+    height: 495px;
+    margin: 8px;
+    position: relative;
+    width: 285px;
+    > a:hover .people-pic {
+      @include opacity(.6);
+    }
+    .people-pic {
+      @include transition(opacity 400ms);
+      height: 100%;
+      width: 100%;
+      &.project-developers { background-image: url(/img/our-people-project-developers.jpg); }
+      &.project-managers { background-image: url(/img/our-people-project-managers.jpg); }
+      &.designers { background-image: url(/img/our-people-designers.jpg); }
+      &.craftsmen { background-image: url(/img/our-people-craftsmen.jpg); }
+    }
+    .people-tag {
+      @include box-sizing(border-box);
+      background-color: $red;
+      bottom: 25px;
+      color: #fff;
+      font-family: 'Sentinel';
+      font-size: 18px;
+      font-weight: bold;
+      left: 0;
+      letter-spacing: -.03em;
+      line-height: 2em;
+      padding: 0 1.3em;
+      position: absolute;
+      text-align: left;
+      width: 93%;
+      z-index: 1;
+      > .the {
+        font-family: 'Avenir';
+        font-size: .65em;
+        font-weight: lighter;
+        text-transform: uppercase;
+        &:after {
+          @include opacity(.25);
+          color: #000;
+          content: ' | ';
+          font-size: 22px;
+          font-weight: 100
+        }
+      }
+    }
+  }
+}

@@ -1,57 +1,10 @@
-.our-work-container {
+.our-work-content {
+  @include box-shadow(0 10px 50px rgba(0,0,0,.75));
   background: url(/img/our-work-bg-sm.jpg) no-repeat 0 0;
   height: 788px;
+  position: relative;
   text-align: center;
   width: 100%;
-  h1 {
-    font-family: 'Avenir';
-    font-size: 66px;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-  }
-  header > p {
-    color: #000;
-    font-family: 'Avenir';
-    font-size: 17px;
-    font-weight: lighter;
-    line-height: 1.8em;
-    margin: 0 auto;
-    max-width: 570px;
-    > span {
-      border-top: 1px solid shade($grey-light, 15);
-      display: block;
-      margin: auto;
-      &:first-child {
-        border-top: 0;
-      }
-    }
-  }
-  .signature {
-    margin: 25px auto 0;
-    text-transform: uppercase;
-    > img {
-      width: 240px;
-    }
-    .name,
-    .title {
-      margin: 0;
-    }
-    .name {
-      color: $red;
-      font-family: 'Sentinel';
-      font-size: 12px;
-      font-weight: bolder;
-      letter-spacing: 3px;
-      margin-top: 10px;
-    }
-    .title {
-      color: #000;
-      font-family: 'Avenir';
-      font-size: 9px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-  }
 }
 
 .our-promise {
@@ -93,6 +46,54 @@
     &:first-child:before {
       content: '';
     }
+  }
+}
+
+#our-work {
+  overflow-x: hidden;
+  h1 {
+    font-family: 'Avenir';
+    font-size: 66px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: .67em;
+  }
+  header > p > span {
+    border-top: 1px solid shade($grey-light, 15);
+    &:first-child {
+      border-top: 0;
+    }
+  }
+  .signature {
+    margin: 25px auto 0;
+    text-transform: uppercase;
+    > img {
+      width: 240px;
+    }
+    .name,
+    .title {
+      margin: 0;
+    }
+    .name {
+      color: $red;
+      font-family: 'Sentinel';
+      font-size: 12px;
+      font-weight: bolder;
+      letter-spacing: 3px;
+      margin-top: 10px;
+    }
+    .title {
+      color: #000;
+      font-family: 'Avenir';
+      font-size: 9px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+  .parallax {
+    height: 560px;
+    overflow-y: hidden;
+    width: 100%;
   }
 }
 
