@@ -1,64 +1,80 @@
 @font-face {
-  font-family: 'NeutraText';
-  src: url("/styles/fonts/neutratext-bold-webfont.eot");
-  src: url("/styles/fonts/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/neutratext-bold-webfont.woff") format("woff"), url("/styles/fonts/neutratext-bold-webfont.ttf") format("truetype"), url("/styles/fonts/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-family: 'NeutraTextBold';
+  src: url("../fonts/neutratext-bold-webfont.eot");
+  src: url("../fonts/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/neutratext-bold-webfont.woff") format("woff"), url("../fonts/neutratext-bold-webfont.ttf") format("truetype"), url("../fonts/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sentinel';
-  src: url("/styles/fonts/sentinel-light-webfont.eot");
-  src: url("/styles/fonts/sentinel-light-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/sentinel-light-webfont.woff") format("woff"), url("/styles/fonts/sentinel-light-webfont.ttf") format("truetype"), url("/styles/fonts/sentinel-light-webfont.svg#sentinellight") format("svg");
-  font-weight: light;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Sentinel';
-  src: url("/styles/fonts/sentinel-book-webfont.eot");
-  src: url("/styles/fonts/sentinel-book-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/sentinel-book-webfont.woff") format("woff"), url("/styles/fonts/sentinel-book-webfont.ttf") format("truetype"), url("/styles/fonts/sentinel-book-webfont.svg#sentinelbook") format("svg");
+  font-family: 'SentinelLight';
+  src: url("../fonts/sentinel-light-webfont.eot");
+  src: url("../fonts/sentinel-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel-light-webfont.woff") format("woff"), url("../fonts/sentinel-light-webfont.ttf") format("truetype"), url("../fonts/sentinel-light-webfont.svg#sentinellight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sentinel';
-  src: url("/styles/fonts/sentinel-medium-webfont.eot");
-  src: url("/styles/fonts/sentinel-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/sentinel-medium-webfont.woff") format("woff"), url("/styles/fonts/sentinel-medium-webfont.ttf") format("truetype"), url("/styles/fonts/sentinel-medium-webfont.svg#sentinelmedium") format("svg");
-  font-weight: bold;
+  font-family: 'SentinelLightItalic';
+  src: url("../fonts/sentinel-lightitalic-webfont.eot");
+  src: url("../fonts/sentinel-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel-lightitalic-webfont.woff") format("woff"), url("../fonts/sentinel-lightitalic-webfont.ttf") format("truetype"), url("../fonts/sentinel-lightitalic-webfont.svg#sentinellight_italic") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sentinel';
-  src: url("/styles/fonts/sentinel-bold-webfont.eot");
-  src: url("/styles/fonts/sentinel-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/sentinel-bold-webfont.woff") format("woff"), url("/styles/fonts/sentinel-bold-webfont.ttf") format("truetype"), url("/styles/fonts/sentinel-bold-webfont.svg#sentinelbold") format("svg");
-  font-weight: bolder;
+  font-family: 'SentinalBook';
+  src: url("../fonts/sentinel-book-webfont.eot");
+  src: url("../fonts/sentinel-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel-book-webfont.woff") format("woff"), url("../fonts/sentinel-book-webfont.ttf") format("truetype"), url("../fonts/sentinel-book-webfont.svg#sentinelbook") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir';
-  src: url("/styles/fonts/avenirnextltpro-regular-webfont.eot");
-  src: url("/styles/fonts/avenirnextltpro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/avenirnextltpro-regular-webfont.woff") format("woff"), url("/styles/fonts/avenirnextltpro-regular-webfont.ttf") format("truetype"), url("/styles/fonts/avenirnextltpro-regular-webfont.svg#avenirnext_lt_pro_regularRg") format("svg");
+  font-family: 'SentinelMedium';
+  src: url("../fonts/sentinel-medium-webfont.eot");
+  src: url("../fonts/sentinel-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel-medium-webfont.woff") format("woff"), url("../fonts/sentinel-medium-webfont.ttf") format("truetype"), url("../fonts/sentinel-medium-webfont.svg#sentinelmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SentinelBold';
+  src: url("../fonts/sentinel-bold-webfont.eot");
+  src: url("../fonts/sentinel-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel-bold-webfont.woff") format("woff"), url("../fonts/sentinel-bold-webfont.ttf") format("truetype"), url("../fonts/sentinel-bold-webfont.svg#sentinelbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SentinelBlack';
+  src: url("../fonts/sentinel-black-webfont.eot");
+  src: url("../fonts/sentinel-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel-black-webfont.woff") format("woff"), url("../fonts/sentinel-black-webfont.ttf") format("truetype"), url("../fonts/sentinel-black-webfont.svg#sentinelblack") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avenir';
-  src: url("/styles/fonts/avenirnextltpro-demi-webfont.eot");
-  src: url("/styles/fonts/avenirnextltpro-demi-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/avenirnextltpro-demi-webfont.woff") format("woff"), url("/styles/fonts/avenirnextltpro-demi-webfont.ttf") format("truetype"), url("/styles/fonts/avenirnextltpro-demi-webfont.svg#avenir_next_lt_prodemi") format("svg");
-  font-weight: bold;
+  src: url("../fonts/avenirnextltpro-regular-webfont.eot");
+  src: url("../fonts/avenirnextltpro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextltpro-regular-webfont.woff") format("woff"), url("../fonts/avenirnextltpro-regular-webfont.ttf") format("truetype"), url("../fonts/avenirnextltpro-regular-webfont.svg#avenirnext_lt_pro_regularRg") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir';
-  src: url("/styles/fonts/avenirnextltpro-bold-webfont.eot");
-  src: url("/styles/fonts/avenirnextltpro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/avenirnextltpro-bold-webfont.woff") format("woff"), url("/styles/fonts/avenirnextltpro-bold-webfont.ttf") format("truetype"), url("/styles/fonts/avenirnextltpro-bold-webfont.svg#avenir_next_lt_probold") format("svg");
-  font-weight: bolder;
+  font-family: 'AvenirDemiBold';
+  src: url("../fonts/avenirnextltpro-demi-webfont.eot");
+  src: url("../fonts/avenirnextltpro-demi-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextltpro-demi-webfont.woff") format("woff"), url("../fonts/avenirnextltpro-demi-webfont.ttf") format("truetype"), url("../fonts/avenirnextltpro-demi-webfont.svg#avenir_next_lt_prodemi") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirBold';
+  src: url("../fonts/avenirnextltpro-bold-webfont.eot");
+  src: url("../fonts/avenirnextltpro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirnextltpro-bold-webfont.woff") format("woff"), url("../fonts/avenirnextltpro-bold-webfont.ttf") format("truetype"), url("../fonts/avenirnextltpro-bold-webfont.svg#avenir_next_lt_probold") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -67,15 +83,14 @@
   background-color: lightgrey;
   color: #555555;
   display: inline-block;
-  font-family: 'Avenir';
-  font-size: 11px;
-  font-weight: 600;
+  font-family: 'AvenirBold';
+  font-size: .75em;
   letter-spacing: 0;
   line-height: 100%;
   padding: 6px 10px 5px;
   text-transform: uppercase;
 }
-/* line 12, ../sass/imports/_mixins.scss */
+/* line 11, ../sass/imports/_mixins.scss */
 #external-links .chat-btn:hover {
   background-color: #db2a38;
   color: white;
@@ -86,15 +101,14 @@
   background-color: #db2a38;
   color: white;
   display: inline-block;
-  font-family: 'Avenir';
-  font-size: 11px;
-  font-weight: 600;
+  font-family: 'AvenirBold';
+  font-size: .75em;
   letter-spacing: 0;
   line-height: 100%;
   padding: 6px 10px 5px;
   text-transform: uppercase;
 }
-/* line 12, ../sass/imports/_mixins.scss */
+/* line 11, ../sass/imports/_mixins.scss */
 #internal-links .schedule-btn:hover {
   background-color: #373737;
   color: white;
@@ -122,7 +136,7 @@ a:active {
 /* line 22, ../sass/case.scss */
 h1 {
   color: #000;
-  font-family: 'NeutraText';
+  font-family: 'NeutraTextBold';
   font-weight: normal;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -139,22 +153,21 @@ header > p {
   color: #000;
   font-family: 'Avenir';
   font-size: 17px;
-  font-weight: lighter;
   line-height: 1.8em;
   margin: 0 auto;
   max-width: 570px;
 }
-/* line 43, ../sass/case.scss */
+/* line 42, ../sass/case.scss */
 header > p > span {
   display: block;
   margin: auto;
 }
-/* line 46, ../sass/case.scss */
+/* line 45, ../sass/case.scss */
 header > p > span:first-child {
   border-top: 0;
 }
 
-/* line 52, ../sass/case.scss */
+/* line 51, ../sass/case.scss */
 .page {
   *zoom: 1;
   max-width: 90em;
@@ -171,64 +184,64 @@ header > p > span:first-child {
   clear: both;
 }
 
-/* line 56, ../sass/case.scss */
+/* line 55, ../sass/case.scss */
 #main-header {
   height: 150px;
   padding: 20px 90px;
   position: relative;
 }
-/* line 60, ../sass/case.scss */
+/* line 59, ../sass/case.scss */
 #main-header .case-logo {
   float: left;
   height: 62px;
   margin: 40px 0 0;
   vertical-align: bottom;
 }
-/* line 66, ../sass/case.scss */
+/* line 65, ../sass/case.scss */
 #main-header > nav {
   clear: right;
   float: right;
   text-align: right;
 }
-/* line 70, ../sass/case.scss */
+/* line 69, ../sass/case.scss */
 #main-header > nav ul {
   margin: 0;
 }
-/* line 73, ../sass/case.scss */
+/* line 72, ../sass/case.scss */
 #main-header > nav li {
   display: inline-block;
 }
-/* line 75, ../sass/case.scss */
+/* line 74, ../sass/case.scss */
 #main-header > nav li > a {
   text-transform: uppercase;
 }
 
-/* line 84, ../sass/case.scss */
+/* line 83, ../sass/case.scss */
 #external-links ul {
   display: inline-block;
 }
-/* line 87, ../sass/case.scss */
+/* line 86, ../sass/case.scss */
 #external-links li > a {
   color: #373737;
   display: block;
-  font-family: 'Sentinel';
+  font-family: 'SentinelMedium';
   font-size: 9px;
-  font-weight: bold;
   letter-spacing: 1px;
   line-height: 100%;
   margin: 0 9px;
   position: relative;
 }
-/* line 97, ../sass/case.scss */
+/* line 95, ../sass/case.scss */
 #external-links li > a:hover {
   color: #db2a38;
 }
-/* line 101, ../sass/case.scss */
+/* line 99, ../sass/case.scss */
 #external-links .chat-btn {
   margin-left: 30px;
+  padding: 5px 10px 4px;
   position: relative;
 }
-/* line 105, ../sass/case.scss */
+/* line 104, ../sass/case.scss */
 #external-links .chat-btn:after {
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
@@ -246,11 +259,11 @@ header > p > span:first-child {
   position: absolute;
   top: 100%;
 }
-/* line 115, ../sass/case.scss */
+/* line 114, ../sass/case.scss */
 #external-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 119, ../sass/case.scss */
+/* line 118, ../sass/case.scss */
 #external-links .icon-phone {
   bottom: -1px;
   height: 1.4em;
@@ -258,25 +271,24 @@ header > p > span:first-child {
   right: -15px;
 }
 
-/* line 127, ../sass/case.scss */
+/* line 126, ../sass/case.scss */
 #internal-links {
   margin-top: 63px;
 }
-/* line 129, ../sass/case.scss */
+/* line 128, ../sass/case.scss */
 #internal-links li > a {
   color: #db2a38;
-  font-family: 'Avenir';
+  font-family: 'AvenirBold';
   font-size: 12px;
-  font-weight: bolder;
   letter-spacing: .5px;
   margin: 0 10px;
   position: relative;
 }
-/* line 137, ../sass/case.scss */
+/* line 135, ../sass/case.scss */
 #internal-links li > a:hover {
   color: #373737;
 }
-/* line 142, ../sass/case.scss */
+/* line 140, ../sass/case.scss */
 #internal-links li a:before {
   color: #a8a8a8;
   content: '/';
@@ -286,12 +298,12 @@ header > p > span:first-child {
   position: absolute;
   top: 0;
 }
-/* line 152, ../sass/case.scss */
+/* line 150, ../sass/case.scss */
 #internal-links li:first-child a:before,
 #internal-links li .schedule-btn:before {
   content: '';
 }
-/* line 156, ../sass/case.scss */
+/* line 154, ../sass/case.scss */
 #internal-links .schedule-btn {
   margin: 0 0 0 5px;
 }
@@ -313,37 +325,35 @@ header > p > span:first-child {
   background: #db2a38;
   color: #fff;
   display: inline-block;
-  font-family: 'Avenir';
+  font-family: 'AvenirBold';
   font-size: 11px;
-  font-weight: bold;
   letter-spacing: 3px;
   padding: 8px 35px;
   margin: 170px 0 0;
   text-transform: uppercase;
 }
 
-/* line 23, ../sass/imports/_our-work.scss */
+/* line 22, ../sass/imports/_our-work.scss */
 .red-ribbon {
   background: #db2a38;
   background: rgba(200, 0, 10, 0.7);
   margin-top: 140px;
   padding: 7px 0;
 }
-/* line 28, ../sass/imports/_our-work.scss */
+/* line 27, ../sass/imports/_our-work.scss */
 .red-ribbon > li {
   display: inline-block;
 }
-/* line 30, ../sass/imports/_our-work.scss */
+/* line 29, ../sass/imports/_our-work.scss */
 .red-ribbon > li > a {
   color: #fff;
-  font-family: 'Avenir';
+  font-family: 'AvenirDemiBold';
   font-size: 10px;
-  font-weight: lighter;
   letter-spacing: 2px;
   padding: 5px 8px;
   text-transform: uppercase;
 }
-/* line 39, ../sass/imports/_our-work.scss */
+/* line 37, ../sass/imports/_our-work.scss */
 .red-ribbon > li:before {
   color: #000;
   content: '|';
@@ -351,63 +361,60 @@ header > p > span:first-child {
   position: relative;
   top: 1px;
 }
-/* line 46, ../sass/imports/_our-work.scss */
+/* line 44, ../sass/imports/_our-work.scss */
 .red-ribbon > li:first-child:before {
   content: '';
 }
 
-/* line 52, ../sass/imports/_our-work.scss */
+/* line 50, ../sass/imports/_our-work.scss */
 #our-work {
   overflow-x: hidden;
 }
-/* line 54, ../sass/imports/_our-work.scss */
+/* line 52, ../sass/imports/_our-work.scss */
 #our-work h1 {
-  font-family: 'Avenir';
+  font-family: 'AvenirDemiBold';
   font-size: 66px;
-  font-weight: bold;
   letter-spacing: 1px;
   margin-top: .67em;
 }
-/* line 61, ../sass/imports/_our-work.scss */
+/* line 58, ../sass/imports/_our-work.scss */
 #our-work header > p > span {
   border-top: 1px solid #b3b3b3;
 }
-/* line 63, ../sass/imports/_our-work.scss */
+/* line 60, ../sass/imports/_our-work.scss */
 #our-work header > p > span:first-child {
   border-top: 0;
 }
-/* line 67, ../sass/imports/_our-work.scss */
+/* line 64, ../sass/imports/_our-work.scss */
 #our-work .signature {
   margin: 25px auto 0;
   text-transform: uppercase;
 }
-/* line 70, ../sass/imports/_our-work.scss */
+/* line 67, ../sass/imports/_our-work.scss */
 #our-work .signature > img {
   width: 240px;
 }
-/* line 74, ../sass/imports/_our-work.scss */
+/* line 71, ../sass/imports/_our-work.scss */
 #our-work .signature .name,
 #our-work .signature .title {
   margin: 0;
 }
-/* line 77, ../sass/imports/_our-work.scss */
+/* line 74, ../sass/imports/_our-work.scss */
 #our-work .signature .name {
   color: #db2a38;
-  font-family: 'Sentinel';
+  font-family: 'SentinelBlack';
   font-size: 12px;
-  font-weight: bolder;
   letter-spacing: 3px;
   margin-top: 10px;
 }
-/* line 85, ../sass/imports/_our-work.scss */
+/* line 81, ../sass/imports/_our-work.scss */
 #our-work .signature .title {
-  color: #000;
-  font-family: 'Avenir';
+  font-family: 'AvenirDemiBold';
   font-size: 9px;
-  font-weight: bold;
   letter-spacing: 2px;
+  line-height: 2em;
 }
-/* line 93, ../sass/imports/_our-work.scss */
+/* line 88, ../sass/imports/_our-work.scss */
 #our-work .parallax {
   height: 560px;
   overflow-y: hidden;
@@ -417,18 +424,19 @@ header > p > span:first-child {
 /* line 1, ../sass/imports/_our-people.scss */
 #our-people {
   background-color: #f2f2f2;
+  padding-bottom: 4em;
   text-align: center;
 }
-/* line 4, ../sass/imports/_our-people.scss */
+/* line 5, ../sass/imports/_our-people.scss */
 #our-people header {
   padding-top: 3em;
 }
-/* line 7, ../sass/imports/_our-people.scss */
+/* line 8, ../sass/imports/_our-people.scss */
 #our-people h1 {
   font-size: 3.85em;
   letter-spacing: -0.05em;
 }
-/* line 11, ../sass/imports/_our-people.scss */
+/* line 12, ../sass/imports/_our-people.scss */
 #our-people nav li {
   display: inline-block;
   height: 495px;
@@ -436,12 +444,12 @@ header > p > span:first-child {
   position: relative;
   width: 285px;
 }
-/* line 17, ../sass/imports/_our-people.scss */
+/* line 18, ../sass/imports/_our-people.scss */
 #our-people nav li > a:hover .people-pic {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 20, ../sass/imports/_our-people.scss */
+/* line 21, ../sass/imports/_our-people.scss */
 #our-people nav li .people-pic {
   -webkit-transition: opacity 400ms;
   -moz-transition: opacity 400ms;
@@ -450,23 +458,23 @@ header > p > span:first-child {
   height: 100%;
   width: 100%;
 }
-/* line 24, ../sass/imports/_our-people.scss */
+/* line 25, ../sass/imports/_our-people.scss */
 #our-people nav li .people-pic.project-developers {
   background-image: url(/img/our-people-project-developers.jpg);
 }
-/* line 25, ../sass/imports/_our-people.scss */
+/* line 26, ../sass/imports/_our-people.scss */
 #our-people nav li .people-pic.project-managers {
   background-image: url(/img/our-people-project-managers.jpg);
 }
-/* line 26, ../sass/imports/_our-people.scss */
+/* line 27, ../sass/imports/_our-people.scss */
 #our-people nav li .people-pic.designers {
   background-image: url(/img/our-people-designers.jpg);
 }
-/* line 27, ../sass/imports/_our-people.scss */
+/* line 28, ../sass/imports/_our-people.scss */
 #our-people nav li .people-pic.craftsmen {
   background-image: url(/img/our-people-craftsmen.jpg);
 }
-/* line 29, ../sass/imports/_our-people.scss */
+/* line 30, ../sass/imports/_our-people.scss */
 #our-people nav li .people-tag {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -474,9 +482,8 @@ header > p > span:first-child {
   background-color: #db2a38;
   bottom: 25px;
   color: #fff;
-  font-family: 'Sentinel';
+  font-family: 'SentinelBook';
   font-size: 18px;
-  font-weight: bold;
   left: 0;
   letter-spacing: -.03em;
   line-height: 2em;
@@ -490,10 +497,9 @@ header > p > span:first-child {
 #our-people nav li .people-tag > .the {
   font-family: 'Avenir';
   font-size: .65em;
-  font-weight: lighter;
   text-transform: uppercase;
 }
-/* line 50, ../sass/imports/_our-people.scss */
+/* line 49, ../sass/imports/_our-people.scss */
 #our-people nav li .people-tag > .the:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;

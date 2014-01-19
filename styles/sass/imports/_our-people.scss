@@ -1,5 +1,6 @@
 #our-people {
   background-color: #f2f2f2;
+  padding-bottom: 4em;
   text-align: center;
   header {
     padding-top: 3em;
@@ -31,9 +32,8 @@
       background-color: $red;
       bottom: 25px;
       color: #fff;
-      font-family: 'Sentinel';
+      font-family: 'SentinelBook';
       font-size: 18px;
-      font-weight: bold;
       left: 0;
       letter-spacing: -.03em;
       line-height: 2em;
@@ -45,7 +45,6 @@
       > .the {
         font-family: 'Avenir';
         font-size: .65em;
-        font-weight: lighter;
         text-transform: uppercase;
         &:after {
           @include opacity(.25);

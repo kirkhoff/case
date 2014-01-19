@@ -21,7 +21,7 @@ a:active {
 
 h1 {
   color: #000;
-  font-family: 'NeutraText';
+  font-family: 'NeutraTextBold';
   font-weight: normal;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -36,7 +36,6 @@ header > p {
   color: #000;
   font-family: 'Avenir';
   font-size: 17px;
-  font-weight: lighter;
   line-height: 1.8em;
   margin: 0 auto;
   max-width: 570px;
@@ -87,9 +86,8 @@ header > p {
   li > a {
     color: $grey-dark;
     display: block;
-    font-family: 'Sentinel';
+    font-family: 'SentinelMedium';
     font-size: 9px;
-    font-weight: bold;
     letter-spacing: 1px;
     line-height: 100%;
     margin: 0 9px;
@@ -101,6 +99,7 @@ header > p {
   .chat-btn {
     @extend %block-btn-light-grey;
     margin-left: 30px;
+    padding: 5px 10px 4px;
     position: relative;
     &:after {
       @include arrow-down($grey-light, 2px, 4px);
@@ -128,9 +127,8 @@ header > p {
   margin-top: 63px;
   li > a {
     color: $red;
-    font-family: 'Avenir';
+    font-family: 'AvenirBold';
     font-size: 12px;
-    font-weight: bolder;
     letter-spacing: .5px;
     margin: 0 10px;
     position: relative;
