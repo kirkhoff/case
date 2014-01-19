@@ -1,0 +1,127 @@
+@import 'compass/css3';
+@import 'susy';
+@import 'imports/vars';
+@import 'imports/fonts';
+@import 'imports/mixins';
+@import 'imports/placeholders';
+
+body {
+  font-size: 14px; // 1em == 14px
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  @include transition(color, $animate-color-speed);
+  text-decoration: none;
+}
+
+.page {
+  @include container;
+}
+
+#main-header {
+  height: 150px;
+  padding: 20px 90px;
+  position: relative;
+  .case-logo {
+    float: left;
+    height: 62px;
+    margin: 40px 0 0;
+    vertical-align: bottom;
+  }
+  > nav {
+    clear: right;
+    float: right;
+    text-align: right;
+    ul {
+      margin: 0;
+    }
+    li {
+      display: inline-block;
+      > a {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+}
+
+#external-links {
+  ul {
+    display: inline-block;
+  }
+  li > a {
+    color: $grey-dark;
+    display: block;
+    font-family: 'Sentinel';
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 100%;
+    margin: 0 10px;
+    position: relative;
+    &:hover {
+      color: $red;
+    }
+  }
+  .chat-btn {
+    @extend %block-btn-light-grey;
+    margin-left: 30px;
+    position: relative;
+    &:after {
+      @include arrow-down($grey-light, 2px, 4px);
+      @include transition(border-color, $animate-color-speed);
+      content: '';
+      display: block;
+      left: 50%;
+      margin: 0 0 0 -2px;
+      position: absolute;
+      top: 100%;
+    }
+    &:hover:after {
+      border-top-color: $red;
+    }
+  }
+  .icon-phone {
+    bottom: -1px;
+    height: 1.4em;
+    position: absolute;
+    right: -15px;
+  }
+}
+
+#internal-links {
+  margin-top: 63px;
+  li > a {
+    color: $red;
+    font-family: 'Avenir';
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: .5px;
+    margin: 0 10px;
+    position: relative;
+    &:hover {
+      color: $grey-dark;
+    }
+  }
+  li {
+    a:before {
+      color: $grey-light;
+      content: '/';
+      display: inline-block;
+      left: -15px;
+      position: absolute;
+      top: 0;
+    }
+    &:first-child a:before,
+    .schedule-btn:before {
+      content: '';
+    }
+  }
+  .schedule-btn {
+    @extend %block-btn-red;
+    margin: 0 0 0 5px;
+  }
+}

@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'NeutraText';
+  src: url("/styles/fonts/neutratext-bold-webfont.eot");
+  src: url("/styles/fonts/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/neutratext-bold-webfont.woff") format("woff"), url("/styles/fonts/neutratext-bold-webfont.ttf") format("truetype"), url("/styles/fonts/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("/styles/fonts/sentinel-light-webfont.eot");
+  src: url("/styles/fonts/sentinel-light-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/sentinel-light-webfont.woff") format("woff"), url("/styles/fonts/sentinel-light-webfont.ttf") format("truetype"), url("/styles/fonts/sentinel-light-webfont.svg#sentinellight") format("svg");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("/styles/fonts/sentinel-book-webfont.eot");
+  src: url("/styles/fonts/sentinel-book-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/sentinel-book-webfont.woff") format("woff"), url("/styles/fonts/sentinel-book-webfont.ttf") format("truetype"), url("/styles/fonts/sentinel-book-webfont.svg#sentinelbook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("/styles/fonts/sentinel-medium-webfont.eot");
+  src: url("/styles/fonts/sentinel-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/sentinel-medium-webfont.woff") format("woff"), url("/styles/fonts/sentinel-medium-webfont.ttf") format("truetype"), url("/styles/fonts/sentinel-medium-webfont.svg#sentinelmedium") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("/styles/fonts/sentinel-bold-webfont.eot");
+  src: url("/styles/fonts/sentinel-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/sentinel-bold-webfont.woff") format("woff"), url("/styles/fonts/sentinel-bold-webfont.ttf") format("truetype"), url("/styles/fonts/sentinel-bold-webfont.svg#sentinelbold") format("svg");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("/styles/fonts/avenirnextltpro-regular-webfont.eot");
+  src: url("/styles/fonts/avenirnextltpro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/avenirnextltpro-regular-webfont.woff") format("woff"), url("/styles/fonts/avenirnextltpro-regular-webfont.ttf") format("truetype"), url("/styles/fonts/avenirnextltpro-regular-webfont.svg#avenirnext_lt_pro_regularRg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("/styles/fonts/avenirnextltpro-demi-webfont.eot");
+  src: url("/styles/fonts/avenirnextltpro-demi-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/avenirnextltpro-demi-webfont.woff") format("woff"), url("/styles/fonts/avenirnextltpro-demi-webfont.ttf") format("truetype"), url("/styles/fonts/avenirnextltpro-demi-webfont.svg#avenir_next_lt_prodemi") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("/styles/fonts/avenirnextltpro-bold-webfont.eot");
+  src: url("/styles/fonts/avenirnextltpro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/styles/fonts/avenirnextltpro-bold-webfont.woff") format("woff"), url("/styles/fonts/avenirnextltpro-bold-webfont.ttf") format("truetype"), url("/styles/fonts/avenirnextltpro-bold-webfont.svg#avenir_next_lt_probold") format("svg");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+/* line 1, ../sass/imports/_placeholders.scss */
+#external-links .chat-btn {
+  background-color: lightgrey;
+  color: #555555;
+  display: inline-block;
+  font-family: 'Avenir';
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 6px 10px 5px;
+  text-transform: uppercase;
+}
+/* line 12, ../sass/imports/_mixins.scss */
+#external-links .chat-btn:hover {
+  background-color: #db2a38;
+  color: white;
+}
+
+/* line 3, ../sass/imports/_placeholders.scss */
+#internal-links .schedule-btn {
+  background-color: #db2a38;
+  color: white;
+  display: inline-block;
+  font-family: 'Avenir';
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 6px 10px 5px;
+  text-transform: uppercase;
+}
+/* line 12, ../sass/imports/_mixins.scss */
+#internal-links .schedule-btn:hover {
+  background-color: #373737;
+  color: white;
+}
+
+/* line 8, ../sass/case.scss */
+body {
+  font-size: 14px;
+}
+
+/* line 15, ../sass/case.scss */
+a,
+a:hover,
+a:visited,
+a:active {
+  -webkit-transition: color, 100ms;
+  -moz-transition: color, 100ms;
+  -o-transition: color, 100ms;
+  transition: color, 100ms;
+  text-decoration: none;
+}
+
+/* line 20, ../sass/case.scss */
+.page {
+  *zoom: 1;
+  max-width: 90em;
+  _width: 90em;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 24, ../sass/case.scss */
+#main-header {
+  height: 150px;
+  padding: 20px 90px;
+  position: relative;
+}
+/* line 28, ../sass/case.scss */
+#main-header .case-logo {
+  float: left;
+  height: 62px;
+  margin: 40px 0 0;
+  vertical-align: bottom;
+}
+/* line 34, ../sass/case.scss */
+#main-header > nav {
+  clear: right;
+  float: right;
+  text-align: right;
+}
+/* line 38, ../sass/case.scss */
+#main-header > nav ul {
+  margin: 0;
+}
+/* line 41, ../sass/case.scss */
+#main-header > nav li {
+  display: inline-block;
+}
+/* line 43, ../sass/case.scss */
+#main-header > nav li > a {
+  text-transform: uppercase;
+}
+
+/* line 52, ../sass/case.scss */
+#external-links ul {
+  display: inline-block;
+}
+/* line 55, ../sass/case.scss */
+#external-links li > a {
+  color: #373737;
+  display: block;
+  font-family: 'Sentinel';
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 100%;
+  margin: 0 10px;
+  position: relative;
+}
+/* line 65, ../sass/case.scss */
+#external-links li > a:hover {
+  color: #db2a38;
+}
+/* line 69, ../sass/case.scss */
+#external-links .chat-btn {
+  margin-left: 30px;
+  position: relative;
+}
+/* line 73, ../sass/case.scss */
+#external-links .chat-btn:after {
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 4px solid lightgrey;
+  height: 0;
+  width: 0;
+  -webkit-transition: border-color, 100ms;
+  -moz-transition: border-color, 100ms;
+  -o-transition: border-color, 100ms;
+  transition: border-color, 100ms;
+  content: '';
+  display: block;
+  left: 50%;
+  margin: 0 0 0 -2px;
+  position: absolute;
+  top: 100%;
+}
+/* line 83, ../sass/case.scss */
+#external-links .chat-btn:hover:after {
+  border-top-color: #db2a38;
+}
+/* line 87, ../sass/case.scss */
+#external-links .icon-phone {
+  bottom: -1px;
+  height: 1.4em;
+  position: absolute;
+  right: -15px;
+}
+
+/* line 95, ../sass/case.scss */
+#internal-links {
+  margin-top: 63px;
+}
+/* line 97, ../sass/case.scss */
+#internal-links li > a {
+  color: #db2a38;
+  font-family: 'Avenir';
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: .5px;
+  margin: 0 10px;
+  position: relative;
+}
+/* line 105, ../sass/case.scss */
+#internal-links li > a:hover {
+  color: #373737;
+}
+/* line 110, ../sass/case.scss */
+#internal-links li a:before {
+  color: lightgrey;
+  content: '/';
+  display: inline-block;
+  left: -15px;
+  position: absolute;
+  top: 0;
+}
+/* line 119, ../sass/case.scss */
+#internal-links li:first-child a:before,
+#internal-links li .schedule-btn:before {
+  content: '';
+}
+/* line 123, ../sass/case.scss */
+#internal-links .schedule-btn {
+  margin: 0 0 0 5px;
+}

@@ -1,0 +1,3 @@
+%block-btn-light-grey { @include block-btn($grey-medium, #fff, $grey-light, $red); }
+%block-btn-dark-grey { @include block-btn(#fff, #fff, $grey-dark, $red); }
+%block-btn-red { @include block-btn(#fff, #fff, $red, $grey-dark); }
