@@ -17,6 +17,18 @@ a:active {
   text-decoration: none;
 }
 
+h1 {
+  color: #000;
+  font-family: 'NeutraText';
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+mark {
+  background: none;
+  font-weight: bold;
+}
+
 .page {
   @include container;
 }
@@ -60,7 +72,7 @@ a:active {
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 100%;
-    margin: 0 10px;
+    margin: 0 9px;
     position: relative;
     &:hover {
       color: $red;
@@ -108,10 +120,11 @@ a:active {
   }
   li {
     a:before {
-      color: $grey-light;
+      color: shade($grey-light, 20);
       content: '/';
       display: inline-block;
       left: -15px;
+      line-height: 14px;
       position: absolute;
       top: 0;
     }
@@ -125,3 +138,5 @@ a:active {
     margin: 0 0 0 5px;
   }
 }
+
+@import 'imports/our-work';

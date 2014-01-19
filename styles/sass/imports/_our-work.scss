@@ -1,0 +1,98 @@
+.our-work-container {
+  background: url(/img/our-work-bg-sm.jpg) no-repeat 0 0;
+  height: 788px;
+  text-align: center;
+  width: 100%;
+  h1 {
+    font-family: 'Avenir';
+    font-size: 66px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+  }
+  header > p {
+    color: #000;
+    font-family: 'Avenir';
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 1.8em;
+    margin: 0 auto;
+    max-width: 570px;
+    > span {
+      border-top: 1px solid shade($grey-light, 15);
+      display: block;
+      margin: auto;
+      &:first-child {
+        border-top: 0;
+      }
+    }
+  }
+  .signature {
+    margin: 25px auto 0;
+    text-transform: uppercase;
+    > img {
+      width: 240px;
+    }
+    .name,
+    .title {
+      margin: 0;
+    }
+    .name {
+      color: $red;
+      font-family: 'Sentinel';
+      font-size: 12px;
+      font-weight: bolder;
+      letter-spacing: 3px;
+      margin-top: 10px;
+    }
+    .title {
+      color: #000;
+      font-family: 'Avenir';
+      font-size: 9px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.our-promise {
+  background: $red;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Avenir';
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 8px 35px;
+  margin: 170px 0 0;
+  text-transform: uppercase;
+}
+
+.red-ribbon {
+  background: $red;
+  background: rgba(200, 0, 10, .7);
+  margin-top: 140px;
+  padding: 7px 0;
+  > li {
+    display: inline-block;
+    > a {
+      color: #fff;
+      font-family: 'Avenir';
+      font-size: 10px;
+      font-weight: lighter;
+      letter-spacing: 2px;
+      padding: 5px 8px;
+      text-transform: uppercase;
+    }
+    &:before {
+      color: #000;
+      content: '|';
+      margin-right: 5px;
+      position: relative;
+      top: 1px;
+    }
+    &:first-child:before {
+      content: '';
+    }
+  }
+}
+

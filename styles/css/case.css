@@ -118,6 +118,20 @@ a:active {
 }
 
 /* line 20, ../sass/case.scss */
+h1 {
+  color: #000;
+  font-family: 'NeutraText';
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+/* line 27, ../sass/case.scss */
+mark {
+  background: none;
+  font-weight: bold;
+}
+
+/* line 32, ../sass/case.scss */
 .page {
   *zoom: 1;
   max-width: 90em;
@@ -134,43 +148,43 @@ a:active {
   clear: both;
 }
 
-/* line 24, ../sass/case.scss */
+/* line 36, ../sass/case.scss */
 #main-header {
   height: 150px;
   padding: 20px 90px;
   position: relative;
 }
-/* line 28, ../sass/case.scss */
+/* line 40, ../sass/case.scss */
 #main-header .case-logo {
   float: left;
   height: 62px;
   margin: 40px 0 0;
   vertical-align: bottom;
 }
-/* line 34, ../sass/case.scss */
+/* line 46, ../sass/case.scss */
 #main-header > nav {
   clear: right;
   float: right;
   text-align: right;
 }
-/* line 38, ../sass/case.scss */
+/* line 50, ../sass/case.scss */
 #main-header > nav ul {
   margin: 0;
 }
-/* line 41, ../sass/case.scss */
+/* line 53, ../sass/case.scss */
 #main-header > nav li {
   display: inline-block;
 }
-/* line 43, ../sass/case.scss */
+/* line 55, ../sass/case.scss */
 #main-header > nav li > a {
   text-transform: uppercase;
 }
 
-/* line 52, ../sass/case.scss */
+/* line 64, ../sass/case.scss */
 #external-links ul {
   display: inline-block;
 }
-/* line 55, ../sass/case.scss */
+/* line 67, ../sass/case.scss */
 #external-links li > a {
   color: #373737;
   display: block;
@@ -179,19 +193,19 @@ a:active {
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 100%;
-  margin: 0 10px;
+  margin: 0 9px;
   position: relative;
 }
-/* line 65, ../sass/case.scss */
+/* line 77, ../sass/case.scss */
 #external-links li > a:hover {
   color: #db2a38;
 }
-/* line 69, ../sass/case.scss */
+/* line 81, ../sass/case.scss */
 #external-links .chat-btn {
   margin-left: 30px;
   position: relative;
 }
-/* line 73, ../sass/case.scss */
+/* line 85, ../sass/case.scss */
 #external-links .chat-btn:after {
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
@@ -209,11 +223,11 @@ a:active {
   position: absolute;
   top: 100%;
 }
-/* line 83, ../sass/case.scss */
+/* line 95, ../sass/case.scss */
 #external-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 87, ../sass/case.scss */
+/* line 99, ../sass/case.scss */
 #external-links .icon-phone {
   bottom: -1px;
   height: 1.4em;
@@ -221,11 +235,11 @@ a:active {
   right: -15px;
 }
 
-/* line 95, ../sass/case.scss */
+/* line 107, ../sass/case.scss */
 #internal-links {
   margin-top: 63px;
 }
-/* line 97, ../sass/case.scss */
+/* line 109, ../sass/case.scss */
 #internal-links li > a {
   color: #db2a38;
   font-family: 'Avenir';
@@ -235,25 +249,140 @@ a:active {
   margin: 0 10px;
   position: relative;
 }
-/* line 105, ../sass/case.scss */
+/* line 117, ../sass/case.scss */
 #internal-links li > a:hover {
   color: #373737;
 }
-/* line 110, ../sass/case.scss */
+/* line 122, ../sass/case.scss */
 #internal-links li a:before {
-  color: lightgrey;
+  color: #a8a8a8;
   content: '/';
   display: inline-block;
   left: -15px;
+  line-height: 14px;
   position: absolute;
   top: 0;
 }
-/* line 119, ../sass/case.scss */
+/* line 132, ../sass/case.scss */
 #internal-links li:first-child a:before,
 #internal-links li .schedule-btn:before {
   content: '';
 }
-/* line 123, ../sass/case.scss */
+/* line 136, ../sass/case.scss */
 #internal-links .schedule-btn {
   margin: 0 0 0 5px;
+}
+
+/* line 1, ../sass/imports/_our-work.scss */
+.our-work-container {
+  background: url(/img/our-work-bg-sm.jpg) no-repeat 0 0;
+  height: 788px;
+  text-align: center;
+  width: 100%;
+}
+/* line 6, ../sass/imports/_our-work.scss */
+.our-work-container h1 {
+  font-family: 'Avenir';
+  font-size: 66px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+/* line 12, ../sass/imports/_our-work.scss */
+.our-work-container header > p {
+  color: #000;
+  font-family: 'Avenir';
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 1.8em;
+  margin: 0 auto;
+  max-width: 570px;
+}
+/* line 20, ../sass/imports/_our-work.scss */
+.our-work-container header > p > span {
+  border-top: 1px solid #b3b3b3;
+  display: block;
+  margin: auto;
+}
+/* line 24, ../sass/imports/_our-work.scss */
+.our-work-container header > p > span:first-child {
+  border-top: 0;
+}
+/* line 29, ../sass/imports/_our-work.scss */
+.our-work-container .signature {
+  margin: 25px auto 0;
+  text-transform: uppercase;
+}
+/* line 32, ../sass/imports/_our-work.scss */
+.our-work-container .signature > img {
+  width: 240px;
+}
+/* line 36, ../sass/imports/_our-work.scss */
+.our-work-container .signature .name,
+.our-work-container .signature .title {
+  margin: 0;
+}
+/* line 39, ../sass/imports/_our-work.scss */
+.our-work-container .signature .name {
+  color: #db2a38;
+  font-family: 'Sentinel';
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+/* line 47, ../sass/imports/_our-work.scss */
+.our-work-container .signature .title {
+  color: #000;
+  font-family: 'Avenir';
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* line 57, ../sass/imports/_our-work.scss */
+.our-promise {
+  background: #db2a38;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Avenir';
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 8px 35px;
+  margin: 170px 0 0;
+  text-transform: uppercase;
+}
+
+/* line 70, ../sass/imports/_our-work.scss */
+.red-ribbon {
+  background: #db2a38;
+  background: rgba(200, 0, 10, 0.7);
+  margin-top: 140px;
+  padding: 7px 0;
+}
+/* line 75, ../sass/imports/_our-work.scss */
+.red-ribbon > li {
+  display: inline-block;
+}
+/* line 77, ../sass/imports/_our-work.scss */
+.red-ribbon > li > a {
+  color: #fff;
+  font-family: 'Avenir';
+  font-size: 10px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 5px 8px;
+  text-transform: uppercase;
+}
+/* line 86, ../sass/imports/_our-work.scss */
+.red-ribbon > li:before {
+  color: #000;
+  content: '|';
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+}
+/* line 93, ../sass/imports/_our-work.scss */
+.red-ribbon > li:first-child:before {
+  content: '';
 }
