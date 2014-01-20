@@ -221,7 +221,7 @@
 }
 
 /* line 13, ../sass/imports/_placeholders.scss */
-#schedule-form input[type='checkbox'] {
+#schedule-form input[type='checkbox'], #main-footer h1 {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -1144,4 +1144,137 @@ header > p > span:first-child {
   /* Internet Explorer 10+ */
   color: #5c2629;
   font-family: 'SentinelLightItalic';
+}
+
+/* line 1, ../sass/imports/_footer.scss */
+#main-footer {
+  letter-spacing: -.02em;
+  margin-top: -11px;
+  position: relative;
+}
+/* line 8, ../sass/imports/_footer.scss */
+#main-footer .hanging-lamp {
+  height: 170px;
+  position: absolute;
+  right: 80px;
+  top: 0;
+}
+/* line 14, ../sass/imports/_footer.scss */
+#main-footer .brushes {
+  border-bottom: 1px solid lightgrey;
+  margin-top: -10px;
+  position: relative;
+  text-align: center;
+}
+/* line 19, ../sass/imports/_footer.scss */
+#main-footer .brushes > img {
+  height: 115px;
+  position: relative;
+  top: 47px;
+  z-index: 1;
+}
+/* line 26, ../sass/imports/_footer.scss */
+#main-footer .copyright {
+  color: #373737;
+  font-size: 11px;
+  padding: 20px 0 100px;
+  text-align: center;
+}
+/* line 32, ../sass/imports/_footer.scss */
+#main-footer .footer-logo {
+  bottom: 0;
+  margin-bottom: -11px;
+  position: absolute;
+  right: 60px;
+  width: 285px;
+}
+
+/* line 41, ../sass/imports/_footer.scss */
+#site-map {
+  font-family: 'Avenir';
+  margin: auto;
+  padding-top: 100px;
+  width: 80%;
+}
+/* line 46, ../sass/imports/_footer.scss */
+#site-map * {
+  vertical-align: top;
+}
+/* line 49, ../sass/imports/_footer.scss */
+#site-map > section {
+  display: inline-block;
+  min-width: 160px;
+  padding-right: 35px;
+  position: relative;
+}
+/* line 54, ../sass/imports/_footer.scss */
+#site-map > section:before {
+  background-color: #e5e5e5;
+  content: '';
+  display: inline-block;
+  height: 100%;
+  left: -25px;
+  position: absolute;
+  width: 10px;
+}
+/* line 63, ../sass/imports/_footer.scss */
+#site-map > section h2 {
+  color: #db2a38;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0 0 .5em 0;
+}
+/* line 69, ../sass/imports/_footer.scss */
+#site-map > section ul {
+  margin: 0;
+}
+/* line 72, ../sass/imports/_footer.scss */
+#site-map > section a {
+  color: #373737;
+  font-size: .8em;
+  font-weight: 500;
+  line-height: 2em;
+}
+/* line 77, ../sass/imports/_footer.scss */
+#site-map > section a:hover {
+  color: #db2a38;
+}
+
+/* line 84, ../sass/imports/_footer.scss */
+#footer-links {
+  margin-top: 60px;
+  text-align: center;
+}
+/* line 87, ../sass/imports/_footer.scss */
+#footer-links ul {
+  display: block;
+  margin: 2px 0;
+}
+/* line 91, ../sass/imports/_footer.scss */
+#footer-links li {
+  display: inline-block;
+  margin-right: -2px;
+}
+/* line 95, ../sass/imports/_footer.scss */
+#footer-links li:first-child a:before {
+  content: '';
+}
+/* line 98, ../sass/imports/_footer.scss */
+#footer-links a {
+  color: #db2a38;
+  font-family: 'Avenir';
+  font-size: 11px;
+  font-weight: 500;
+  padding: 0 4px;
+}
+/* line 104, ../sass/imports/_footer.scss */
+#footer-links a:hover {
+  color: #373737;
+}
+/* line 107, ../sass/imports/_footer.scss */
+#footer-links a:before {
+  color: #555555;
+  content: '|';
+  font-size: 9px;
+  margin-right: 8px;
 }
