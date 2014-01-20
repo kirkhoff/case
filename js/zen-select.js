@@ -1,3 +1,8 @@
+/**
+ * This Angular directive is created by Curt Kirkhoff, under the MIT (open source) License.
+ * curt@kirkhoff.com
+ */
+
 angular.module('zen.ui.select', [])
     .factory('$dom', function($q, $timeout){
         /**
