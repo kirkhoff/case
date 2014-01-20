@@ -1,0 +1,119 @@
+#blog {
+  text-align: center;
+  header {
+    background-color: #fff;
+    border-left: 1px solid $grey-light;
+    border-right: 1px solid $grey-light;
+    display: block;
+    margin: 3.5em auto .5em;
+    position: relative;
+    width: 18em;
+    z-index: 1;
+    h1 {
+      font-size: 3.8em;
+      letter-spacing: -.06em;
+      line-height: 1em;
+    }
+    p {
+      font-family: 'Sentinel';
+      font-size: 1.5em;
+      line-height: 1em;
+      .and {
+        display: inline;
+        font-size: .8em;
+        font-weight: lighter;
+        margin: 0 .1em;
+      }
+    }
+  }
+}
+
+#feed {
+  border-top: 1px solid $grey-light;
+  padding-top: 2.7em;
+  position: relative;
+  top: -2.7em;
+  li {
+    display: inline-block;
+    margin: 1em;
+    width: 340px;
+  }
+  a:hover {
+    .pic-container .hover-icon {
+      @include opacity(1);
+      visibility: visible;
+    }
+    .pic-container .pic {
+      @include opacity(.25);
+    }
+    h2 {
+      color: $grey-medium;
+    }
+  }
+  .pic-container {
+    background-color: #292929;
+    height: 212px;
+    position: relative;
+    > img {
+      width: 100%;
+      &.hover-icon,
+      &.pic {
+        @include transition(opacity 200ms);
+      }
+      &.hover-icon {
+        @include opacity(0);
+        height: 50px;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        position: absolute;
+        top: 50%;
+        visibility: hidden;
+        width: 50px;
+        z-index: 1;
+      }
+    }
+  }
+  h2 {
+    @extend %ellipsis;
+    color: $red;
+    font-family: 'SentinelMedium';
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+  p {
+    color: $grey-dark;
+    font-family: 'Avenir';
+    font-size: .8em;
+    font-weight: 500;
+    line-height: 1.5em;
+  }
+  .view-all-btn {
+    @extend %block-btn-black;
+    font-family: 'AvenirDemiBold';
+    font-size: .9em;
+  }
+}
+
+#prev-btn,
+#next-btn {
+  @extend %block-btn-black;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 100;
+  height: 40px;
+  margin-top: -60px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  > i {
+    line-height: 40px;
+  }
+}
+#prev-btn {
+  left: 0;
+}
+#next-btn {
+  right: 0;
+}

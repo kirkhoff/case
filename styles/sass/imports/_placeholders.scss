@@ -1,3 +1,22 @@
 %block-btn-light-grey { @include block-btn($grey-medium, #fff, $grey-light, $red); }
 %block-btn-dark-grey { @include block-btn(#fff, #fff, $grey-dark, $red); }
+%block-btn-black { @include block-btn($red, #fff, #000, #000); }
+%block-btn-black { @include block-btn($red, #fff, #000, $red); }
 %block-btn-red { @include block-btn(#fff, #fff, $red, $grey-dark); }
+%ellipsis {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+%hidden508 {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

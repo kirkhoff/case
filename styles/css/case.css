@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'SentinalBook';
+  font-family: 'SentinelBook';
   src: url("../fonts/sentinel-book-webfont.eot");
   src: url("../fonts/sentinel-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sentinel-book-webfont.woff") format("woff"), url("../fonts/sentinel-book-webfont.ttf") format("truetype"), url("../fonts/sentinel-book-webfont.svg#sentinelbook") format("svg");
   font-weight: normal;
@@ -78,6 +78,57 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CaseIcons';
+  src: url("fonts/CaseIcons.eot");
+}
+
+@font-face {
+  font-family: 'CaseIcons';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMk6yAyoAAAC8AAAAYGNtYXDm2CeYAAABHAAAAGRnYXNwAAAAEAAAAYAAAAAIZ2x5ZrSZsMcAAAGIAAAB4GhlYWQBCXDoAAADaAAAADZoaGVhB6kD4QAAA6AAAAAkaG10eBYABDkAAAPEAAAAHGxvY2EBXgHIAAAD4AAAABBtYXhwAAsALgAAA/AAAAAgbmFtZW44wLIAAAQQAAABS3Bvc3QAAwAAAAAFXAAAACAAAwQAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEABAAAAAAAAAAAAAAAAAAABAACDmAAPA/8D/wAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEAFAAAAAQABAAAwAAACAAPAA+AHgmoOYA//3//wAAACAAPAA+AHgmoOYA//3////h/8b/xf+M2WUaBgADAAEAAAAAAAAAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAR8AHwLhA3sAHQAAJR4BFAYHDgEiJicBLgE0NjcBPgEyFhceARQGBwkBAuEFBgYFBQ0NDQX+bwUGBgUBkQUNDQ0FBQYGBf6TAW1RBQ0ODQUFBgYFAZUFDQ4NBQGVBQUFBQUODQ0F/oT+hAABAR8AHwLhA3sAHQAAJQ4BFBYXHgEyNjcBPgE0JicBLgEiBgcOARQWFwkBAR8FBgYFBQ0NDQUBkQUGBgX+bwUNDQ0FBQYGBQFt/pNRBQ0ODQUFBgYFAZUFDQ4NBQGVBQUFBQUODQ0F/oT+hAABAIkAPAN3AyoACwAAAScJAQcJARcJATcBA3ce/qf+px4BWf6nHgFZAVke/qcDDB7+pwFZHv6n/qceAVn+px4BWQAAAAMAGQAAA+cDZgAhACYAKwAAJQEuAyMiDgIHAQ4BFBYXHgMzITI+Ajc+AiYnJSM1MxU1IxEzEQPn/jgCBwgJBQUJCAcC/jgCAwMCAwYICQUDkAUJCAYDAgIBAwL+UXBwcHA0AyAFBgUCAgUGBfzgBAkJCQQEBgUCAgUGBAQJCQkEMmdnswE0/swAAAAAAQFZASUCpwJ0AAQAAAEhAyEDAVkBTwH+swECdP6xAU8AAAAAAQAAAAEAAE0/5YBfDzz1AAsEAAAAAADPAhY4AAAAAM8CFjgAAAAAA+cDewAAAAgAAgAAAAAAAAABAAADwP/AAAAEAAAAABkD5wABAAAAAAAAAAAAAAAAAAAABwAAAAACAAAABAABHwQAAR8EAACJBAAAGQQAAVkAAAAAAAoAQAB2AJgA3gDwAAEAAAAHACwAAwAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQASAAAAAQAAAAAAAgAOAFUAAQAAAAAAAwASACgAAQAAAAAABAASAGMAAQAAAAAABQAWABIAAQAAAAAABgAJADoAAQAAAAAACgAoAHUAAwABBAkAAQASAAAAAwABBAkAAgAOAFUAAwABBAkAAwASACgAAwABBAkABAASAGMAAwABBAkABQAWABIAAwABBAkABgASAEMAAwABBAkACgAoAHUAQwBhAHMAZQBJAGMAbwBuAHMAVgBlAHIAcwBpAG8AbgAgADAALgAwAEMAYQBzAGUASQBjAG8AbgBzQ2FzZUljb25zAEMAYQBzAGUASQBjAG8AbgBzAFIAZQBnAHUAbABhAHIAQwBhAHMAZQBJAGMAbwBuAHMARwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAWIAAoAAAAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAdkAAAHZ/i3cPk9TLzIAAALQAAAAYAAAAGBOsgMqY21hcAAAAzAAAABkAAAAZObYJ5hnYXNwAAADlAAAAAgAAAAIAAAAEGhlYWQAAAOcAAAANgAAADYBCXDoaGhlYQAAA9QAAAAkAAAAJAepA+FobXR4AAAD+AAAABwAAAAcFgAEOW1heHAAAAQUAAAABgAAAAYAB1AAbmFtZQAABBwAAAFLAAABS244wLJwb3N0AAAFaAAAACAAAAAgAAMAAAEABAQAAQEBCkNhc2VJY29ucwABAgABAD74HAL4GwP4GAQeCgAJdlYl/4uLHgoACXZWJf+LiwwHi4v6lPoPBR0AAACMDx0AAACRER0AAAAJHQAAAdASAAgBAQoTFhkcHyQpQ2FzZUljb25zQ2FzZUljb25zdTIwdTNDdTNFdTc4dTI2QTB1RTYwMAAAAgGJAAUABwIAAQAEAAcAQwB/ALQBFwEt/pQO/JQO+XXcFZl9i3V9fQh9fXWLfZkI/CX4KQV9mYuhmZkI+CX4KQWZmaGLmX0ImX2LdX19CPwC/BAF+AL8EAUO97PcFX19i3WZfQiZfaGLmZkI+CX4KQWZmYuhfZkI/CX4KQV9mXWLfX0IfX2LdZl9CPgC/BAF/AL8EAUO+gv5oBVtqQX77fvtBfvt9+0FbW0F9+377QX77fvtBaltBfft9+0F9+377QWpqQX77fftBQ76e78V/Fz5tAWFln+SfosIfot/hIWACPxc/bQFhYCLfpGACJGAl4SYiwj6JIsFl4uXkpGWCJGWi5iFlgj8Q70V+wWLBYvxBfcFiwWLJQWL90cV+wWLBYv3xwX3BYsFi/vHBQ737fkIFffjiwWL++MF++OLBYv34wUO+pQU+pQViwwKAAAAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAQAAAAAAAAAAAAAAAAAAAQAAg5gADwP/A/8ADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABABQAAAAEAAQAAMAAAAgADwAPgB4JqDmAP/9//8AAAAgADwAPgB4JqDmAP/9////4f/G/8X/jNllGgYAAwABAAAAAAAAAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAAD+HjVHXw889QALBAAAAAAAzwIWOAAAAADPAhY4AAAAAAPnA3sAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAZA+cAAQAAAAAAAAAAAAAAAAAAAAcAAAAAAgAAAAQAAR8EAAEfBAAAiQQAABkEAAFZAABQAAAHAAAAAAAOAK4AAQAAAAAAAQASAAAAAQAAAAAAAgAOAFUAAQAAAAAAAwASACgAAQAAAAAABAASAGMAAQAAAAAABQAWABIAAQAAAAAABgAJADoAAQAAAAAACgAoAHUAAwABBAkAAQASAAAAAwABBAkAAgAOAFUAAwABBAkAAwASACgAAwABBAkABAASAGMAAwABBAkABQAWABIAAwABBAkABgASAEMAAwABBAkACgAoAHUAQwBhAHMAZQBJAGMAbwBuAHMAVgBlAHIAcwBpAG8AbgAgADAALgAwAEMAYQBzAGUASQBjAG8AbgBzQ2FzZUljb25zAEMAYQBzAGUASQBjAG8AbgBzAFIAZQBnAHUAbABhAHIAQwBhAHMAZQBJAGMAbwBuAHMARwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 123, ../sass/imports/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'CaseIcons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 137, ../sass/imports/_fonts.scss */
+.icon-arrow-left:before {
+  content: "\3c";
+}
+
+/* line 140, ../sass/imports/_fonts.scss */
+.icon-arrow-right:before {
+  content: "\3e";
+}
+
+/* line 143, ../sass/imports/_fonts.scss */
+.icon-warning:before {
+  content: "\26a0";
+}
+
+/* line 146, ../sass/imports/_fonts.scss */
+.icon-x:before {
+  content: "\78";
+}
+
+/* line 149, ../sass/imports/_fonts.scss */
+.icon-square:before {
+  content: "\e600";
+}
+
 /* line 1, ../sass/imports/_placeholders.scss */
 #external-links .chat-btn {
   background-color: lightgrey;
@@ -97,6 +148,46 @@
 }
 
 /* line 3, ../sass/imports/_placeholders.scss */
+#feed .view-all-btn, #prev-btn,
+#next-btn {
+  background-color: black;
+  color: #db2a38;
+  display: inline-block;
+  font-family: 'AvenirBold';
+  font-size: .75em;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 6px 10px 5px;
+  text-transform: uppercase;
+}
+/* line 11, ../sass/imports/_mixins.scss */
+#feed .view-all-btn:hover, #prev-btn:hover,
+#next-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* line 4, ../sass/imports/_placeholders.scss */
+#feed .view-all-btn, #prev-btn,
+#next-btn {
+  background-color: black;
+  color: #db2a38;
+  display: inline-block;
+  font-family: 'AvenirBold';
+  font-size: .75em;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 6px 10px 5px;
+  text-transform: uppercase;
+}
+/* line 11, ../sass/imports/_mixins.scss */
+#feed .view-all-btn:hover, #prev-btn:hover,
+#next-btn:hover {
+  background-color: #db2a38;
+  color: white;
+}
+
+/* line 5, ../sass/imports/_placeholders.scss */
 #internal-links .schedule-btn {
   background-color: #db2a38;
   color: white;
@@ -112,6 +203,27 @@
 #internal-links .schedule-btn:hover {
   background-color: #373737;
   color: white;
+}
+
+/* line 6, ../sass/imports/_placeholders.scss */
+#feed h2 {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/* line 13, ../sass/imports/_placeholders.scss */
+#schedule-form input[type='checkbox'] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /* line 8, ../sass/case.scss */
@@ -134,6 +246,23 @@ a:active {
 }
 
 /* line 22, ../sass/case.scss */
+button {
+  border: 0;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 31, ../sass/case.scss */
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner {
+  border: 0 none !important;
+  padding: 0 !important;
+}
+
+/* line 36, ../sass/case.scss */
 h1 {
   color: #000;
   font-family: 'NeutraTextBold';
@@ -142,32 +271,32 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 30, ../sass/case.scss */
+/* line 44, ../sass/case.scss */
 mark {
   background: none;
   font-weight: bold;
 }
 
-/* line 35, ../sass/case.scss */
+/* line 49, ../sass/case.scss */
 header > p {
   color: #000;
   font-family: 'Avenir';
   font-size: 17px;
-  line-height: 1.8em;
+  line-height: 1.7em;
   margin: 0 auto;
   max-width: 570px;
 }
-/* line 42, ../sass/case.scss */
+/* line 56, ../sass/case.scss */
 header > p > span {
   display: block;
   margin: auto;
 }
-/* line 45, ../sass/case.scss */
+/* line 59, ../sass/case.scss */
 header > p > span:first-child {
   border-top: 0;
 }
 
-/* line 51, ../sass/case.scss */
+/* line 65, ../sass/case.scss */
 .page {
   *zoom: 1;
   max-width: 90em;
@@ -184,43 +313,43 @@ header > p > span:first-child {
   clear: both;
 }
 
-/* line 55, ../sass/case.scss */
+/* line 69, ../sass/case.scss */
 #main-header {
   height: 150px;
   padding: 20px 90px;
   position: relative;
 }
-/* line 59, ../sass/case.scss */
+/* line 73, ../sass/case.scss */
 #main-header .case-logo {
   float: left;
   height: 62px;
   margin: 40px 0 0;
   vertical-align: bottom;
 }
-/* line 65, ../sass/case.scss */
+/* line 79, ../sass/case.scss */
 #main-header > nav {
   clear: right;
   float: right;
   text-align: right;
 }
-/* line 69, ../sass/case.scss */
+/* line 83, ../sass/case.scss */
 #main-header > nav ul {
   margin: 0;
 }
-/* line 72, ../sass/case.scss */
+/* line 86, ../sass/case.scss */
 #main-header > nav li {
   display: inline-block;
 }
-/* line 74, ../sass/case.scss */
+/* line 88, ../sass/case.scss */
 #main-header > nav li > a {
   text-transform: uppercase;
 }
 
-/* line 83, ../sass/case.scss */
+/* line 97, ../sass/case.scss */
 #external-links ul {
   display: inline-block;
 }
-/* line 86, ../sass/case.scss */
+/* line 100, ../sass/case.scss */
 #external-links li > a {
   color: #373737;
   display: block;
@@ -231,17 +360,17 @@ header > p > span:first-child {
   margin: 0 9px;
   position: relative;
 }
-/* line 95, ../sass/case.scss */
+/* line 109, ../sass/case.scss */
 #external-links li > a:hover {
   color: #db2a38;
 }
-/* line 99, ../sass/case.scss */
+/* line 113, ../sass/case.scss */
 #external-links .chat-btn {
   margin-left: 30px;
   padding: 5px 10px 4px;
   position: relative;
 }
-/* line 104, ../sass/case.scss */
+/* line 118, ../sass/case.scss */
 #external-links .chat-btn:after {
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
@@ -259,11 +388,11 @@ header > p > span:first-child {
   position: absolute;
   top: 100%;
 }
-/* line 114, ../sass/case.scss */
+/* line 128, ../sass/case.scss */
 #external-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 118, ../sass/case.scss */
+/* line 132, ../sass/case.scss */
 #external-links .icon-phone {
   bottom: -1px;
   height: 1.4em;
@@ -271,11 +400,11 @@ header > p > span:first-child {
   right: -15px;
 }
 
-/* line 126, ../sass/case.scss */
+/* line 140, ../sass/case.scss */
 #internal-links {
   margin-top: 63px;
 }
-/* line 128, ../sass/case.scss */
+/* line 142, ../sass/case.scss */
 #internal-links li > a {
   color: #db2a38;
   font-family: 'AvenirBold';
@@ -284,11 +413,11 @@ header > p > span:first-child {
   margin: 0 10px;
   position: relative;
 }
-/* line 135, ../sass/case.scss */
+/* line 149, ../sass/case.scss */
 #internal-links li > a:hover {
   color: #373737;
 }
-/* line 140, ../sass/case.scss */
+/* line 154, ../sass/case.scss */
 #internal-links li a:before {
   color: #a8a8a8;
   content: '/';
@@ -298,12 +427,12 @@ header > p > span:first-child {
   position: absolute;
   top: 0;
 }
-/* line 150, ../sass/case.scss */
+/* line 164, ../sass/case.scss */
 #internal-links li:first-child a:before,
 #internal-links li .schedule-btn:before {
   content: '';
 }
-/* line 154, ../sass/case.scss */
+/* line 168, ../sass/case.scss */
 #internal-links .schedule-btn {
   margin: 0 0 0 5px;
 }
@@ -507,4 +636,388 @@ header > p > span:first-child {
   content: ' | ';
   font-size: 22px;
   font-weight: 100;
+}
+
+/* line 1, ../sass/imports/_blog.scss */
+#blog {
+  text-align: center;
+}
+/* line 3, ../sass/imports/_blog.scss */
+#blog header {
+  background-color: #fff;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  display: block;
+  margin: 3.5em auto .5em;
+  position: relative;
+  width: 18em;
+  z-index: 1;
+}
+/* line 12, ../sass/imports/_blog.scss */
+#blog header h1 {
+  font-size: 3.8em;
+  letter-spacing: -.06em;
+  line-height: 1em;
+}
+/* line 17, ../sass/imports/_blog.scss */
+#blog header p {
+  font-family: 'Sentinel';
+  font-size: 1.5em;
+  line-height: 1em;
+}
+/* line 21, ../sass/imports/_blog.scss */
+#blog header p .and {
+  display: inline;
+  font-size: .8em;
+  font-weight: lighter;
+  margin: 0 .1em;
+}
+
+/* line 31, ../sass/imports/_blog.scss */
+#feed {
+  border-top: 1px solid lightgrey;
+  padding-top: 2.7em;
+  position: relative;
+  top: -2.7em;
+}
+/* line 36, ../sass/imports/_blog.scss */
+#feed li {
+  display: inline-block;
+  margin: 1em;
+  width: 340px;
+}
+/* line 42, ../sass/imports/_blog.scss */
+#feed a:hover .pic-container .hover-icon {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  visibility: visible;
+}
+/* line 46, ../sass/imports/_blog.scss */
+#feed a:hover .pic-container .pic {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+  opacity: 0.25;
+}
+/* line 49, ../sass/imports/_blog.scss */
+#feed a:hover h2 {
+  color: #555555;
+}
+/* line 53, ../sass/imports/_blog.scss */
+#feed .pic-container {
+  background-color: #292929;
+  height: 212px;
+  position: relative;
+}
+/* line 57, ../sass/imports/_blog.scss */
+#feed .pic-container > img {
+  width: 100%;
+}
+/* line 60, ../sass/imports/_blog.scss */
+#feed .pic-container > img.hover-icon, #feed .pic-container > img.pic {
+  -webkit-transition: opacity 200ms;
+  -moz-transition: opacity 200ms;
+  -o-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+/* line 63, ../sass/imports/_blog.scss */
+#feed .pic-container > img.hover-icon {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+  visibility: hidden;
+  width: 50px;
+  z-index: 1;
+}
+/* line 77, ../sass/imports/_blog.scss */
+#feed h2 {
+  color: #db2a38;
+  font-family: 'SentinelMedium';
+  font-size: 1.2em;
+  font-weight: normal;
+}
+/* line 84, ../sass/imports/_blog.scss */
+#feed p {
+  color: #373737;
+  font-family: 'Avenir';
+  font-size: .8em;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+/* line 91, ../sass/imports/_blog.scss */
+#feed .view-all-btn {
+  font-family: 'AvenirDemiBold';
+  font-size: .9em;
+}
+
+/* line 99, ../sass/imports/_blog.scss */
+#prev-btn,
+#next-btn {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 100;
+  height: 40px;
+  margin-top: -60px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+}
+/* line 110, ../sass/imports/_blog.scss */
+#prev-btn > i,
+#next-btn > i {
+  line-height: 40px;
+}
+
+/* line 114, ../sass/imports/_blog.scss */
+#prev-btn {
+  left: 0;
+}
+
+/* line 117, ../sass/imports/_blog.scss */
+#next-btn {
+  right: 0;
+}
+
+/* line 1, ../sass/imports/_schedule.scss */
+#schedule {
+  background-color: #e42f3e;
+}
+/* line 3, ../sass/imports/_schedule.scss */
+#schedule header {
+  padding-top: 3.9em;
+  text-align: center;
+}
+/* line 6, ../sass/imports/_schedule.scss */
+#schedule header h1 {
+  color: white;
+  display: inline;
+  font-size: 2.4em;
+  letter-spacing: -.02em;
+  line-height: 1.6em;
+  position: relative;
+}
+/* line 13, ../sass/imports/_schedule.scss */
+#schedule header h1 span.clock-o {
+  color: #db2a38;
+  position: relative;
+}
+/* line 17, ../sass/imports/_schedule.scss */
+#schedule header h1 img.clock-o {
+  position: absolute;
+  right: 202px;
+  top: 9px;
+  width: 25px;
+}
+/* line 24, ../sass/imports/_schedule.scss */
+#schedule header p {
+  color: #000;
+}
+/* line 28, ../sass/imports/_schedule.scss */
+#schedule footer {
+  background-color: #232323;
+  color: #fff;
+  font-family: 'AvenirDemiBold';
+  font-size: 11px;
+  letter-spacing: .05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 36, ../sass/imports/_schedule.scss */
+#schedule footer li {
+  display: inline-block;
+  padding: 13px 10px;
+}
+/* line 39, ../sass/imports/_schedule.scss */
+#schedule footer li:first-child:before {
+  content: '';
+}
+/* line 42, ../sass/imports/_schedule.scss */
+#schedule footer li:before {
+  color: #e42f3e;
+  content: '\e600';
+  font-family: 'CaseIcons';
+  font-size: 1.5em;
+  margin-right: 20px;
+  speak: none;
+  vertical-align: middle;
+}
+
+/* line 55, ../sass/imports/_schedule.scss */
+#schedule-form {
+  margin: 2em auto;
+  padding-bottom: 100px;
+  width: 590px;
+}
+/* line 59, ../sass/imports/_schedule.scss */
+#schedule-form .text-input-row {
+  border-bottom: 1px solid #bd2d39;
+  margin-top: 25px;
+}
+/* line 63, ../sass/imports/_schedule.scss */
+#schedule-form .checkbox-row {
+  background-color: #bd2d39;
+  margin-top: 15px;
+}
+/* line 68, ../sass/imports/_schedule.scss */
+#schedule-form .checkbox-group,
+#schedule-form legend {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+}
+/* line 73, ../sass/imports/_schedule.scss */
+#schedule-form .checkbox-group {
+  padding: 18px 0 18px 35px;
+  width: 75%;
+}
+/* line 77, ../sass/imports/_schedule.scss */
+#schedule-form .submit-row {
+  zoom: 1;
+  margin: 20px 0 0;
+}
+/* line 56, ../sass/imports/_mixins.scss */
+#schedule-form .submit-row:before, #schedule-form .submit-row:after {
+  content: ' ';
+  display: table;
+}
+/* line 60, ../sass/imports/_mixins.scss */
+#schedule-form .submit-row:after {
+  clear: both;
+}
+/* line 82, ../sass/imports/_schedule.scss */
+#schedule-form label,
+#schedule-form input[type='text'] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: none;
+  border: 0;
+  display: inline-block;
+  line-height: 1em;
+  margin: 0 0 0 -2px;
+  outline: none;
+  padding: 0 15px 8px;
+}
+/* line 93, ../sass/imports/_schedule.scss */
+#schedule-form label,
+#schedule-form legend {
+  color: #fff;
+  font-family: 'SentinelBook';
+  font-size: 15px;
+  width: 25%;
+}
+/* line 98, ../sass/imports/_schedule.scss */
+#schedule-form label.required:after,
+#schedule-form legend.required:after {
+  content: '*';
+  margin-left: .2em;
+}
+/* line 103, ../sass/imports/_schedule.scss */
+#schedule-form legend {
+  display: inline-block;
+  padding-left: 13px;
+  padding-top: 18px;
+}
+/* line 108, ../sass/imports/_schedule.scss */
+#schedule-form input[type='text'] {
+  -webkit-transition: box-shadow 200ms;
+  -moz-transition: box-shadow 200ms;
+  -o-transition: box-shadow 200ms;
+  transition: box-shadow 200ms;
+  border-left: 1px solid #bd2d39;
+  color: #fff;
+  font-family: 'SentinelLightItalic';
+  font-size: 17px;
+  width: 75%;
+}
+/* line 115, ../sass/imports/_schedule.scss */
+#schedule-form input[type='text']:focus {
+  -webkit-box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.3);
+}
+/* line 122, ../sass/imports/_schedule.scss */
+#schedule-form input[type='checkbox']:checked + label:before {
+  background: #000;
+  color: #e5e5e5;
+  content: '\78';
+  font-family: 'CaseIcons';
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: normal;
+  speak: none;
+  text-align: center;
+}
+/* line 133, ../sass/imports/_schedule.scss */
+#schedule-form input[type='checkbox'] + label {
+  color: #5c2629;
+  display: inline-block;
+  font-family: 'Avenir';
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  width: 47%;
+}
+/* line 141, ../sass/imports/_schedule.scss */
+#schedule-form input[type='checkbox'] + label:before {
+  background: white;
+  content: '';
+  display: inline-block;
+  height: 15px;
+  margin-left: -25px;
+  margin-top: -3px;
+  position: absolute;
+  width: 15px;
+}
+/* line 152, ../sass/imports/_schedule.scss */
+#schedule-form input[type='submit'] {
+  background-color: #fff;
+  border: 0;
+  clear: right;
+  color: #373737;
+  float: right;
+  font-family: 'SentinelBook';
+  font-size: 22px;
+  letter-spacing: -.04em;
+  outline: 0;
+  padding: 7px 40px;
+}
+/* line 163, ../sass/imports/_schedule.scss */
+#schedule-form input[type='submit']:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* line 170, ../sass/imports/_schedule.scss */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #5c2629;
+  font-family: 'SentinelLightItalic';
+}
+
+/* line 173, ../sass/imports/_schedule.scss */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #5c2629;
+  font-family: 'SentinelLightItalic';
+}
+
+/* line 176, ../sass/imports/_schedule.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #5c2629;
+  font-family: 'SentinelLightItalic';
+}
+
+/* line 179, ../sass/imports/_schedule.scss */
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #5c2629;
+  font-family: 'SentinelLightItalic';
 }
