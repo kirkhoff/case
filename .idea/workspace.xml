@@ -25,10 +25,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="217" column="71" selection-start="12238" selection-end="12238" vertical-scroll-proportion="0.91678226" vertical-offset="2594" max-vertical-offset="3675">
+                <state line="43" column="46" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.6033287" vertical-offset="210" max-vertical-offset="3675">
                   <folding />
                 </state>
               </provider>
@@ -47,7 +47,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_schedule.scss" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="_schedule.scss" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/sass/imports/_schedule.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="32" column="23" selection-start="641" selection-end="641" vertical-scroll-proportion="0.19409283" vertical-offset="342" max-vertical-offset="2790">
@@ -137,10 +137,10 @@
         <option value="$PROJECT_DIR$/styles/sass/case.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_placeholders.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_mixins.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_fonts.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_vars.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_schedule.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -603,13 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="71" selection-start="12238" selection-end="12238" vertical-scroll-proportion="0.91678226" vertical-offset="2594" max-vertical-offset="3675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/CaseIcons (6)/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="76" selection-end="3954" vertical-scroll-proportion="0.08163265" vertical-offset="0" max-vertical-offset="735">
@@ -644,6 +637,13 @@
     <entry file="file://$PROJECT_DIR$/styles/sass/imports/_schedule.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="23" selection-start="641" selection-end="641" vertical-scroll-proportion="0.19409283" vertical-offset="342" max-vertical-offset="2790">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="46" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.6033287" vertical-offset="210" max-vertical-offset="3675">
           <folding />
         </state>
       </provider>
