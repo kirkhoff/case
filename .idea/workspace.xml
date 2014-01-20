@@ -22,102 +22,74 @@
     <favorites_list name="case" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="46" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.6033287" vertical-offset="210" max-vertical-offset="3675">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="_blog.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/sass/imports/_blog.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="34" column="14" selection-start="677" selection-end="677" vertical-scroll-proportion="-1.1898735" vertical-offset="416" max-vertical-offset="1860">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_schedule.scss" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/styles/sass/imports/_schedule.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="23" selection-start="641" selection-end="641" vertical-scroll-proportion="0.19409283" vertical-offset="342" max-vertical-offset="2790">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Downloads/CaseIcons (7)/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="0" selection-start="4381" selection-end="4594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_mixins.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/sass/imports/_mixins.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="1" selection-start="1474" selection-end="1474" vertical-scroll-proportion="-28.375" vertical-offset="249" max-vertical-offset="1020">
-                  <folding>
-                    <marker date="1390175116000" expanded="true" signature="1363:1474" placeholder="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_fonts.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/sass/imports/_fonts.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="125" column="21" selection-start="8820" selection-end="8820" vertical-scroll-proportion="-10.333333" vertical-offset="1627" max-vertical-offset="2370">
-                  <folding>
-                    <element signature="e#4758#6684#1" expanded="true" />
-                    <element signature="e#6712#8653#1" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_vars.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/sass/imports/_vars.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="6" selection-start="163" selection-end="174" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="300">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_placeholders.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/sass/imports/_placeholders.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="8" selection-start="495" selection-end="505" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="405">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="case.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/sass/case.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="38" column="22" selection-start="808" selection-end="808" vertical-scroll-proportion="-4.3333335" vertical-offset="466" max-vertical-offset="2730">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="case.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/case.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="60" selection-start="418" selection-end="418" vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="444">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zen-select.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/zen-select.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="137" column="84" selection-start="6186" selection-end="6186" vertical-scroll-proportion="-12.076923" vertical-offset="1741" max-vertical-offset="6390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="198" column="26" selection-start="11160" selection-end="11160" vertical-scroll-proportion="-0.96" vertical-offset="2922" max-vertical-offset="3735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_zen-select.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/sass/imports/_zen-select.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="22" selection-start="175" selection-end="175" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1470">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_schedule.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/sass/imports/_schedule.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="3" selection-start="1663" selection-end="1663" vertical-scroll-proportion="-14.5" vertical-offset="927" max-vertical-offset="2880">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/CaseIcons (8)/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="4871" selection-end="4917" vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="750">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_fonts.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/sass/imports/_fonts.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="152" column="12" selection-start="9566" selection-end="9571" vertical-scroll-proportion="-17.666666" vertical-offset="1856" max-vertical-offset="2415">
+              <folding>
+                <element signature="e#4758#6852#1" expanded="true" />
+                <element signature="e#6880#8929#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -134,13 +106,18 @@
         <option value="$PROJECT_DIR$/styles/sass/imports/_our-people.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_our-work.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_blog.scss" />
-        <option value="$PROJECT_DIR$/styles/sass/case.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_placeholders.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_mixins.scss" />
-        <option value="$PROJECT_DIR$/styles/sass/imports/_fonts.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_vars.scss" />
-        <option value="$PROJECT_DIR$/styles/sass/imports/_schedule.scss" />
+        <option value="$PROJECT_DIR$/zen-select.js" />
+        <option value="$PROJECT_DIR$/js/_zen-select.scss" />
+        <option value="$PROJECT_DIR$/styles/sass/case.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/styles/sass/imports/_fonts.scss" />
+        <option value="$PROJECT_DIR$/styles/sass/imports/_schedule.scss" />
+        <option value="$PROJECT_DIR$/js/zen-select.js" />
+        <option value="$PROJECT_DIR$/styles/sass/imports/_zen-select.scss" />
+        <option value="$PROJECT_DIR$/js/case.js" />
       </list>
     </option>
   </component>
@@ -148,7 +125,7 @@
     <option name="x" value="4" />
     <option name="y" value="22" />
     <option name="width" value="1436" />
-    <option name="height" value="878" />
+    <option name="height" value="564" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -287,6 +264,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles/sass/imports" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
@@ -373,7 +355,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1436" height="878" extended-state="6" />
+    <frame x="4" y="22" width="1436" height="564" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -385,7 +367,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32627118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -394,6 +376,25 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25371024" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -552,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/case.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="22" selection-start="808" selection-end="808" vertical-scroll-proportion="-4.3333335" vertical-offset="466" max-vertical-offset="2730">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/imports/_blog.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="14" selection-start="677" selection-end="677" vertical-scroll-proportion="-1.1898735" vertical-offset="416" max-vertical-offset="1860">
@@ -598,7 +592,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="1" selection-start="1474" selection-end="1474" vertical-scroll-proportion="-28.375" vertical-offset="249" max-vertical-offset="1020">
           <folding>
-            <marker date="1390175116000" expanded="true" signature="1363:1474" placeholder="{...}" />
+            <marker date="1390175116000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -617,16 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="21" selection-start="8820" selection-end="8820" vertical-scroll-proportion="-10.333333" vertical-offset="1627" max-vertical-offset="2370">
-          <folding>
-            <element signature="e#4758#6684#1" expanded="true" />
-            <element signature="e#6712#8653#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/imports/_vars.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="6" selection-start="163" selection-end="174" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="300">
@@ -634,16 +618,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_schedule.scss">
+    <entry file="file://$PROJECT_DIR$/styles/sass/case.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="23" selection-start="641" selection-end="641" vertical-scroll-proportion="0.19409283" vertical-offset="342" max-vertical-offset="2790">
+        <state line="8" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.16348773" vertical-offset="0" max-vertical-offset="2760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vendor/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1462" column="4" selection-start="40543" selection-end="40543" vertical-scroll-proportion="0.07114094" vertical-offset="21877" max-vertical-offset="308160">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="46" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.6033287" vertical-offset="210" max-vertical-offset="3675">
+        <state line="198" column="26" selection-start="11160" selection-end="11160" vertical-scroll-proportion="-0.96" vertical-offset="2922" max-vertical-offset="3735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/CaseIcons (8)/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="4871" selection-end="4917" vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="12" selection-start="9566" selection-end="9571" vertical-scroll-proportion="-17.666666" vertical-offset="1856" max-vertical-offset="2415">
+          <folding>
+            <element signature="e#4758#6852#1" expanded="true" />
+            <element signature="e#6880#8929#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/zen-select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="84" selection-start="6186" selection-end="6186" vertical-scroll-proportion="-12.076923" vertical-offset="1741" max-vertical-offset="6390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_schedule.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="3" selection-start="1663" selection-end="1663" vertical-scroll-proportion="-14.5" vertical-offset="927" max-vertical-offset="2880">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_zen-select.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="22" selection-start="175" selection-end="175" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/case.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="60" selection-start="418" selection-end="418" vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="444">
           <folding />
         </state>
       </provider>

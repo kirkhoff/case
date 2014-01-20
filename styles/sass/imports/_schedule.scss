@@ -78,6 +78,12 @@
     @include clearfix;
     margin: 20px 0 0;
   }
+  .zen-ui-select-toggle {
+    width: 370px !important;
+  }
+  .zen-ui-select-list-container {
+    width: 100% !important;
+  }
   label,
   input[type='text'] {
     @include box-sizing(border-box);

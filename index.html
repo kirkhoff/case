@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="/styles/css/case.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body ng-app="case">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -161,7 +161,7 @@
                     <a href="" target="_blank" class="view-all-btn">View All Articles</a>
                 </div>
             </section>
-            <section id="schedule">
+            <section id="schedule" ng-controller="scheduleCtrl">
                 <header>
                     <h1>
                         Schedule a C<span class="clock-o">o</span>nsultation
@@ -204,9 +204,10 @@
                         </fieldset>
                     </div>
                     <div class="submit-row">
-                        <select id="best-time">
-                            <option>Best Time to Reach Me</option>
-                        </select>
+                        <select id="best-time"
+                                ng-model="bestTime"
+                                ng-options="option for option in timeOptions"
+                                zen-select></select>
                         <input type="submit" value="Get Started!">
                     </div>
                 </form>
@@ -222,6 +223,9 @@
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+        <script src="/js/zen-select.js"></script>
+        <script src="/js/case.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
