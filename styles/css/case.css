@@ -661,6 +661,7 @@ header > p > span:first-child {
 }
 /* line 88, ../sass/imports/_our-work.scss */
 #our-work .parallax {
+  background: url(/img/parallax-our-work.jpg) 90% 0 no-repeat fixed;
   height: 560px;
   overflow-y: hidden;
   width: 100%;
