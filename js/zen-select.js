@@ -97,7 +97,7 @@ angular.module('zen.ui.select', [])
                 ngDisabled: '='
             },
             compile: function(tElement, tAttrs){
-                var templateUrl = tAttrs.templateUrl || '/templates/select/select.html',
+                var templateUrl = tAttrs.templateUrl || '/template/select/select.html',
                     templateLoader = $http.get(templateUrl, {cache: $templateCache}),
                     selectId = tAttrs['id'],
                     zenSelect,

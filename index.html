@@ -12,12 +12,13 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <link rel="stylesheet" href="/styles/css/bootstrap.css">
         <link rel="stylesheet" href="/styles/css/normalize.css">
         <link rel="stylesheet" href="/styles/css/main.css">
         <link rel="stylesheet" href="/styles/css/case.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body ng-app="case">
+    <body ng-app="case" ng-controller="caseCtrl">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -38,13 +39,37 @@
                 </nav>
                 <nav id="internal-links">
                     <ul>
-                        <li><a href="#our-work">Our Work</a></li>
-                        <li><a href="#our-people">Our People</a></li>
-                        <li><a href="#blog">Idea Center</a></li>
-                        <li><a href="#schedule" class="schedule-btn">Schedule a Consultation</a></li>
+                        <li><a href="#our-work" scroll-to="our-work">Our Work</a></li>
+                        <li><a href="#our-people" scroll-to="our-people">Our People</a></li>
+                        <li><a href="#blog" scroll-to="blog">Idea Center</a></li>
+                        <li><a href="#schedule" scroll-to="schedule" class="schedule-btn">Schedule a Consultation</a></li>
                     </ul>
                 </nav>
             </header>
+            <section id="hero" ng-controller="heroCtrl">
+                <carousel interval="5000">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                        <img ng-src="{{slide.img}}" alt="">
+                        <div class="content">
+                            <h1>{{slide.header}}</h1>
+                            <p class="highlighted-lines">
+                                <span ng-bind-html="slide.description1"></span>
+                                <span ng-bind-html="slide.description2"></span>
+                                <span>
+                                    <span ng-bind-html="slide.description3"></span>
+                                    <a href="" target="_blank">view work »</a>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="preview">
+                            <img ng-src="{{nextImage($index)}}" alt="">
+                        </div>
+                    </slide>
+                </carousel>
+                <div class="continue-btn">
+                    <button scroll-to="our-work"><i class="icon-arrow-down" aria-hidden="true"></i></button>
+                </div>
+            </section>
             <section id="our-work">
                 <div class="our-work-content">
                     <header>
@@ -67,9 +92,7 @@
                         <li><a href="" target="_blank">2013 National Capitol Business Ethics Award Winner</a></li>
                     </ul>
                 </div>
-                <div class="parallax" stellar-background-ratio=".5">
-                    <!--<img src="/img/parallax-our-work.jpg" alt="">-->
-                </div>
+                <div class="parallax" stellar-background-ratio="."></div>
             </section>
             <section id="our-people">
                 <header>
@@ -315,7 +338,9 @@
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-sanitize.min.js"></script>
         <script src="/js/vendor/ui-bootstrap-custom-0.10.0.min.js"></script>
         <script src="/js/vendor/angular-stellar.min.js"></script>
         <script src="/js/zen-select.js"></script>

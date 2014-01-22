@@ -553,6 +553,164 @@ header > p > span:first-child {
   margin: 0 0 0 5px;
 }
 
+/* line 1, ../sass/imports/_hero.scss */
+.carousel-indicators {
+  bottom: 75px;
+  /* Reset from bootstrap.css */
+}
+/* line 5, ../sass/imports/_hero.scss */
+.carousel-indicators > li,
+.carousel-indicators > li.active {
+  background-color: #db2a38;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  height: auto;
+  margin: 0;
+  width: auto;
+  text-indent: 0;
+}
+/* line 15, ../sass/imports/_hero.scss */
+.carousel-indicators > li {
+  background-color: #db2a38;
+  color: white;
+  display: inline-block;
+  font-family: 'AvenirBold';
+  font-size: .75em;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 6px 10px 5px;
+  text-transform: uppercase;
+  -webkit-box-sizing: none;
+  -moz-box-sizing: none;
+  box-sizing: none;
+  border: .7em solid transparent;
+  font-family: 'AvenirDemiBold';
+  font-size: .8em;
+  font-weight: 600;
+  letter-spacing: .05em;
+  line-height: 2em;
+  padding: 0 1.5em;
+}
+/* line 11, ../sass/imports/_mixins.scss */
+.carousel-indicators > li:hover {
+  background-color: #db2a38;
+  color: white;
+}
+/* line 25, ../sass/imports/_hero.scss */
+.carousel-indicators > li.active {
+  border: .7em solid #fff;
+  line-height: 3em;
+}
+/* line 29, ../sass/imports/_hero.scss */
+.carousel-indicators > li:hover {
+  background-color: #e42f3e;
+}
+
+/* line 37, ../sass/imports/_hero.scss */
+.carousel-control.right:hover,
+.carousel-control.left:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 42, ../sass/imports/_hero.scss */
+.carousel-control.right,
+.carousel-control.left {
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 47, ../sass/imports/_hero.scss */
+.carousel .preview {
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  transform: rotate(12deg);
+  background-color: #fff;
+  border-left: 7px solid #fff;
+  overflow: hidden;
+  position: absolute;
+  right: -126%;
+  top: 0;
+}
+/* line 55, ../sass/imports/_hero.scss */
+.carousel .preview > img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  -webkit-transform: rotate(-12deg);
+  -moz-transform: rotate(-12deg);
+  -ms-transform: rotate(-12deg);
+  -o-transform: rotate(-12deg);
+  transform: rotate(-12deg);
+  -webkit-filter: blur(5px);
+  position: relative;
+  left: -75px;
+}
+
+/* line 65, ../sass/imports/_hero.scss */
+#hero .content {
+  position: absolute;
+  left: 747px;
+  top: 260px;
+}
+/* line 70, ../sass/imports/_hero.scss */
+#hero h1 {
+  color: #fff;
+  font-size: 6em;
+  letter-spacing: -.06em;
+  line-height: 1em;
+}
+/* line 76, ../sass/imports/_hero.scss */
+#hero .highlighted-lines {
+  margin: 0;
+  padding-left: 5px;
+  width: 513px;
+}
+/* line 80, ../sass/imports/_hero.scss */
+#hero .highlighted-lines > span {
+  background-color: #232323;
+  color: #fff;
+  display: block;
+  font-family: 'Avenir';
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 3px 0;
+  padding: .4em 1em;
+}
+/* line 89, ../sass/imports/_hero.scss */
+#hero .highlighted-lines > span > mark {
+  color: #fff;
+}
+/* line 92, ../sass/imports/_hero.scss */
+#hero .highlighted-lines > span a {
+  color: #e42f3e;
+}
+/* line 94, ../sass/imports/_hero.scss */
+#hero .highlighted-lines > span a:hover {
+  color: #fff;
+}
+/* line 100, ../sass/imports/_hero.scss */
+#hero .continue-btn {
+  margin: .5em 0;
+  text-align: center;
+}
+/* line 103, ../sass/imports/_hero.scss */
+#hero .continue-btn > button {
+  background: transparent;
+  color: #db2a38;
+  font-size: 1.75em;
+}
+/* line 107, ../sass/imports/_hero.scss */
+#hero .continue-btn > button:hover {
+  color: #bd2d39;
+}
+
 /* line 1, ../sass/imports/_our-work.scss */
 .our-work-content {
   -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.75);

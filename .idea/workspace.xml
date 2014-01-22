@@ -22,22 +22,40 @@
     <favorites_list name="case" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5067138">
       <split-first>
         <leaf>
-          <file leaf-file-name="case.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/case.js">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="7" selection-start="243" selection-end="243" vertical-scroll-proportion="0.078947365" vertical-offset="0" max-vertical-offset="760">
+                <state line="64" column="62" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.6008902" vertical-offset="555" max-vertical-offset="5520">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
+          <file leaf-file-name="ui-bootstrap-custom-0.10.0.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/vendor/ui-bootstrap-custom-0.10.0.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="318" column="32" selection-start="17822" selection-end="17822" vertical-scroll-proportion="-14.5" vertical-offset="4422" max-vertical-offset="5145">
+                <state line="172" column="54" selection-start="6636" selection-end="6636" vertical-scroll-proportion="-9.5" vertical-offset="2243" max-vertical-offset="7755">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="carousel.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/template/carousel/carousel.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="51" selection-start="512" selection-end="512" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="210">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="slide.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/template/carousel/slide.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="44" selection-start="273" selection-end="273" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
                   <folding />
                 </state>
               </provider>
@@ -68,7 +86,7 @@
           <file leaf-file-name="_footer.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/imports/_footer.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="25" selection-start="614" selection-end="614" vertical-scroll-proportion="-4.9166665" vertical-offset="377" max-vertical-offset="1785">
+                <state line="33" column="25" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="1785">
                   <folding />
                 </state>
               </provider>
@@ -77,7 +95,25 @@
           <file leaf-file-name="case.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/case.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="14" selection-start="12" selection-end="14" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2775">
+                <state line="170" column="23" selection-start="3005" selection-end="3005" vertical-scroll-proportion="-21.291666" vertical-offset="2039" max-vertical-offset="2790">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_placeholders.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/sass/imports/_placeholders.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="32" selection-start="322" selection-end="322" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="405">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_mixins.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/sass/imports/_mixins.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1020">
                   <folding />
                 </state>
               </provider>
@@ -86,16 +122,34 @@
           <file leaf-file-name="_our-work.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/sass/imports/_our-work.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="49" selection-start="1710" selection-end="1710" vertical-scroll-proportion="-10.6" vertical-offset="790" max-vertical-offset="1515">
+                <state line="89" column="18" selection-start="1751" selection-end="1751" vertical-scroll-proportion="-24.041666" vertical-offset="758" max-vertical-offset="1515">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test.html">
+          <file leaf-file-name="_hero.scss" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/styles/sass/imports/_hero.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="41" selection-start="4175" selection-end="4182" vertical-scroll-proportion="0.3328551" vertical-offset="803" max-vertical-offset="3210">
+                <state line="57" column="30" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.63027656" vertical-offset="422" max-vertical-offset="1755">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles/css/bootstrap.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="341" column="17" selection-start="5934" selection-end="5950" vertical-scroll-proportion="-18.153847" vertical-offset="4643" max-vertical-offset="6750">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="case.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/case.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="61" column="9" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="1335">
                   <folding />
                 </state>
               </provider>
@@ -127,13 +181,17 @@
         <option value="$PROJECT_DIR$/styles/sass/imports/_fonts.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_schedule.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_zen-select.scss" />
-        <option value="$PROJECT_DIR$/js/zen-select.js" />
-        <option value="$PROJECT_DIR$/styles/sass/case.scss" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_footer.scss" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/styles/sass/imports/_our-work.scss" />
+        <option value="$PROJECT_DIR$/js/zen-select.js" />
+        <option value="$PROJECT_DIR$/js/vendor/ui-bootstrap-custom-0.10.0.js" />
+        <option value="$PROJECT_DIR$/styles/sass/case.scss" />
+        <option value="$PROJECT_DIR$/template/carousel/slide.html" />
+        <option value="$PROJECT_DIR$/template/carousel/carousel.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/case.js" />
+        <option value="$PROJECT_DIR$/styles/sass/imports/_hero.scss" />
       </list>
     </option>
   </component>
@@ -179,7 +237,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -190,87 +248,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case.scss" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -287,6 +265,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -297,23 +283,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -383,15 +361,15 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32405064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32233503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -408,9 +386,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25371024" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32824427" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -430,6 +408,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_our-work.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="49" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="790" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/case.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="60" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
@@ -582,20 +567,6 @@
         <state line="26" column="0" selection-start="4261" selection-end="4432" vertical-scroll-proportion="0.5145119" vertical-offset="0" max-vertical-offset="758" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_placeholders.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="495" selection-end="505" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="1" selection-start="1474" selection-end="1474" vertical-scroll-proportion="-28.375" vertical-offset="249" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/CaseIcons (6)/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="76" selection-end="3954" vertical-scroll-proportion="0.08163265" vertical-offset="0" max-vertical-offset="735" />
@@ -629,8 +600,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="12" selection-start="9566" selection-end="9571" vertical-scroll-proportion="-17.666666" vertical-offset="1856" max-vertical-offset="2415">
           <folding>
-            <element signature="e#4758#6852#1" expanded="true" />
-            <element signature="e#6880#8929#1" expanded="true" />
+            <element signature="e#4758#6852#1" expanded="false" />
+            <element signature="e#6880#8929#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,13 +609,6 @@
     <entry file="file://$PROJECT_DIR$/styles/sass/imports/_zen-select.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="22" selection-start="175" selection-end="175" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1470">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/zen-select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="116" selection-end="116" vertical-scroll-proportion="0.07177033" vertical-offset="0" max-vertical-offset="6465">
           <folding />
         </state>
       </provider>
@@ -658,42 +622,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/imports/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
+        <state line="33" column="25" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vendor/ui-bootstrap-custom-0.10.0.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2607" selection-start="2721" selection-end="2729" vertical-scroll-proportion="0.1504298" vertical-offset="0" max-vertical-offset="698">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_our-work.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="18" selection-start="1751" selection-end="1751" vertical-scroll-proportion="-24.041666" vertical-offset="758" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_placeholders.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="32" selection-start="322" selection-end="322" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/sass/case.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="12" selection-end="14" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2775">
+        <state line="170" column="23" selection-start="3005" selection-end="3005" vertical-scroll-proportion="-21.291666" vertical-offset="2039" max-vertical-offset="2790">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_our-work.scss">
+    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="49" selection-start="1710" selection-end="1710" vertical-scroll-proportion="-10.6" vertical-offset="790" max-vertical-offset="1515">
+        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/styles/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="41" selection-start="4175" selection-end="4182" vertical-scroll-proportion="0.3328551" vertical-offset="803" max-vertical-offset="3210">
+        <state line="341" column="17" selection-start="5934" selection-end="5950" vertical-scroll-proportion="-18.153847" vertical-offset="4643" max-vertical-offset="6750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/zen-select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="9" selection-start="3603" selection-end="3603" vertical-scroll-proportion="0.28016645" vertical-offset="1103" max-vertical-offset="6465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/carousel/slide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="44" selection-start="273" selection-end="273" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vendor/ui-bootstrap-custom-0.10.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="54" selection-start="6636" selection-end="6636" vertical-scroll-proportion="-9.5" vertical-offset="2243" max-vertical-offset="7755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/carousel/carousel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="51" selection-start="512" selection-end="512" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="318" column="32" selection-start="17822" selection-end="17822" vertical-scroll-proportion="-14.5" vertical-offset="4422" max-vertical-offset="5145">
+        <state line="64" column="62" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.6008902" vertical-offset="555" max-vertical-offset="5520">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/case.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="243" selection-end="243" vertical-scroll-proportion="0.078947365" vertical-offset="0" max-vertical-offset="760">
+        <state line="61" column="9" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/sass/imports/_hero.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="30" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.63027656" vertical-offset="422" max-vertical-offset="1755">
           <folding />
         </state>
       </provider>
