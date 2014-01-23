@@ -20,3 +20,41 @@
   position: absolute;
   width: 1px;
 }
+%pic-link {
+  &:hover {
+    .pic-container .hover-icon {
+      @include opacity(1);
+      visibility: visible;
+    }
+    .pic-container .pic {
+      @include opacity(.25);
+    }
+    h2,
+    span {
+      color: $grey-medium;
+    }
+  }
+  .pic-container {
+    background-color: #292929;
+    position: relative;
+    > img {
+      width: 100%;
+      &.hover-icon,
+      &.pic {
+        @include transition(opacity 200ms);
+      }
+      &.hover-icon {
+        @include opacity(0);
+        height: 50px;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        position: absolute;
+        top: 50%;
+        visibility: hidden;
+        width: 50px;
+        z-index: 1;
+      }
+    }
+  }
+}

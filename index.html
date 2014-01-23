@@ -23,7 +23,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="page">
-            <header id="main-header">
+            <header id="main-header" ng-controller="subNavCtrl">
                 <img src="/img/case-logo.png" alt="CASE - Because it's your home" class="case-logo">
                 <nav id="external-links">
                     <ul>
@@ -39,10 +39,52 @@
                 </nav>
                 <nav id="internal-links">
                     <ul>
-                        <li><a href="#our-work" scroll-to="our-work">Our Work</a></li>
-                        <li><a href="#our-people" scroll-to="our-people">Our People</a></li>
-                        <li><a href="#blog" scroll-to="blog">Idea Center</a></li>
+                        <li><a href="#our-work" scroll-to="our-work" ng-mouseenter="open(ourWork)" ng-mouseleave="close(ourWork)">Our Work</a></li>
+                        <li><a href="#our-people" scroll-to="our-people" ng-mouseenter="open(ourPeople)" ng-mouseleave="close(ourPeople)">Our People</a></li>
+                        <li><a href="#blog" scroll-to="blog" ng-mouseenter="open(ideaCenter)" ng-mouseleave="close(ideaCenter)">Idea Center</a></li>
                         <li><a href="#schedule" scroll-to="schedule" class="schedule-btn">Schedule a Consultation</a></li>
+                    </ul>
+                </nav>
+                <nav id="our-work-nav" class="sub-nav" collapse="ourWork.collapsed" ng-mouseenter="open(ourWork)">
+                    <i class="icon-arrow-down-solid" aria-hidden="true"></i>
+                    <ul>
+                        <li ng-repeat="item in ourWork.nav">
+                            <a ng-href="item.url" ng-mouseenter="open(ourWork)" ng-mouseleave="close(ourWork)">
+                                <div class="pic-container">
+                                    <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
+                                    <img ng-src="{{item.img}}" alt="" class="pic">
+                                </div>
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav id="our-people-nav" class="sub-nav" collapse="ourPeople.collapsed" ng-mouseenter="open(ourPeople)">
+                    <i class="icon-arrow-down-solid" aria-hidden="true"></i>
+                    <ul>
+                        <li ng-repeat="item in ourPeople.nav">
+                            <a ng-href="item.url" ng-mouseenter="open(ourPeople)" ng-mouseleave="close(ourPeople)">
+                                <div class="pic-container">
+                                    <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
+                                    <img ng-src="{{item.img}}" alt="" class="pic">
+                                </div>
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav id="idea-center-nav" class="sub-nav" collapse="ideaCenter.collapsed" ng-mouseenter="open(ideaCenter)">
+                    <i class="icon-arrow-down-solid" aria-hidden="true"></i>
+                    <ul>
+                        <li ng-repeat="item in ideaCenter.nav">
+                            <a ng-href="item.url" ng-mouseenter="open(ideaCenter)" ng-mouseleave="close(ideaCenter)">
+                                <div class="pic-container">
+                                    <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
+                                    <img ng-src="{{item.img}}" alt="" class="pic">
+                                </div>
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -92,7 +134,7 @@
                         <li><a href="" target="_blank">2013 National Capitol Business Ethics Award Winner</a></li>
                     </ul>
                 </div>
-                <div class="parallax" stellar-background-ratio="."></div>
+                <div class="parallax" stellar-background-ratio=".5"></div>
             </section>
             <section id="our-people">
                 <header>

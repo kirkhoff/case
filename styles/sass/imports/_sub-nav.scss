@@ -1,0 +1,44 @@
+#main-header {
+  position: relative;
+  z-index: 1;
+}
+
+.sub-nav {
+  background-color: #f1f1f1;
+  left: 0;
+  padding: 3em 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  a {
+    @extend %pic-link;
+  }
+  ul {
+    margin: auto;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    margin: 0 .8em;
+    width: 14em;
+  }
+  span {
+    color: $red;
+    display: block;
+    font-family: 'AvenirBold';
+    font-size: .85em;
+    letter-spacing: .03em;
+    margin: .5em 0 0;
+    text-transform: uppercase;
+  }
+  > i {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: -6px;
+  }
+}
+
+#our-work-nav > i { right: 525px }
+#our-people-nav > i { right: 425px }
+#idea-center-nav > i { right: 320px }
