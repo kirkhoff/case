@@ -190,45 +190,25 @@
                     <h1>Blog</h1>
                     <p>Ideas <span class="and">&</span> Inspiration.</p>
                 </header>
-                <div id="feed">
+                <div id="feed" ng-controller="blogCtrl">
                     <ul>
-                        <li>
-                            <a href="" target="_blank">
+                        <li ng-repeat="entry in entries | startFrom:(page-1)*entriesPerPage | limitTo:entriesPerPage">
+                            <a ng-href="{{entry.link}}" target="_blank">
                                 <div class="pic-container" aria-hidden="true">
                                     <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
-                                    <img src="/img/blog-pic-1.jpg" alt="" class="pic">
+                                    <img ng-src="{{getImgFromContent(entry.content)}}" error-src="{{defaultImg}}" alt="" class="pic">
                                 </div>
-                                <h2>Prep Your Dining Room for Thanksgiving</h2>
+                                <h2>{{entry.title}}</h2>
                             </a>
-                            <p>With Thanksgiving only a week away, it’s time to get serious about preparing your dining room for the biggest feast of the year.</p>
-                        </li>
-                        <li>
-                            <a href="" target="_blank">
-                                <div class="pic-container" aria-hidden="true">
-                                    <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
-                                    <img src="/img/blog-pic-2.jpg" alt="" class="pic">
-                                </div>
-                                <h2>Enhance your Entryway</h2>
-                            </a>
-                            <p>What is the first thing you do after greeting guests at thefront door? Escort them through your foyer into your home.</p>
-                        </li>
-                        <li>
-                            <a href="" target="_blank">
-                                <div class="pic-container" aria-hidden="true">
-                                    <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
-                                    <img src="/img/blog-pic-3.jpg" alt="" class="pic">
-                                </div>
-                                <h2>A Mudroom to Keep your Room Clean</h2>
-                            </a>
-                            <p>With the winter weather finally upon us,layers is the name of the game. </p>
+                            <p>{{entry.contentSnippet}}</p>
                         </li>
                     </ul>
-                    <button id="prev-btn"><i class="icon-arrow-left" aria-hidden="true"></i></button>
-                    <button id="next-btn"><i class="icon-arrow-right" aria-hidden="true"></i></button>
                     <a href="" target="_blank" class="view-all-btn">View All Articles</a>
+                    <button id="prev-btn" ng-click="page = page - 1" ng-show="canShowPrev()"><i class="icon-arrow-left" aria-hidden="true"></i></button>
+                    <button id="next-btn" ng-click="page = page + 1" ng-show="canShowNext()"><i class="icon-arrow-right" aria-hidden="true"></i></button>
                 </div>
             </section>
-            <section id="schedule" ng-controller="scheduleCtrl">
+            <section id="schedule" ng-controller="scheduleCtrl" remove-outside-styles replace-select>
                 <header>
                     <h1>
                         Schedule a C<span class="clock-o">o</span>nsultation
@@ -239,45 +219,7 @@
                         <span>sed diam nonummy nibh eusmod tincidunt ut laoreet dolore.</span>
                     </p>
                 </header>
-                <form id="schedule-form">
-                    <div class="text-input-row">
-                        <label for="first-name" class="required">First Name</label>
-                        <input id="first-name" required="true" type="text" placeholder="Enter first name here">
-                    </div>
-                    <div class="text-input-row">
-                        <label for="last-name" class="required">Last Name</label>
-                        <input id="last-name" required="true" type="text" placeholder="Enter last name here">
-                    </div>
-                    <div class="text-input-row">
-                        <label for="email" class="required">Email Address</label>
-                        <input id="email" required="true" type="text" placeholder="example@example.com">
-                    </div>
-                    <div class="text-input-row">
-                        <label for="phone" class="required">Phone Number</label>
-                        <input id="phone" required="true" type="text" placeholder="555.555.5555">
-                    </div>
-                    <div class="checkbox-row">
-                        <fieldset>
-                            <legend>Project Description</legend>
-                            <div class="checkbox-group">
-                                <input type="checkbox" name="project" id="pd1"><label for="pd1">Kitchen</label>
-                                <input type="checkbox" name="project" id="pd5"><label for="pd5">Addition</label>
-                                <input type="checkbox" name="project" id="pd2"><label for="pd2">Bath</label>
-                                <input type="checkbox" name="project" id="pd6"><label for="pd6">Small Job</label>
-                                <input type="checkbox" name="project" id="pd3"><label for="pd3">Interior Remodeling</label>
-                                <input type="checkbox" name="project" id="pd7"><label for="pd7">Other</label>
-                                <input type="checkbox" name="project" id="pd4"><label for="pd4">Exterior Remodeling</label>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div class="submit-row">
-                        <select id="best-time"
-                                ng-model="bestTime"
-                                ng-options="option for option in timeOptions"
-                                zen-select></select>
-                        <input type="submit" value="Get Started!">
-                    </div>
-                </form>
+                <script type="text/javascript" src="https://www.formstack.com/forms/js.php?1666367-HF9Z8iw5g4-v3"></script><noscript><a href="https://www.formstack.com/forms/?1666367-HF9Z8iw5g4" title="Online Form">Online Form - Schedule a Consultation - Case Homeage Redesign</a></noscript>
                 <footer>
                     <ul>
                         <li>Bethesda 301-917-2273</li>
@@ -384,7 +326,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-sanitize.min.js"></script>
         <script src="/js/vendor/ui-bootstrap-custom-0.10.0.min.js"></script>
-        <script src="/js/vendor/angular-stellar.min.js"></script>
+        <script src="/js/vendor/angular-stellar.js"></script>
         <script src="/js/zen-select.js"></script>
         <script src="/js/case.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

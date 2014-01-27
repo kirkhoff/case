@@ -102,6 +102,19 @@ angular.module('case', ['ngSanitize', 'zen.ui.select', 'ui.bootstrap', 'angular.
             url: '#',
             img: '/img/sub-nav/additions.jpg'
         }])
+    .factory('BlogService', function($http){
+        var url = 'http://www.casedesign.com/blog/feed',
+            num = 9;
+        return {
+            fetch: function(){
+                return $http.jsonp('//ajax.googleapis.com/ajax/services/feed/load?' +
+                    'v=1.0&' +
+                    'callback=JSON_CALLBACK&' +
+                    'num=' + num + '&' +
+                    'q=' + encodeURIComponent(url));
+            }
+        }
+    })
     .controller('caseCtrl', function($scope, $location, $anchorScroll){
         $scope.scrollTo = function(elementId){
             $location.hash(elementId);
@@ -170,6 +183,29 @@ angular.module('case', ['ngSanitize', 'zen.ui.select', 'ui.bootstrap', 'angular.
             section.collapsed = false;
         }
     })
+    .controller('blogCtrl', function($scope, BlogService){
+        BlogService.fetch().then(
+            function(rsp){
+                $scope.entries = rsp.data.responseData.feed.entries;
+            });
+        $scope.page = 1;
+        $scope.entriesPerPage = 3;
+        $scope.defaultImg = '/img/default-article.jpg';
+        $scope.getImgFromContent = function(content){
+            var element = angular.element('<div>' + content + '</div>');
+            var firstImg = element.find('img').eq(0);
+            var src = firstImg.attr('src');
+            return src || $scope.defaultImg;
+        };
+        $scope.canShowNext = function(){
+            return ($scope.entries && ($scope.page + 1) * $scope.entriesPerPage <= $scope.entries.length);
+//            return true;
+        };
+        $scope.canShowPrev = function(){
+            return ($scope.page - 1 > 0);
+//            return true;
+        };
+    })
     .directive('scrollTo', function(){
         return {
             link: function(scope, element, attrs){
@@ -183,6 +219,71 @@ angular.module('case', ['ngSanitize', 'zen.ui.select', 'ui.bootstrap', 'angular.
                     });
                     return false;
                 });
+            }
+        }
+    })
+    .directive('errorSrc', function(){
+        return {
+            link: function(scope, element, attrs){
+                scope.$watch(function(){
+                    return attrs['ngSrc'];
+                }, function (value) {
+                    if (!value) {
+                        element.attr('src', attrs.errorSrc);
+                    }
+                });
+                element.bind('error', function(){
+                    element.attr('src', attrs.errorSrc);
+                });
+            }
+        }
+    })
+    .directive('removeOutsideStyles', function(){
+        return {
+            link: function(scope, element, attrs){
+                element.find('link').remove();
+            }
+        }
+    })
+    .directive('replaceSelect', function($compile){
+        return {
+            link: function(scope, element, attrs){
+                // Find the select box provided by Form Stack
+                var select = element.find('select').eq(0);
+                var selectLabel = select.parent().find('label').eq(0);
+                var submitBtn;
+                var submitRow;
+                var checkboxLabel;
+
+                angular.forEach(element.find('input'), function(input){
+                    var $input = angular.element(input);
+                    if ($input.attr('type') == 'submit') {
+                        submitBtn = $input;
+                        submitRow = $input.parent();
+                        submitRow.addClass('submit-row');
+                        submitBtn.attr('style', '');
+                    } else if ($input.attr('type') == 'checkbox') {
+                        // Reformat checkboxes so we can style them
+                        checkboxLabel = $input.parent();
+                        checkboxLabel.after($input);
+                        $input.after(checkboxLabel);
+                    }
+                });
+
+                // Add the zen-select attribute so we can style it
+                scope.selectModel = select.find('option').eq(0).val();
+                select.attr('zen-select', '').attr('ng-model', 'selectModel');
+                selectLabel.addClass('hidden508');
+                $compile(select)(scope);
+                submitRow.prepend(select).prepend(selectLabel);
+            }
+        }
+    })
+    .filter('startFrom', function(){
+        return function(input, start){
+            if (angular.isDefined(input)) {
+                start = +start;
+                return input.slice(start);
             }
         }
     });

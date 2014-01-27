@@ -64,6 +64,10 @@ header > p {
   }
 }
 
+.hidden508 {
+  @extend %hidden508;
+}
+
 .page {
   @include container;
 }

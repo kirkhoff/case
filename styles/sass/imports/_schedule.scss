@@ -50,125 +50,154 @@
       }
     }
   }
-}
-
-#schedule-form {
-  margin: 2em auto;
-  padding-bottom: 100px;
-  width: 590px;
-  .text-input-row {
-    border-bottom: 1px solid $red-dark;
-    margin-top: 25px;
-  }
-  .checkbox-row {
-    background-color: $red-dark;
-    margin-top: 15px;
-  }
-  .checkbox-group,
-  legend {
-    @include box-sizing(border-box);
-    display: block;
-    float: left;
-  }
-  .checkbox-group {
-    padding: 18px 0 18px 35px;
-    width: 75%;
-  }
-  .submit-row {
-    @include clearfix;
-    margin: 20px 0 0;
-  }
-  .zen-ui-select-toggle {
-    width: 370px !important;
-  }
-  .zen-ui-select-list-container {
-    width: 100% !important;
-  }
-  label,
-  input[type='text'] {
-    @include box-sizing(border-box);
-    background: none;
-    border: 0;
-    display: inline-block;
-    line-height: 1em;
-    margin: 0 0 0 -2px;
-    outline: none;
-    padding: 0 15px 8px;
-  }
-  label,
-  legend {
-    color: #fff;
-    font-family: 'SentinelBook';
-    font-size: 15px;
-    width: 25%;
-    &.required:after {
-      content: '*';
-      margin-left: .2em;
+  /* Everything within form is provided by Form Stack.
+     We are using their class names, without relying on their styles. */
+  form {
+    margin: 2em auto;
+    padding-bottom: 100px;
+    width: 590px;
+    .fsError {
+      @include box-shadow(-4px 4px 10px rgba(0,0,0,.5));
+      background-color: #fff;
+      padding: 10px 15px;
     }
-  }
-  legend {
-    display: inline-block;
-    padding-left: 13px;
-    padding-top: 18px;
-  }
-  input[type='text'] {
-    @include transition(box-shadow 200ms);
-    border-left: 1px solid $red-dark;
-    color: #fff;
-    font-family: 'SentinelLightItalic';
-    font-size: 17px;
-    width: 75%;
-    &:focus {
-      @include box-shadow(-5px 5px 7px rgba(0,0,0,.3));
+    .fsError,
+    .fsValidationError {
+      position: relative;
+      &:after {
+        content: '\26a0';
+        font-family: 'CaseIcons';
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: -9px;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+      }
     }
-  }
-  input[type='checkbox'] {
-    @extend %hidden508;
-  }
-  input[type='checkbox']:checked + label:before {
-    background: #000;
-    color: shade(#fff, 10);
-    content: '\78';
-    font-family: 'CaseIcons';
-    font-size: 11px;
-    line-height: 15px;
-    font-weight: normal;
-    speak: none;
-    text-align: center;
-  }
-  input[type='checkbox'] + label {
-    color: $red-black;
-    display: inline-block;
-    font-family: 'Avenir';
-    font-size: 12px;
-    font-weight: 500;
-    position: relative;
-    width: 47%;
-    &:before {
-      background: white;
-      content: '';
+    .fsRow {
+      border-bottom: 1px solid $red-dark;
+      margin-top: 25px;
+    }
+    fieldset {
+      background-color: $red-dark;
+      margin-top: 15px;
+    }
+    .fieldset-content,
+    legend {
+      @include box-sizing(border-box);
+      display: block;
+      float: left;
+    }
+    .fieldset-content {
+      padding: 18px 0 18px 35px;
+      width: 75%;
+    }
+    .submit-row {
+      @include clearfix;
+      margin: 20px 0 0;
+      .zen-ui-select {
+        float: left;
+      }
+    }
+    .zen-ui-select-toggle {
+      width: 370px !important;
+    }
+    .zen-ui-select-list-container {
+      width: 100% !important;
+    }
+    label,
+    input[type='text'],
+    input[type='tel'],
+    input[type='email'] {
+      @include box-sizing(border-box);
+      background: none;
+      border: 0;
       display: inline-block;
-      height: 15px;
-      margin-left: -25px;
-      margin-top: -3px;
-      position: absolute;
-      width: 15px;
+      line-height: 1em;
+      margin: 0 0 0 -2px;
+      outline: none;
+      padding: 0 15px 8px;
     }
-  }
-  input[type='submit'] {
-    background-color: #fff;
-    border: 0;
-    clear: right;
-    color: $grey-dark;
-    float: right;
-    font-family: 'SentinelBook';
-    font-size: 22px;
-    letter-spacing: -.04em;
-    outline: 0;
-    padding: 7px 40px;
-    &:hover {
-      background-color: #000;
+    label,
+    legend {
       color: #fff;
+      font-family: 'SentinelBook';
+      font-size: 15px;
+      width: 25%;
+      &.required:after {
+        content: '*';
+        margin-left: .2em;
+      }
+    }
+    legend {
+      display: inline-block;
+      padding-left: 13px;
+      padding-top: 18px;
+    }
+    input[type='text'],
+    input[type='tel'],
+    input[type='email'] {
+      @include transition(box-shadow 200ms);
+      border-left: 1px solid $red-dark;
+      color: #fff;
+      font-family: 'SentinelLightItalic';
+      font-size: 17px;
+      width: 75%;
+      &:focus {
+        @include box-shadow(-5px 5px 7px rgba(0,0,0,.3));
+      }
+    }
+    input[type='checkbox'] {
+      @extend %hidden508;
+    }
+    input[type='checkbox']:checked + label:before,
+    .fsOptionLabel:checked:before {
+      background: #000;
+      color: shade(#fff, 10);
+      content: '\78';
+      font-family: 'CaseIcons';
+      font-size: 11px;
+      line-height: 15px;
+      font-weight: normal;
+      speak: none;
+      text-align: center;
+    }
+    .fsOptionLabel,
+    input[type='checkbox'] + label {
+      color: $red-black;
+      display: inline-block;
+      font-family: 'Avenir';
+      font-size: 12px;
+      font-weight: 500;
+      position: relative;
+      width: 47%;
+      &:before {
+        background: white;
+        content: '';
+        display: inline-block;
+        height: 15px;
+        margin-left: -25px;
+        margin-top: -3px;
+        position: absolute;
+        width: 15px;
+      }
+    }
+    input[type='submit'] {
+      background-color: #fff;
+      border: 0;
+      clear: right;
+      color: $grey-dark;
+      float: right;
+      font-family: 'SentinelBook';
+      font-size: 22px;
+      letter-spacing: -.04em;
+      outline: 0;
+      padding: 7px 40px;
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
     }
   }
 }

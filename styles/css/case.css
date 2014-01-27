@@ -226,7 +226,7 @@
 }
 
 /* line 13, ../sass/imports/_placeholders.scss */
-#schedule-form input[type='checkbox'], #main-footer h1 {
+.hidden508, #schedule form input[type='checkbox'], #main-footer h1 {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -257,20 +257,21 @@
 /* line 37, ../sass/imports/_placeholders.scss */
 .sub-nav a .pic-container, #feed a .pic-container {
   background-color: #292929;
+  overflow-y: hidden;
   position: relative;
 }
-/* line 40, ../sass/imports/_placeholders.scss */
+/* line 41, ../sass/imports/_placeholders.scss */
 .sub-nav a .pic-container > img, #feed a .pic-container > img {
   width: 100%;
 }
-/* line 43, ../sass/imports/_placeholders.scss */
+/* line 44, ../sass/imports/_placeholders.scss */
 .sub-nav a .pic-container > img.hover-icon, #feed a .pic-container > img.hover-icon, .sub-nav a .pic-container > img.pic, #feed a .pic-container > img.pic {
   -webkit-transition: opacity 200ms;
   -moz-transition: opacity 200ms;
   -o-transition: opacity 200ms;
   transition: opacity 200ms;
 }
-/* line 46, ../sass/imports/_placeholders.scss */
+/* line 47, ../sass/imports/_placeholders.scss */
 .sub-nav a .pic-container > img.hover-icon, #feed a .pic-container > img.hover-icon {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -465,7 +466,7 @@ header > p > span:first-child {
   border-top: 0;
 }
 
-/* line 67, ../sass/case.scss */
+/* line 71, ../sass/case.scss */
 .page {
   *zoom: 1;
   max-width: 90em;
@@ -482,43 +483,43 @@ header > p > span:first-child {
   clear: both;
 }
 
-/* line 71, ../sass/case.scss */
+/* line 75, ../sass/case.scss */
 #main-header {
   height: 150px;
   padding: 20px 90px;
   position: relative;
 }
-/* line 75, ../sass/case.scss */
+/* line 79, ../sass/case.scss */
 #main-header .case-logo {
   float: left;
   height: 62px;
   margin: 40px 0 0;
   vertical-align: bottom;
 }
-/* line 81, ../sass/case.scss */
+/* line 85, ../sass/case.scss */
 #main-header > nav {
   clear: right;
   float: right;
   text-align: right;
 }
-/* line 85, ../sass/case.scss */
+/* line 89, ../sass/case.scss */
 #main-header > nav ul {
   margin: 0;
 }
-/* line 88, ../sass/case.scss */
+/* line 92, ../sass/case.scss */
 #main-header > nav li {
   display: inline-block;
 }
-/* line 90, ../sass/case.scss */
+/* line 94, ../sass/case.scss */
 #main-header > nav li > a {
   text-transform: uppercase;
 }
 
-/* line 99, ../sass/case.scss */
+/* line 103, ../sass/case.scss */
 #external-links ul {
   display: inline-block;
 }
-/* line 102, ../sass/case.scss */
+/* line 106, ../sass/case.scss */
 #external-links li > a {
   color: #373737;
   display: block;
@@ -529,17 +530,17 @@ header > p > span:first-child {
   margin: 0 9px;
   position: relative;
 }
-/* line 111, ../sass/case.scss */
+/* line 115, ../sass/case.scss */
 #external-links li > a:hover {
   color: #db2a38;
 }
-/* line 115, ../sass/case.scss */
+/* line 119, ../sass/case.scss */
 #external-links .chat-btn {
   margin-left: 30px;
   padding: 5px 10px 4px;
   position: relative;
 }
-/* line 120, ../sass/case.scss */
+/* line 124, ../sass/case.scss */
 #external-links .chat-btn:after {
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
@@ -557,11 +558,11 @@ header > p > span:first-child {
   position: absolute;
   top: 100%;
 }
-/* line 130, ../sass/case.scss */
+/* line 134, ../sass/case.scss */
 #external-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 134, ../sass/case.scss */
+/* line 138, ../sass/case.scss */
 #external-links .icon-phone {
   bottom: -1px;
   height: 1.4em;
@@ -569,11 +570,11 @@ header > p > span:first-child {
   right: -15px;
 }
 
-/* line 142, ../sass/case.scss */
+/* line 146, ../sass/case.scss */
 #internal-links {
   margin-top: 63px;
 }
-/* line 144, ../sass/case.scss */
+/* line 148, ../sass/case.scss */
 #internal-links li > a {
   color: #db2a38;
   font-family: 'AvenirBold';
@@ -582,11 +583,11 @@ header > p > span:first-child {
   margin: 0 10px;
   position: relative;
 }
-/* line 151, ../sass/case.scss */
+/* line 155, ../sass/case.scss */
 #internal-links li > a:hover {
   color: #373737;
 }
-/* line 156, ../sass/case.scss */
+/* line 160, ../sass/case.scss */
 #internal-links li a:before {
   color: #a8a8a8;
   content: '/';
@@ -596,12 +597,12 @@ header > p > span:first-child {
   position: absolute;
   top: 0;
 }
-/* line 166, ../sass/case.scss */
+/* line 170, ../sass/case.scss */
 #internal-links li:first-child a:before,
 #internal-links li .schedule-btn:before {
   content: '';
 }
-/* line 170, ../sass/case.scss */
+/* line 174, ../sass/case.scss */
 #internal-links .schedule-btn {
   margin: 0 0 0 5px;
 }
@@ -1071,34 +1072,36 @@ header > p > span:first-child {
 #feed li {
   display: inline-block;
   margin: 1em;
-  width: 340px;
+  vertical-align: top;
+  width: 24.3em;
 }
-/* line 44, ../sass/imports/_blog.scss */
+/* line 45, ../sass/imports/_blog.scss */
 #feed .pic-container {
-  height: 212px;
+  height: 15.2em;
 }
-/* line 47, ../sass/imports/_blog.scss */
+/* line 48, ../sass/imports/_blog.scss */
 #feed h2 {
   color: #db2a38;
   font-family: 'SentinelMedium';
   font-size: 1.2em;
   font-weight: normal;
 }
-/* line 54, ../sass/imports/_blog.scss */
+/* line 55, ../sass/imports/_blog.scss */
 #feed p {
   color: #373737;
   font-family: 'Avenir';
   font-size: .8em;
   font-weight: 500;
+  letter-spacing: -.03em;
   line-height: 1.5em;
 }
-/* line 61, ../sass/imports/_blog.scss */
+/* line 63, ../sass/imports/_blog.scss */
 #feed .view-all-btn {
   font-family: 'AvenirDemiBold';
   font-size: .9em;
 }
 
-/* line 69, ../sass/imports/_blog.scss */
+/* line 71, ../sass/imports/_blog.scss */
 #prev-btn,
 #next-btn {
   font-family: Arial;
@@ -1111,18 +1114,18 @@ header > p > span:first-child {
   top: 50%;
   width: 40px;
 }
-/* line 80, ../sass/imports/_blog.scss */
+/* line 82, ../sass/imports/_blog.scss */
 #prev-btn > i,
 #next-btn > i {
   line-height: 40px;
 }
 
-/* line 84, ../sass/imports/_blog.scss */
+/* line 86, ../sass/imports/_blog.scss */
 #prev-btn {
   left: 0;
 }
 
-/* line 87, ../sass/imports/_blog.scss */
+/* line 89, ../sass/imports/_blog.scss */
 #next-btn {
   right: 0;
 }
@@ -1130,6 +1133,8 @@ header > p > span:first-child {
 /* line 1, ../sass/imports/_schedule.scss */
 #schedule {
   background-color: #e42f3e;
+  /* Everything within form is provided by Form Stack.
+     We are using their class names, without relying on their styles. */
 }
 /* line 3, ../sass/imports/_schedule.scss */
 #schedule header {
@@ -1190,62 +1195,92 @@ header > p > span:first-child {
   speak: none;
   vertical-align: middle;
 }
-
 /* line 55, ../sass/imports/_schedule.scss */
-#schedule-form {
+#schedule form {
   margin: 2em auto;
   padding-bottom: 100px;
   width: 590px;
 }
 /* line 59, ../sass/imports/_schedule.scss */
-#schedule-form .text-input-row {
+#schedule form .fsError {
+  -webkit-box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  padding: 10px 15px;
+}
+/* line 65, ../sass/imports/_schedule.scss */
+#schedule form .fsError,
+#schedule form .fsValidationError {
+  position: relative;
+}
+/* line 67, ../sass/imports/_schedule.scss */
+#schedule form .fsError:after,
+#schedule form .fsValidationError:after {
+  content: '\26a0';
+  font-family: 'CaseIcons';
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: -9px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+}
+/* line 78, ../sass/imports/_schedule.scss */
+#schedule form .fsRow {
   border-bottom: 1px solid #bd2d39;
   margin-top: 25px;
 }
-/* line 63, ../sass/imports/_schedule.scss */
-#schedule-form .checkbox-row {
+/* line 82, ../sass/imports/_schedule.scss */
+#schedule form fieldset {
   background-color: #bd2d39;
   margin-top: 15px;
 }
-/* line 68, ../sass/imports/_schedule.scss */
-#schedule-form .checkbox-group,
-#schedule-form legend {
+/* line 87, ../sass/imports/_schedule.scss */
+#schedule form .fieldset-content,
+#schedule form legend {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   float: left;
 }
-/* line 73, ../sass/imports/_schedule.scss */
-#schedule-form .checkbox-group {
+/* line 92, ../sass/imports/_schedule.scss */
+#schedule form .fieldset-content {
   padding: 18px 0 18px 35px;
   width: 75%;
 }
-/* line 77, ../sass/imports/_schedule.scss */
-#schedule-form .submit-row {
+/* line 96, ../sass/imports/_schedule.scss */
+#schedule form .submit-row {
   zoom: 1;
   margin: 20px 0 0;
 }
 /* line 56, ../sass/imports/_mixins.scss */
-#schedule-form .submit-row:before, #schedule-form .submit-row:after {
+#schedule form .submit-row:before, #schedule form .submit-row:after {
   content: ' ';
   display: table;
 }
 /* line 60, ../sass/imports/_mixins.scss */
-#schedule-form .submit-row:after {
+#schedule form .submit-row:after {
   clear: both;
 }
-/* line 81, ../sass/imports/_schedule.scss */
-#schedule-form .zen-ui-select-toggle {
+/* line 99, ../sass/imports/_schedule.scss */
+#schedule form .submit-row .zen-ui-select {
+  float: left;
+}
+/* line 103, ../sass/imports/_schedule.scss */
+#schedule form .zen-ui-select-toggle {
   width: 370px !important;
 }
-/* line 84, ../sass/imports/_schedule.scss */
-#schedule-form .zen-ui-select-list-container {
+/* line 106, ../sass/imports/_schedule.scss */
+#schedule form .zen-ui-select-list-container {
   width: 100% !important;
 }
-/* line 88, ../sass/imports/_schedule.scss */
-#schedule-form label,
-#schedule-form input[type='text'] {
+/* line 112, ../sass/imports/_schedule.scss */
+#schedule form label,
+#schedule form input[type='text'],
+#schedule form input[type='tel'],
+#schedule form input[type='email'] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1257,28 +1292,30 @@ header > p > span:first-child {
   outline: none;
   padding: 0 15px 8px;
 }
-/* line 99, ../sass/imports/_schedule.scss */
-#schedule-form label,
-#schedule-form legend {
+/* line 123, ../sass/imports/_schedule.scss */
+#schedule form label,
+#schedule form legend {
   color: #fff;
   font-family: 'SentinelBook';
   font-size: 15px;
   width: 25%;
 }
-/* line 104, ../sass/imports/_schedule.scss */
-#schedule-form label.required:after,
-#schedule-form legend.required:after {
+/* line 128, ../sass/imports/_schedule.scss */
+#schedule form label.required:after,
+#schedule form legend.required:after {
   content: '*';
   margin-left: .2em;
 }
-/* line 109, ../sass/imports/_schedule.scss */
-#schedule-form legend {
+/* line 133, ../sass/imports/_schedule.scss */
+#schedule form legend {
   display: inline-block;
   padding-left: 13px;
   padding-top: 18px;
 }
-/* line 114, ../sass/imports/_schedule.scss */
-#schedule-form input[type='text'] {
+/* line 140, ../sass/imports/_schedule.scss */
+#schedule form input[type='text'],
+#schedule form input[type='tel'],
+#schedule form input[type='email'] {
   -webkit-transition: box-shadow 200ms;
   -moz-transition: box-shadow 200ms;
   -o-transition: box-shadow 200ms;
@@ -1289,14 +1326,17 @@ header > p > span:first-child {
   font-size: 17px;
   width: 75%;
 }
-/* line 121, ../sass/imports/_schedule.scss */
-#schedule-form input[type='text']:focus {
+/* line 147, ../sass/imports/_schedule.scss */
+#schedule form input[type='text']:focus,
+#schedule form input[type='tel']:focus,
+#schedule form input[type='email']:focus {
   -webkit-box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.3);
   box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.3);
 }
-/* line 128, ../sass/imports/_schedule.scss */
-#schedule-form input[type='checkbox']:checked + label:before {
+/* line 155, ../sass/imports/_schedule.scss */
+#schedule form input[type='checkbox']:checked + label:before,
+#schedule form .fsOptionLabel:checked:before {
   background: #000;
   color: #e5e5e5;
   content: '\78';
@@ -1307,8 +1347,9 @@ header > p > span:first-child {
   speak: none;
   text-align: center;
 }
-/* line 139, ../sass/imports/_schedule.scss */
-#schedule-form input[type='checkbox'] + label {
+/* line 167, ../sass/imports/_schedule.scss */
+#schedule form .fsOptionLabel,
+#schedule form input[type='checkbox'] + label {
   color: #5c2629;
   display: inline-block;
   font-family: 'Avenir';
@@ -1317,8 +1358,9 @@ header > p > span:first-child {
   position: relative;
   width: 47%;
 }
-/* line 147, ../sass/imports/_schedule.scss */
-#schedule-form input[type='checkbox'] + label:before {
+/* line 175, ../sass/imports/_schedule.scss */
+#schedule form .fsOptionLabel:before,
+#schedule form input[type='checkbox'] + label:before {
   background: white;
   content: '';
   display: inline-block;
@@ -1328,8 +1370,8 @@ header > p > span:first-child {
   position: absolute;
   width: 15px;
 }
-/* line 158, ../sass/imports/_schedule.scss */
-#schedule-form input[type='submit'] {
+/* line 186, ../sass/imports/_schedule.scss */
+#schedule form input[type='submit'] {
   background-color: #fff;
   border: 0;
   clear: right;
@@ -1341,34 +1383,34 @@ header > p > span:first-child {
   outline: 0;
   padding: 7px 40px;
 }
-/* line 169, ../sass/imports/_schedule.scss */
-#schedule-form input[type='submit']:hover {
+/* line 197, ../sass/imports/_schedule.scss */
+#schedule form input[type='submit']:hover {
   background-color: #000;
   color: #fff;
 }
 
-/* line 176, ../sass/imports/_schedule.scss */
+/* line 205, ../sass/imports/_schedule.scss */
 ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #5c2629;
   font-family: 'SentinelLightItalic';
 }
 
-/* line 179, ../sass/imports/_schedule.scss */
+/* line 208, ../sass/imports/_schedule.scss */
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #5c2629;
   font-family: 'SentinelLightItalic';
 }
 
-/* line 182, ../sass/imports/_schedule.scss */
+/* line 211, ../sass/imports/_schedule.scss */
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #5c2629;
   font-family: 'SentinelLightItalic';
 }
 
-/* line 185, ../sass/imports/_schedule.scss */
+/* line 214, ../sass/imports/_schedule.scss */
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #5c2629;

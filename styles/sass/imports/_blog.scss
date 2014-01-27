@@ -36,13 +36,14 @@
   li {
     display: inline-block;
     margin: 1em;
-    width: 340px;
+    vertical-align: top;
+    width: 24.3em;
   }
   a {
     @extend %pic-link;
   }
   .pic-container {
-    height: 212px;
+    height: 15.2em;
   }
   h2 {
     @extend %ellipsis;
@@ -56,6 +57,7 @@
     font-family: 'Avenir';
     font-size: .8em;
     font-weight: 500;
+    letter-spacing: -.03em;
     line-height: 1.5em;
   }
   .view-all-btn {

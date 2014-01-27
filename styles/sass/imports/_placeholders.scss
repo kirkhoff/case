@@ -36,6 +36,7 @@
   }
   .pic-container {
     background-color: #292929;
+    overflow-y: hidden;
     position: relative;
     > img {
       width: 100%;
