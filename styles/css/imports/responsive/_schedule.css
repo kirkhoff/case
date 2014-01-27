@@ -1,0 +1,6 @@
+@media screen and (max-width: 1024px) {
+  /* line 3, ../../../sass/imports/responsive/_schedule.scss */
+  #schedule h1 img.clock-o {
+    right: 5.75em;
+  }
+}

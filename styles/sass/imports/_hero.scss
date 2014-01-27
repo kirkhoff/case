@@ -1,5 +1,7 @@
 .carousel-indicators {
-  bottom: 75px;
+  bottom: 5.3em;
+  margin-left: -27em;
+  width: 54em;
   /* Reset from bootstrap.css */
   > li,
   > li.active {
@@ -50,22 +52,23 @@
   border-left: 7px solid #fff;
   overflow: hidden;
   position: absolute;
-  right: -126%;
+  right: -91%;
   top: 0;
+  width: 100%;
   > img {
     @include opacity(.9);
     @include transform(rotate(-12deg));
     -webkit-filter: blur(5px);
     position: relative;
-    left: -75px;
+    left: -9%;
   }
 }
 
 #hero {
   .content {
     position: absolute;
-    left: 747px;
-    top: 260px
+    left: 59.3%;
+    top: 40.8%
   }
   h1 {
     color: #fff;
@@ -110,3 +113,5 @@
     }
   }
 }
+
+@import 'responsive/hero';

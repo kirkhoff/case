@@ -1,0 +1,6 @@
+@media screen and (max-width: 1024px) {
+  /* line 2, ../../../sass/imports/responsive/_hero.scss */
+  .carousel-indicators {
+    width: 74%;
+  }
+}

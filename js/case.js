@@ -183,13 +183,28 @@ angular.module('case', ['ngSanitize', 'zen.ui.select', 'ui.bootstrap', 'angular.
             section.collapsed = false;
         }
     })
-    .controller('blogCtrl', function($scope, BlogService){
+    .controller('blogCtrl', function($scope, $window, $document, BlogService){
         BlogService.fetch().then(
             function(rsp){
                 $scope.entries = rsp.data.responseData.feed.entries;
             });
+
+        // Check to see if we're on a touch device
+        if ($document.find('html').eq(0).hasClass('touch')) {
+            if ($window.innerWidth && $window.innerWidth >= 768) {
+                // Tablet
+                $scope.entriesPerPage = 2;
+                $scope.showBlogNav = true;
+            } else {
+                // Phone
+                $scope.entriesPerPage = 3;
+                $scope.showBlogNav = false;
+            }
+        } else {
+            $scope.entriesPerPage = 3;
+            $scope.showBlogNav = true;
+        }
         $scope.page = 1;
-        $scope.entriesPerPage = 3;
         $scope.defaultImg = '/img/default-article.jpg';
         $scope.getImgFromContent = function(content){
             var element = angular.element('<div>' + content + '</div>');

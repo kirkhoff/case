@@ -1,0 +1,15 @@
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  #external-links,
+  #internal-links {
+    display: none;
+  }
+  #main-header {
+    height: 125px;
+    padding-left: 40px;
+    .case-logo {
+      margin-top: 10px;
+    }
+  }
+}

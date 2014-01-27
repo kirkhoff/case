@@ -1,0 +1,60 @@
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  #schedule {
+    header h1 img.clock-o {
+      right: 5.75em;
+    }
+    select {
+      background: url(/img/mobile/select-arrow.png) no-repeat right;
+      background-size: contain;
+      border: 1px solid shade($red-dark, 20);
+      border-radius: 0;
+      color: #fff;
+      display: inline-block !important;
+      float: left;
+      font-family: 'SentinelBook';
+      font-size: 16px;
+      height: 45px;
+      position: relative;
+      width: 370px;
+    }
+    input[type='submit'] {
+      border-radius: 0;
+    }
+    .zen-ui-select {
+      display: none;
+    }
+    footer ul {
+      margin: auto;
+      width: 70%;
+      a {
+        color: #fff;
+      }
+      li {
+        padding-left: 5px;
+        padding-right: 5px;
+        &:before {
+          margin-right: 15px;
+        }
+      }
+      li:first-child + li + li:before {
+        content: '';
+      }
+    }
+  }
+  #site-map {
+    > section {
+      display: block !important;
+      margin-bottom: 10px;
+      h2 {
+        margin-bottom: 0 !important;
+      }
+    }
+    nav li {
+      display: inline-block;
+      font-size: 1.2em;
+      margin-right: 20px;
+    }
+  }
+}

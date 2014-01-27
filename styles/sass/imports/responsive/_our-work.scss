@@ -1,0 +1,30 @@
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  #our-work {
+    .our-work-content {
+      height: 575px;
+      h1 {
+        font-size: 52px;
+        margin-top: .5em;
+      }
+      .red-ribbon {
+        margin-top: 4em;
+        > li {
+          display: none;
+        }
+        > li:first-child,
+        > li:first-child + li {
+          display: inline-block;
+        }
+      }
+    }
+    .our-promise {
+      margin-top: 100px;
+    }
+    .parallax {
+      background-attachment: scroll !important;
+      background-position: 45% 60% !important;
+    }
+  }
+}

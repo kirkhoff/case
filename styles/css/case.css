@@ -668,10 +668,12 @@ header > p > span:first-child {
 
 /* line 1, ../sass/imports/_hero.scss */
 .carousel-indicators {
-  bottom: 75px;
+  bottom: 5.3em;
+  margin-left: -27em;
+  width: 54em;
   /* Reset from bootstrap.css */
 }
-/* line 5, ../sass/imports/_hero.scss */
+/* line 7, ../sass/imports/_hero.scss */
 .carousel-indicators > li,
 .carousel-indicators > li.active {
   background-color: #db2a38;
@@ -683,7 +685,7 @@ header > p > span:first-child {
   width: auto;
   text-indent: 0;
 }
-/* line 15, ../sass/imports/_hero.scss */
+/* line 17, ../sass/imports/_hero.scss */
 .carousel-indicators > li {
   background-color: #db2a38;
   color: white;
@@ -710,24 +712,24 @@ header > p > span:first-child {
   background-color: #db2a38;
   color: white;
 }
-/* line 25, ../sass/imports/_hero.scss */
+/* line 27, ../sass/imports/_hero.scss */
 .carousel-indicators > li.active {
   border: .7em solid #fff;
   line-height: 3em;
 }
-/* line 29, ../sass/imports/_hero.scss */
+/* line 31, ../sass/imports/_hero.scss */
 .carousel-indicators > li:hover {
   background-color: #e42f3e;
 }
 
-/* line 37, ../sass/imports/_hero.scss */
+/* line 39, ../sass/imports/_hero.scss */
 .carousel-control.right:hover,
 .carousel-control.left:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 42, ../sass/imports/_hero.scss */
+/* line 44, ../sass/imports/_hero.scss */
 .carousel-control.right,
 .carousel-control.left {
   -webkit-transition: opacity 1s;
@@ -738,7 +740,7 @@ header > p > span:first-child {
   opacity: 0;
 }
 
-/* line 47, ../sass/imports/_hero.scss */
+/* line 49, ../sass/imports/_hero.scss */
 .carousel .preview {
   -webkit-transform: rotate(12deg);
   -moz-transform: rotate(12deg);
@@ -749,10 +751,11 @@ header > p > span:first-child {
   border-left: 7px solid #fff;
   overflow: hidden;
   position: absolute;
-  right: -126%;
+  right: -91%;
   top: 0;
+  width: 100%;
 }
-/* line 55, ../sass/imports/_hero.scss */
+/* line 58, ../sass/imports/_hero.scss */
 .carousel .preview > img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
@@ -763,29 +766,29 @@ header > p > span:first-child {
   transform: rotate(-12deg);
   -webkit-filter: blur(5px);
   position: relative;
-  left: -75px;
+  left: -9%;
 }
 
-/* line 65, ../sass/imports/_hero.scss */
+/* line 68, ../sass/imports/_hero.scss */
 #hero .content {
   position: absolute;
-  left: 747px;
-  top: 260px;
+  left: 59.3%;
+  top: 40.8%;
 }
-/* line 70, ../sass/imports/_hero.scss */
+/* line 73, ../sass/imports/_hero.scss */
 #hero h1 {
   color: #fff;
   font-size: 6em;
   letter-spacing: -.06em;
   line-height: 1em;
 }
-/* line 76, ../sass/imports/_hero.scss */
+/* line 79, ../sass/imports/_hero.scss */
 #hero .highlighted-lines {
   margin: 0;
   padding-left: 5px;
   width: 513px;
 }
-/* line 80, ../sass/imports/_hero.scss */
+/* line 83, ../sass/imports/_hero.scss */
 #hero .highlighted-lines > span {
   background-color: #232323;
   color: #fff;
@@ -796,34 +799,51 @@ header > p > span:first-child {
   margin: 3px 0;
   padding: .4em 1em;
 }
-/* line 89, ../sass/imports/_hero.scss */
+/* line 92, ../sass/imports/_hero.scss */
 #hero .highlighted-lines > span > mark {
   color: #fff;
 }
-/* line 92, ../sass/imports/_hero.scss */
+/* line 95, ../sass/imports/_hero.scss */
 #hero .highlighted-lines > span a {
   color: #e42f3e;
 }
-/* line 94, ../sass/imports/_hero.scss */
+/* line 97, ../sass/imports/_hero.scss */
 #hero .highlighted-lines > span a:hover {
   color: #fff;
 }
-/* line 100, ../sass/imports/_hero.scss */
+/* line 103, ../sass/imports/_hero.scss */
 #hero .continue-btn {
   margin: .5em 0;
   text-align: center;
 }
-/* line 103, ../sass/imports/_hero.scss */
+/* line 106, ../sass/imports/_hero.scss */
 #hero .continue-btn > button {
   background: transparent;
   color: #db2a38;
   font-size: 1.75em;
 }
-/* line 107, ../sass/imports/_hero.scss */
+/* line 110, ../sass/imports/_hero.scss */
 #hero .continue-btn > button:hover {
   color: #bd2d39;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 4, ../sass/imports/responsive/_hero.scss */
+  .carousel-indicators {
+    bottom: .75em;
+  }
+
+  /* line 8, ../sass/imports/responsive/_hero.scss */
+  #hero .carousel-control {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  /* line 11, ../sass/imports/responsive/_hero.scss */
+  #hero .content {
+    left: 45%;
+    top: 20%;
+  }
+}
 /* line 1, ../sass/imports/_our-work.scss */
 .our-work-content {
   -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.75);
@@ -938,6 +958,39 @@ header > p > span:first-child {
   width: 100%;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 5, ../sass/imports/responsive/_our-work.scss */
+  #our-work .our-work-content {
+    height: 575px;
+  }
+  /* line 7, ../sass/imports/responsive/_our-work.scss */
+  #our-work .our-work-content h1 {
+    font-size: 52px;
+    margin-top: .5em;
+  }
+  /* line 11, ../sass/imports/responsive/_our-work.scss */
+  #our-work .our-work-content .red-ribbon {
+    margin-top: 4em;
+  }
+  /* line 13, ../sass/imports/responsive/_our-work.scss */
+  #our-work .our-work-content .red-ribbon > li {
+    display: none;
+  }
+  /* line 17, ../sass/imports/responsive/_our-work.scss */
+  #our-work .our-work-content .red-ribbon > li:first-child,
+  #our-work .our-work-content .red-ribbon > li:first-child + li {
+    display: inline-block;
+  }
+  /* line 22, ../sass/imports/responsive/_our-work.scss */
+  #our-work .our-promise {
+    margin-top: 100px;
+  }
+  /* line 25, ../sass/imports/responsive/_our-work.scss */
+  #our-work .parallax {
+    background-attachment: scroll !important;
+    background-position: 45% 60% !important;
+  }
+}
 /* line 1, ../sass/imports/_our-people.scss */
 #our-people {
   background-color: #f2f2f2;
@@ -1130,6 +1183,41 @@ header > p > span:first-child {
   right: 0;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 5, ../sass/imports/responsive/_blog.scss */
+  #blog li {
+    margin: 10px;
+    width: 285px;
+  }
+  /* line 8, ../sass/imports/responsive/_blog.scss */
+  #blog li:first-child {
+    margin-left: 0;
+  }
+  /* line 11, ../sass/imports/responsive/_blog.scss */
+  #blog li:first-child + li {
+    margin-right: 0;
+  }
+  /* line 14, ../sass/imports/responsive/_blog.scss */
+  #blog li .pic-container {
+    height: 12.75em;
+  }
+
+  /* line 19, ../sass/imports/responsive/_blog.scss */
+  #feed {
+    margin: auto;
+    width: 77%;
+  }
+
+  /* line 23, ../sass/imports/responsive/_blog.scss */
+  #next-btn {
+    right: -15.1%;
+  }
+
+  /* line 26, ../sass/imports/responsive/_blog.scss */
+  #prev-btn {
+    left: -15.1%;
+  }
+}
 /* line 1, ../sass/imports/_schedule.scss */
 #schedule {
   background-color: #e42f3e;
@@ -1158,9 +1246,9 @@ header > p > span:first-child {
 /* line 17, ../sass/imports/_schedule.scss */
 #schedule header h1 img.clock-o {
   position: absolute;
-  right: 202px;
-  top: 9px;
-  width: 25px;
+  right: 6em;
+  top: .28em;
+  width: .75em;
 }
 /* line 24, ../sass/imports/_schedule.scss */
 #schedule header p {
@@ -1417,6 +1505,73 @@ header > p > span:first-child {
   font-family: 'SentinelLightItalic';
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 5, ../sass/imports/responsive/_schedule.scss */
+  #schedule header h1 img.clock-o {
+    right: 5.75em;
+  }
+  /* line 8, ../sass/imports/responsive/_schedule.scss */
+  #schedule select {
+    background: url(/img/mobile/select-arrow.png) no-repeat right;
+    background-size: contain;
+    border: 1px solid #97242d;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block !important;
+    float: left;
+    font-family: 'SentinelBook';
+    font-size: 16px;
+    height: 45px;
+    position: relative;
+    width: 370px;
+  }
+  /* line 22, ../sass/imports/responsive/_schedule.scss */
+  #schedule input[type='submit'] {
+    border-radius: 0;
+  }
+  /* line 25, ../sass/imports/responsive/_schedule.scss */
+  #schedule .zen-ui-select {
+    display: none;
+  }
+  /* line 28, ../sass/imports/responsive/_schedule.scss */
+  #schedule footer ul {
+    margin: auto;
+    width: 70%;
+  }
+  /* line 31, ../sass/imports/responsive/_schedule.scss */
+  #schedule footer ul a {
+    color: #fff;
+  }
+  /* line 34, ../sass/imports/responsive/_schedule.scss */
+  #schedule footer ul li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  /* line 37, ../sass/imports/responsive/_schedule.scss */
+  #schedule footer ul li:before {
+    margin-right: 15px;
+  }
+  /* line 41, ../sass/imports/responsive/_schedule.scss */
+  #schedule footer ul li:first-child + li + li:before {
+    content: '';
+  }
+
+  /* line 47, ../sass/imports/responsive/_schedule.scss */
+  #site-map > section {
+    display: block !important;
+    margin-bottom: 10px;
+  }
+  /* line 50, ../sass/imports/responsive/_schedule.scss */
+  #site-map > section h2 {
+    margin-bottom: 0 !important;
+  }
+  /* line 54, ../sass/imports/responsive/_schedule.scss */
+  #site-map nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 20px;
+  }
+}
 /* line 1, ../sass/imports/_footer.scss */
 #main-footer {
   letter-spacing: -.02em;
@@ -1548,4 +1703,22 @@ header > p > span:first-child {
   content: '|';
   font-size: 9px;
   margin-right: 8px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 5, ../sass/imports/responsive/_menu.scss */
+  #external-links,
+  #internal-links {
+    display: none;
+  }
+
+  /* line 8, ../sass/imports/responsive/_menu.scss */
+  #main-header {
+    height: 125px;
+    padding-left: 40px;
+  }
+  /* line 11, ../sass/imports/responsive/_menu.scss */
+  #main-header .case-logo {
+    margin-top: 10px;
+  }
 }

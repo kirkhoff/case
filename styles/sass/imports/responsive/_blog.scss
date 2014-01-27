@@ -1,0 +1,29 @@
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  #blog {
+    li {
+      margin: 10px;
+      width: 285px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:first-child + li {
+        margin-right: 0;
+      }
+      .pic-container {
+        height: 12.75em;
+      }
+    }
+  }
+  #feed {
+    margin: auto;
+    width: 77%;
+  }
+  #next-btn {
+    right: -15.1%;
+  }
+  #prev-btn {
+    left: -15.1%;
+  }
+}
