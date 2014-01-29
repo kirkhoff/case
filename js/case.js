@@ -186,6 +186,9 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
             section.collapsed = false;
         }
     })
+    .controller('mobileMenuCtrl', function($scope){
+        $scope.showMenu = true;
+    })
     .controller('blogCtrl', function($scope, $window, $document, BlogService){
         BlogService.fetch().then(
             function(rsp){

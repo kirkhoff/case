@@ -1,7 +1,7 @@
 @media screen and (max-width: 1024px) {
   /* line 3, ../../../sass/imports/responsive/_menu.scss */
-  #external-links,
-  #internal-links {
+  #utility-links,
+  #primary-links {
     display: none;
   }
 }

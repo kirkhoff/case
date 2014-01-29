@@ -140,7 +140,8 @@
 }
 
 /* line 1, ../sass/imports/_placeholders.scss */
-#external-links .chat-btn {
+#utility-links .chat-btn,
+.utility-links .chat-btn {
   background-color: lightgrey;
   color: #555555;
   display: inline-block;
@@ -152,7 +153,8 @@
   text-transform: uppercase;
 }
 /* line 11, ../sass/imports/_mixins.scss */
-#external-links .chat-btn:hover {
+#utility-links .chat-btn:hover,
+.utility-links .chat-btn:hover {
   background-color: #db2a38;
   color: white;
 }
@@ -198,7 +200,7 @@
 }
 
 /* line 5, ../sass/imports/_placeholders.scss */
-#internal-links .schedule-btn, .sub-nav .cta > a {
+.schedule-btn, .sub-nav .cta > a {
   background-color: #db2a38;
   color: white;
   display: inline-block;
@@ -210,7 +212,7 @@
   text-transform: uppercase;
 }
 /* line 11, ../sass/imports/_mixins.scss */
-#internal-links .schedule-btn:hover, .sub-nav .cta > a:hover {
+.schedule-btn:hover, .sub-nav .cta > a:hover {
   background-color: #373737;
   color: white;
 }
@@ -522,12 +524,19 @@ header > p > span:first-child {
   text-transform: uppercase;
 }
 
-/* line 107, ../sass/case.scss */
-#external-links ul {
+/* line 106, ../sass/case.scss */
+#mobile-menu {
+  display: none;
+}
+
+/* line 112, ../sass/case.scss */
+#utility-links ul,
+.utility-links ul {
   display: inline-block;
 }
-/* line 110, ../sass/case.scss */
-#external-links li > a {
+/* line 115, ../sass/case.scss */
+#utility-links li > a,
+.utility-links li > a {
   color: #373737;
   display: block;
   font-family: 'SentinelMedium';
@@ -536,19 +545,23 @@ header > p > span:first-child {
   line-height: 100%;
   margin: 0 9px;
   position: relative;
+  text-transform: uppercase;
 }
-/* line 119, ../sass/case.scss */
-#external-links li > a:hover {
+/* line 125, ../sass/case.scss */
+#utility-links li > a:hover,
+.utility-links li > a:hover {
   color: #db2a38;
 }
-/* line 123, ../sass/case.scss */
-#external-links .chat-btn {
+/* line 129, ../sass/case.scss */
+#utility-links .chat-btn,
+.utility-links .chat-btn {
   margin-left: 30px;
   padding: 5px 10px 4px;
   position: relative;
 }
-/* line 128, ../sass/case.scss */
-#external-links .chat-btn:after {
+/* line 134, ../sass/case.scss */
+#utility-links .chat-btn:after,
+.utility-links .chat-btn:after {
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
   border-top: 4px solid lightgrey;
@@ -565,24 +578,26 @@ header > p > span:first-child {
   position: absolute;
   top: 100%;
 }
-/* line 138, ../sass/case.scss */
-#external-links .chat-btn:hover:after {
+/* line 144, ../sass/case.scss */
+#utility-links .chat-btn:hover:after,
+.utility-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 142, ../sass/case.scss */
-#external-links .icon-phone {
+/* line 148, ../sass/case.scss */
+#utility-links .icon-phone,
+.utility-links .icon-phone {
   bottom: -1px;
   height: 1.4em;
   position: absolute;
   right: -15px;
 }
 
-/* line 150, ../sass/case.scss */
-#internal-links {
+/* line 156, ../sass/case.scss */
+#primary-links {
   margin-top: 63px;
 }
-/* line 152, ../sass/case.scss */
-#internal-links li > a {
+/* line 158, ../sass/case.scss */
+#primary-links li > a {
   color: #db2a38;
   font-family: 'AvenirBold';
   font-size: 12px;
@@ -590,12 +605,12 @@ header > p > span:first-child {
   margin: 0 10px;
   position: relative;
 }
-/* line 159, ../sass/case.scss */
-#internal-links li > a:hover {
+/* line 165, ../sass/case.scss */
+#primary-links li > a:hover {
   color: #373737;
 }
-/* line 164, ../sass/case.scss */
-#internal-links li a:before {
+/* line 170, ../sass/case.scss */
+#primary-links li a:before {
   color: #a8a8a8;
   content: '/';
   display: inline-block;
@@ -604,13 +619,14 @@ header > p > span:first-child {
   position: absolute;
   top: 0;
 }
-/* line 174, ../sass/case.scss */
-#internal-links li:first-child a:before,
-#internal-links li .schedule-btn:before {
+/* line 180, ../sass/case.scss */
+#primary-links li:first-child a:before,
+#primary-links li .schedule-btn:before {
   content: '';
 }
-/* line 178, ../sass/case.scss */
-#internal-links .schedule-btn {
+
+/* line 186, ../sass/case.scss */
+.schedule-btn {
   margin: 0 0 0 5px;
 }
 
@@ -1740,10 +1756,10 @@ header > p > span:first-child {
   margin-right: 8px;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   /* line 5, ../sass/imports/responsive/_menu.scss */
-  #external-links,
-  #internal-links {
+  #utility-links,
+  #primary-links {
     display: none;
   }
 
@@ -1755,5 +1771,98 @@ header > p > span:first-child {
   /* line 11, ../sass/imports/responsive/_menu.scss */
   #main-header .case-logo {
     margin-top: 10px;
+  }
+
+  /* line 15, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu {
+    background: #fff fixed;
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 1em 2em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 16;
+  }
+  /* line 26, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu .close-btn {
+    background-color: #e42f3e;
+    color: #fff;
+    font-size: 1.75em;
+    line-height: 0;
+    padding: 5px;
+  }
+  /* line 33, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu .scroll-pane {
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  /* line 39, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu .schedule-btn {
+    font-size: 1em;
+    margin: 0;
+    padding: 1em;
+  }
+  /* line 44, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu .chat-btn {
+    background-color: #e42f3e;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    margin: .8em 0 0 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: 4em;
+  }
+  /* line 53, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu .chat-btn:after {
+    border-top-color: #e42f3e;
+  }
+  /* line 59, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu nav > ul > li {
+    border-top: 1px solid lightgrey;
+    margin: .3em 0;
+    padding: .3em 0 0;
+  }
+  /* line 63, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu nav > ul > li:first-child {
+    border-top: 0;
+  }
+  /* line 66, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu nav > ul > li a {
+    color: #db2a38;
+    font-family: 'AvenirDemiBold';
+    font-size: 1.8em;
+    line-height: 2em;
+    text-transform: uppercase;
+  }
+  /* line 73, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu nav > ul > li > a {
+    font-weight: 600;
+  }
+  /* line 76, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu nav > ul > li > ul {
+    font-size: .7em;
+    font-weight: 400;
+    list-style: square url(/img/mobile/square.png);
+    margin: 0 0 0 3.5em;
+  }
+  /* line 81, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu nav > ul > li > ul > li {
+    margin: 1em 0;
+    padding: 0 0 0 .4em;
+  }
+  /* line 89, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu .utility-links li > a {
+    font-size: 1.2em;
+    margin: 1.1em 0;
+  }
+  /* line 92, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu .utility-links li > a .icon-phone {
+    display: none;
   }
 }

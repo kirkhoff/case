@@ -103,7 +103,12 @@ header > p {
   }
 }
 
-#external-links {
+#mobile-menu {
+  display: none;
+}
+
+#utility-links,
+.utility-links {
   ul {
     display: inline-block;
   }
@@ -116,6 +121,7 @@ header > p {
     line-height: 100%;
     margin: 0 9px;
     position: relative;
+    text-transform: uppercase;
     &:hover {
       color: $red;
     }
@@ -147,7 +153,7 @@ header > p {
   }
 }
 
-#internal-links {
+#primary-links {
   margin-top: 63px;
   li > a {
     color: $red;
@@ -175,10 +181,11 @@ header > p {
       content: '';
     }
   }
-  .schedule-btn {
-    @extend %block-btn-red;
-    margin: 0 0 0 5px;
-  }
+}
+
+.schedule-btn {
+  @extend %block-btn-red;
+  margin: 0 0 0 5px;
 }
 
 @import 'imports/sub-nav';

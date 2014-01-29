@@ -23,21 +23,11 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="page">
+            <menu id="mobile-menu" ng-include="'partials/mobile-menu.html'" ng-show="showMenu" ng-controller="mobileMenuCtrl"></menu>
             <header id="main-header" ng-controller="subNavCtrl">
                 <a href="http://www.casedesign.com" target="_self"><img src="/img/case-logo.png" alt="CASE - Because it's your home" class="case-logo"></a>
-                <nav id="external-links">
-                    <ul>
-                        <li><a href="http://www.casedesign.com/seminars" target="_self">Seminars</a></li>
-                        <li><a href="http://www.casedesign.com/press" target="_self">Press</a></li>
-                        <li><a href="http://www.casedesign.com/blog/" target="_self">Blog</a></li>
-                        <li><a href="http://www.casedesign.com/case-cares" target="_self">Case Cares</a></li>
-                        <li><a href="http://www.casedesign.com/tips-to-prepare-for-a-successful-remodel" target="_self">Remodeling Tips</a></li>
-                        <li><a href="http://www.casedesign.com/e-newsletter" target="_self">E-Newsletter</a></li>
-                        <li><a href="http://www.casedesign.com/contact-us" target="_self">Contact Us <img src="/img/icon-phone.png" class="icon-phone" aria-hidden="false" alt=""></a></li>
-                    </ul>
-                    <a href="" target="_self" class="chat-btn">Chat</a>
-                </nav>
-                <nav id="internal-links">
+                <nav id="utility-links" ng-include="'partials/utility-links.html'"></nav>
+                <nav id="primary-links">
                     <ul>
                         <li><a href="http://www.casedesign.com/our-work" ng-mouseenter="open(ourWork)" ng-mouseleave="close(ourWork)">Our Work</a></li>
                         <li><a href="http://www.casedesign.com/our-work/idea-center" ng-mouseenter="open(ideaCenter)" ng-mouseleave="close(ideaCenter)">Idea Center</a></li>
