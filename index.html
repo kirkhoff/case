@@ -45,11 +45,11 @@
                         <li><a href="#schedule" scroll-to="schedule" class="schedule-btn">Schedule a Consultation</a></li>
                     </ul>
                 </nav>
-                <nav id="our-work-nav" class="sub-nav" ng-hide="ourWork.collapsed" ng-mouseenter="open(ourWork)">
+                <nav id="our-work-nav" class="sub-nav" ng-hide="ourWork.collapsed" ng-mouseenter="open(ourWork)" ng-mouseleave="close(ourWork)">
                     <i class="icon-arrow-down-solid" aria-hidden="true"></i>
                     <ul>
                         <li ng-repeat="item in ourWork.nav">
-                            <a ng-href="item.url" ng-mouseenter="open(ourWork)" ng-mouseleave="close(ourWork)">
+                            <a ng-href="item.url">
                                 <div class="pic-container">
                                     <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
                                     <img ng-src="{{item.img}}" alt="" class="pic">
@@ -58,12 +58,16 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="cta">
+                        <p>Looking for Inspiration?</p>
+                        <a href="http://www.casedesign.com/our-work/idea-center" target="_self">Visit our Idea Center</a>
+                    </div>
                 </nav>
-                <nav id="our-people-nav" class="sub-nav" ng-hide="ourPeople.collapsed" ng-mouseenter="open(ourPeople)">
+                <nav id="our-people-nav" class="sub-nav" ng-hide="ourPeople.collapsed" ng-mouseenter="open(ourPeople)" ng-mouseleave="close(ourPeople)">
                     <i class="icon-arrow-down-solid" aria-hidden="true"></i>
                     <ul>
                         <li ng-repeat="item in ourPeople.nav">
-                            <a ng-href="item.url" ng-mouseenter="open(ourPeople)" ng-mouseleave="close(ourPeople)">
+                            <a ng-href="item.url">
                                 <div class="pic-container">
                                     <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
                                     <img ng-src="{{item.img}}" alt="" class="pic">
@@ -73,11 +77,11 @@
                         </li>
                     </ul>
                 </nav>
-                <nav id="idea-center-nav" class="sub-nav" ng-hide="ideaCenter.collapsed" ng-mouseenter="open(ideaCenter)">
+                <nav id="idea-center-nav" class="sub-nav" ng-hide="ideaCenter.collapsed" ng-mouseenter="open(ideaCenter)" ng-mouseleave="close(ideaCenter)">
                     <i class="icon-arrow-down-solid" aria-hidden="true"></i>
                     <ul>
                         <li ng-repeat="item in ideaCenter.nav">
-                            <a ng-href="item.url" ng-mouseenter="open(ideaCenter)" ng-mouseleave="close(ideaCenter)">
+                            <a ng-href="item.url">
                                 <div class="pic-container">
                                     <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
                                     <img ng-src="{{item.img}}" alt="" class="pic">

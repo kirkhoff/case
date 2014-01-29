@@ -4,12 +4,38 @@
 }
 
 .sub-nav {
-  background-color: #f1f1f1;
+  @include transition(opacity 200ms);
+  @include background(linear-gradient(#d6d6d6, #f1f1f1));
+  @include box-shadow(0 3px 2px -2px rgba(0,0,0,.3));
   left: 0;
   padding: 3em 0;
   position: absolute;
   top: 100%;
   width: 100%;
+  &.ng-hide {
+    @include opacity(0);
+  }
+  &.ng-hide-add,
+  &.ng-hide-remove {
+    display: block !important;
+  }
+  .cta {
+    border-top: 1px solid $grey-light;
+    margin-top: .5em;
+    padding: .7em 0 0;
+    text-align: center;
+    width: 100%;
+    > p {
+      color: $grey-dark;
+      font-family: 'SentinelLightItalic';
+      margin: .5em 0;
+    }
+    > a {
+      @extend %block-btn-red;
+      font-size: .85em;
+      padding: 8px 22px;
+    }
+  }
   a {
     @extend %pic-link;
   }
@@ -40,5 +66,5 @@
 }
 
 #our-work-nav > i { right: 525px }
-#our-people-nav > i { right: 425px }
-#idea-center-nav > i { right: 320px }
+#idea-center-nav > i { right: 425px }
+#our-people-nav > i { right: 320px }

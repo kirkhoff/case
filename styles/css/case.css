@@ -198,7 +198,7 @@
 }
 
 /* line 5, ../sass/imports/_placeholders.scss */
-#internal-links .schedule-btn {
+#internal-links .schedule-btn, .sub-nav .cta > a {
   background-color: #db2a38;
   color: white;
   display: inline-block;
@@ -210,7 +210,7 @@
   text-transform: uppercase;
 }
 /* line 11, ../sass/imports/_mixins.scss */
-#internal-links .schedule-btn:hover {
+#internal-links .schedule-btn:hover, .sub-nav .cta > a:hover {
   background-color: #373737;
   color: white;
 }
@@ -514,29 +514,12 @@ header > p > span:first-child {
 #main-header > nav li > a {
   text-transform: uppercase;
 }
-/* line 99, ../sass/case.scss */
-#main-header .sub-nav {
-  -webkit-transition: opacity 200ms;
-  -moz-transition: opacity 200ms;
-  -o-transition: opacity 200ms;
-  transition: opacity 200ms;
-}
-/* line 102, ../sass/case.scss */
-#main-header .ng-hide {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-}
-/* line 106, ../sass/case.scss */
-#main-header .sub-nav.ng-hide-add,
-#main-header .sub-nav.ng-hide-remove {
-  display: block !important;
-}
 
-/* line 112, ../sass/case.scss */
+/* line 102, ../sass/case.scss */
 #external-links ul {
   display: inline-block;
 }
-/* line 115, ../sass/case.scss */
+/* line 105, ../sass/case.scss */
 #external-links li > a {
   color: #373737;
   display: block;
@@ -547,17 +530,17 @@ header > p > span:first-child {
   margin: 0 9px;
   position: relative;
 }
-/* line 124, ../sass/case.scss */
+/* line 114, ../sass/case.scss */
 #external-links li > a:hover {
   color: #db2a38;
 }
-/* line 128, ../sass/case.scss */
+/* line 118, ../sass/case.scss */
 #external-links .chat-btn {
   margin-left: 30px;
   padding: 5px 10px 4px;
   position: relative;
 }
-/* line 133, ../sass/case.scss */
+/* line 123, ../sass/case.scss */
 #external-links .chat-btn:after {
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
@@ -575,11 +558,11 @@ header > p > span:first-child {
   position: absolute;
   top: 100%;
 }
-/* line 143, ../sass/case.scss */
+/* line 133, ../sass/case.scss */
 #external-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 147, ../sass/case.scss */
+/* line 137, ../sass/case.scss */
 #external-links .icon-phone {
   bottom: -1px;
   height: 1.4em;
@@ -587,11 +570,11 @@ header > p > span:first-child {
   right: -15px;
 }
 
-/* line 155, ../sass/case.scss */
+/* line 145, ../sass/case.scss */
 #internal-links {
   margin-top: 63px;
 }
-/* line 157, ../sass/case.scss */
+/* line 147, ../sass/case.scss */
 #internal-links li > a {
   color: #db2a38;
   font-family: 'AvenirBold';
@@ -600,11 +583,11 @@ header > p > span:first-child {
   margin: 0 10px;
   position: relative;
 }
-/* line 164, ../sass/case.scss */
+/* line 154, ../sass/case.scss */
 #internal-links li > a:hover {
   color: #373737;
 }
-/* line 169, ../sass/case.scss */
+/* line 159, ../sass/case.scss */
 #internal-links li a:before {
   color: #a8a8a8;
   content: '/';
@@ -614,12 +597,12 @@ header > p > span:first-child {
   position: absolute;
   top: 0;
 }
-/* line 179, ../sass/case.scss */
+/* line 169, ../sass/case.scss */
 #internal-links li:first-child a:before,
 #internal-links li .schedule-btn:before {
   content: '';
 }
-/* line 183, ../sass/case.scss */
+/* line 173, ../sass/case.scss */
 #internal-links .schedule-btn {
   margin: 0 0 0 5px;
 }
@@ -632,25 +615,64 @@ header > p > span:first-child {
 
 /* line 6, ../sass/imports/_sub-nav.scss */
 .sub-nav {
-  background-color: #f1f1f1;
+  -webkit-transition: opacity 200ms;
+  -moz-transition: opacity 200ms;
+  -o-transition: opacity 200ms;
+  transition: opacity 200ms;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d6d6d6), color-stop(100%, #f1f1f1));
+  background: -webkit-linear-gradient(#d6d6d6, #f1f1f1);
+  background: -moz-linear-gradient(#d6d6d6, #f1f1f1);
+  background: -o-linear-gradient(#d6d6d6, #f1f1f1);
+  background: linear-gradient(#d6d6d6, #f1f1f1);
+  -webkit-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.3);
   left: 0;
   padding: 3em 0;
   position: absolute;
   top: 100%;
   width: 100%;
 }
-/* line 16, ../sass/imports/_sub-nav.scss */
+/* line 15, ../sass/imports/_sub-nav.scss */
+.sub-nav.ng-hide {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 19, ../sass/imports/_sub-nav.scss */
+.sub-nav.ng-hide-add, .sub-nav.ng-hide-remove {
+  display: block !important;
+}
+/* line 22, ../sass/imports/_sub-nav.scss */
+.sub-nav .cta {
+  border-top: 1px solid lightgrey;
+  margin-top: .5em;
+  padding: .7em 0 0;
+  text-align: center;
+  width: 100%;
+}
+/* line 28, ../sass/imports/_sub-nav.scss */
+.sub-nav .cta > p {
+  color: #373737;
+  font-family: 'SentinelLightItalic';
+  margin: .5em 0;
+}
+/* line 33, ../sass/imports/_sub-nav.scss */
+.sub-nav .cta > a {
+  font-size: .85em;
+  padding: 8px 22px;
+}
+/* line 42, ../sass/imports/_sub-nav.scss */
 .sub-nav ul {
   margin: auto;
   text-align: center;
 }
-/* line 20, ../sass/imports/_sub-nav.scss */
+/* line 46, ../sass/imports/_sub-nav.scss */
 .sub-nav li {
   display: inline-block;
   margin: 0 .8em;
   width: 14em;
 }
-/* line 25, ../sass/imports/_sub-nav.scss */
+/* line 51, ../sass/imports/_sub-nav.scss */
 .sub-nav span {
   color: #db2a38;
   display: block;
@@ -660,7 +682,7 @@ header > p > span:first-child {
   margin: .5em 0 0;
   text-transform: uppercase;
 }
-/* line 34, ../sass/imports/_sub-nav.scss */
+/* line 60, ../sass/imports/_sub-nav.scss */
 .sub-nav > i {
   color: white;
   font-size: 20px;
@@ -668,18 +690,18 @@ header > p > span:first-child {
   top: -6px;
 }
 
-/* line 42, ../sass/imports/_sub-nav.scss */
+/* line 68, ../sass/imports/_sub-nav.scss */
 #our-work-nav > i {
   right: 525px;
 }
 
-/* line 43, ../sass/imports/_sub-nav.scss */
-#our-people-nav > i {
+/* line 69, ../sass/imports/_sub-nav.scss */
+#idea-center-nav > i {
   right: 425px;
 }
 
-/* line 44, ../sass/imports/_sub-nav.scss */
-#idea-center-nav > i {
+/* line 70, ../sass/imports/_sub-nav.scss */
+#our-people-nav > i {
   right: 320px;
 }
 
