@@ -187,7 +187,7 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
         }
     })
     .controller('mobileMenuCtrl', function($scope){
-        $scope.showMenu = true;
+        $scope.showMenu = false;
     })
     .controller('blogCtrl', function($scope, $window, $document, BlogService){
         BlogService.fetch().then(

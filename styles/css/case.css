@@ -624,9 +624,9 @@ header > p > span:first-child {
 #primary-links li .schedule-btn:before {
   content: '';
 }
-
-/* line 186, ../sass/case.scss */
-.schedule-btn {
+/* line 184, ../sass/case.scss */
+#primary-links .schedule-btn {
+  color: #fff !important;
   margin: 0 0 0 5px;
 }
 
@@ -1756,27 +1756,169 @@ header > p > span:first-child {
   margin-right: 8px;
 }
 
+/* line 1, ../sass/imports/_placeholders.scss */
+#utility-links .chat-btn,
+.utility-links .chat-btn {
+  background-color: lightgrey;
+  color: #555555;
+  display: inline-block;
+  font-family: 'AvenirBold';
+  font-size: .75em;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 6px 10px 5px;
+  text-transform: uppercase;
+}
+/* line 11, ../sass/imports/_mixins.scss */
+#utility-links .chat-btn:hover,
+.utility-links .chat-btn:hover {
+  background-color: #db2a38;
+  color: white;
+}
+
+/* line 3, ../sass/imports/_placeholders.scss */
+#feed .view-all-btn, #prev-btn,
+#next-btn {
+  background-color: black;
+  color: #db2a38;
+  display: inline-block;
+  font-family: 'AvenirBold';
+  font-size: .75em;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 6px 10px 5px;
+  text-transform: uppercase;
+}
+/* line 11, ../sass/imports/_mixins.scss */
+#feed .view-all-btn:hover, #prev-btn:hover,
+#next-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* line 4, ../sass/imports/_placeholders.scss */
+#feed .view-all-btn, #prev-btn,
+#next-btn {
+  background-color: black;
+  color: #db2a38;
+  display: inline-block;
+  font-family: 'AvenirBold';
+  font-size: .75em;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 6px 10px 5px;
+  text-transform: uppercase;
+}
+/* line 11, ../sass/imports/_mixins.scss */
+#feed .view-all-btn:hover, #prev-btn:hover,
+#next-btn:hover {
+  background-color: #db2a38;
+  color: white;
+}
+
+/* line 5, ../sass/imports/_placeholders.scss */
+.schedule-btn, .sub-nav .cta > a {
+  background-color: #db2a38;
+  color: white;
+  display: inline-block;
+  font-family: 'AvenirBold';
+  font-size: .75em;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 6px 10px 5px;
+  text-transform: uppercase;
+}
+/* line 11, ../sass/imports/_mixins.scss */
+.schedule-btn:hover, .sub-nav .cta > a:hover {
+  background-color: #373737;
+  color: white;
+}
+
+/* line 6, ../sass/imports/_placeholders.scss */
+.zen-ui-select .zen-ui-select-toggle > span,
+.zen-ui-select .zen-ui-select-list > li, #feed h2 {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/* line 13, ../sass/imports/_placeholders.scss */
+.hidden508, #schedule form input[type='checkbox'], #main-footer h1 {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 25, ../sass/imports/_placeholders.scss */
+.sub-nav a:hover .pic-container .hover-icon, #feed a:hover .pic-container .hover-icon {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  visibility: visible;
+}
+/* line 29, ../sass/imports/_placeholders.scss */
+.sub-nav a:hover .pic-container .pic, #feed a:hover .pic-container .pic {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+  opacity: 0.25;
+}
+/* line 33, ../sass/imports/_placeholders.scss */
+.sub-nav a:hover h2, #feed a:hover h2,
+.sub-nav a:hover span,
+#feed a:hover span {
+  color: #555555;
+}
+/* line 37, ../sass/imports/_placeholders.scss */
+.sub-nav a .pic-container, #feed a .pic-container {
+  background-color: #292929;
+  overflow-y: hidden;
+  position: relative;
+}
+/* line 41, ../sass/imports/_placeholders.scss */
+.sub-nav a .pic-container > img, #feed a .pic-container > img {
+  width: 100%;
+}
+/* line 44, ../sass/imports/_placeholders.scss */
+.sub-nav a .pic-container > img.hover-icon, #feed a .pic-container > img.hover-icon, .sub-nav a .pic-container > img.pic, #feed a .pic-container > img.pic {
+  -webkit-transition: opacity 200ms;
+  -moz-transition: opacity 200ms;
+  -o-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+/* line 47, ../sass/imports/_placeholders.scss */
+.sub-nav a .pic-container > img.hover-icon, #feed a .pic-container > img.hover-icon {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+  visibility: hidden;
+  width: 50px;
+  z-index: 1;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  /* line 5, ../sass/imports/responsive/_menu.scss */
+  /* line 7, ../sass/imports/responsive/_menu.scss */
   #utility-links,
   #primary-links {
     display: none;
   }
 
-  /* line 8, ../sass/imports/responsive/_menu.scss */
-  #main-header {
-    height: 125px;
-    padding-left: 40px;
-  }
-  /* line 11, ../sass/imports/responsive/_menu.scss */
-  #main-header .case-logo {
-    margin-top: 10px;
-  }
-
-  /* line 15, ../sass/imports/responsive/_menu.scss */
+  /* line 10, ../sass/imports/responsive/_menu.scss */
   #mobile-menu {
-    background: #fff fixed;
     display: block;
+  }
+  /* line 12, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu menu {
+    background: #fff fixed;
     height: 100%;
     left: 0;
     margin: 0;
@@ -1786,7 +1928,7 @@ header > p > span:first-child {
     width: 100%;
     z-index: 16;
   }
-  /* line 26, ../sass/imports/responsive/_menu.scss */
+  /* line 23, ../sass/imports/responsive/_menu.scss */
   #mobile-menu .close-btn {
     background-color: #e42f3e;
     color: #fff;
@@ -1794,20 +1936,20 @@ header > p > span:first-child {
     line-height: 0;
     padding: 5px;
   }
-  /* line 33, ../sass/imports/responsive/_menu.scss */
+  /* line 30, ../sass/imports/responsive/_menu.scss */
   #mobile-menu .scroll-pane {
     display: block;
     height: 100%;
     overflow-y: scroll;
     width: 100%;
   }
-  /* line 39, ../sass/imports/responsive/_menu.scss */
+  /* line 36, ../sass/imports/responsive/_menu.scss */
   #mobile-menu .schedule-btn {
     font-size: 1em;
     margin: 0;
     padding: 1em;
   }
-  /* line 44, ../sass/imports/responsive/_menu.scss */
+  /* line 42, ../sass/imports/responsive/_menu.scss */
   #mobile-menu .chat-btn {
     background-color: #e42f3e;
     color: #fff;
@@ -1818,21 +1960,21 @@ header > p > span:first-child {
     padding-top: 1em;
     width: 4em;
   }
-  /* line 53, ../sass/imports/responsive/_menu.scss */
+  /* line 51, ../sass/imports/responsive/_menu.scss */
   #mobile-menu .chat-btn:after {
     border-top-color: #e42f3e;
   }
-  /* line 59, ../sass/imports/responsive/_menu.scss */
+  /* line 57, ../sass/imports/responsive/_menu.scss */
   #mobile-menu nav > ul > li {
     border-top: 1px solid lightgrey;
     margin: .3em 0;
     padding: .3em 0 0;
   }
-  /* line 63, ../sass/imports/responsive/_menu.scss */
+  /* line 61, ../sass/imports/responsive/_menu.scss */
   #mobile-menu nav > ul > li:first-child {
     border-top: 0;
   }
-  /* line 66, ../sass/imports/responsive/_menu.scss */
+  /* line 64, ../sass/imports/responsive/_menu.scss */
   #mobile-menu nav > ul > li a {
     color: #db2a38;
     font-family: 'AvenirDemiBold';
@@ -1840,29 +1982,60 @@ header > p > span:first-child {
     line-height: 2em;
     text-transform: uppercase;
   }
-  /* line 73, ../sass/imports/responsive/_menu.scss */
+  /* line 71, ../sass/imports/responsive/_menu.scss */
   #mobile-menu nav > ul > li > a {
     font-weight: 600;
   }
-  /* line 76, ../sass/imports/responsive/_menu.scss */
+  /* line 74, ../sass/imports/responsive/_menu.scss */
   #mobile-menu nav > ul > li > ul {
     font-size: .7em;
     font-weight: 400;
     list-style: square url(/img/mobile/square.png);
     margin: 0 0 0 3.5em;
   }
-  /* line 81, ../sass/imports/responsive/_menu.scss */
+  /* line 79, ../sass/imports/responsive/_menu.scss */
   #mobile-menu nav > ul > li > ul > li {
     margin: 1em 0;
     padding: 0 0 0 .4em;
   }
-  /* line 89, ../sass/imports/responsive/_menu.scss */
+  /* line 87, ../sass/imports/responsive/_menu.scss */
   #mobile-menu .utility-links li > a {
     font-size: 1.2em;
     margin: 1.1em 0;
   }
-  /* line 92, ../sass/imports/responsive/_menu.scss */
+  /* line 90, ../sass/imports/responsive/_menu.scss */
   #mobile-menu .utility-links li > a .icon-phone {
     display: none;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 100, ../sass/imports/responsive/_menu.scss */
+  #main-header {
+    height: 125px;
+    padding-left: 40px;
+  }
+  /* line 103, ../sass/imports/responsive/_menu.scss */
+  #main-header .case-logo {
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* line 112, ../sass/imports/responsive/_menu.scss */
+  #main-header {
+    height: 70px;
+    padding: 15px 20px;
+  }
+  /* line 115, ../sass/imports/responsive/_menu.scss */
+  #main-header .case-logo {
+    height: 40px;
+    margin: 0;
+  }
+
+  /* line 120, ../sass/imports/responsive/_menu.scss */
+  #menu-btn {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 15;
   }
 }

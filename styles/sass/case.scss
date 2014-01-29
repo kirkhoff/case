@@ -181,11 +181,14 @@ header > p {
       content: '';
     }
   }
+  .schedule-btn {
+    color: #fff !important;
+    margin: 0 0 0 5px;
+  }
 }
 
 .schedule-btn {
   @extend %block-btn-red;
-  margin: 0 0 0 5px;
 }
 
 @import 'imports/sub-nav';

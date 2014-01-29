@@ -1,3 +1,5 @@
+@import '../placeholders';
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 1024px) {
@@ -5,24 +7,19 @@ and (max-device-width : 1024px) {
   #primary-links {
     display: none;
   }
-  #main-header {
-    height: 125px;
-    padding-left: 40px;
-    .case-logo {
-      margin-top: 10px;
-    }
-  }
   #mobile-menu {
-    background: #fff fixed;
     display: block;
-    height: 100%;
-    left: 0;
-    margin: 0;
-    padding: 1em 2em;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 16;
+    menu {
+      background: #fff fixed;
+      height: 100%;
+      left: 0;
+      margin: 0;
+      padding: 1em 2em;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 16;
+    }
     .close-btn {
       background-color: $red-light;
       color: #fff;
@@ -37,6 +34,7 @@ and (max-device-width : 1024px) {
       width: 100%;
     }
     .schedule-btn {
+      @extend %block-btn-red;
       font-size: 1em;
       margin: 0;
       padding: 1em;
@@ -93,5 +91,36 @@ and (max-device-width : 1024px) {
         display: none;
       }
     }
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  #main-header {
+    height: 125px;
+    padding-left: 40px;
+    .case-logo {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  #main-header {
+    height: 70px;
+    padding: 15px 20px;
+    .case-logo {
+      height: 40px;
+      margin: 0;
+    }
+  }
+  #menu-btn {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 15;
   }
 }
