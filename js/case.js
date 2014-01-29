@@ -189,6 +189,7 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
     .controller('blogCtrl', function($scope, $window, $document, BlogService){
         BlogService.fetch().then(
             function(rsp){
+                console.log(rsp);
                 $scope.entries = rsp.data.responseData.feed.entries;
             });
 

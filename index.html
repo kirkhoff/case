@@ -45,7 +45,7 @@
                         <li><a href="#schedule" scroll-to="schedule" class="schedule-btn">Schedule a Consultation</a></li>
                     </ul>
                 </nav>
-                <nav id="our-work-nav" class="sub-nav" ng-hide="ourWork.collapsed" ng-mouseenter="open(ourWork)" ng-mouseleave="close(ourWork)">
+                <nav id="our-work-nav" class="sub-nav ng-hide" ng-hide="ourWork.collapsed" ng-mouseenter="open(ourWork)" ng-mouseleave="close(ourWork)">
                     <i class="icon-arrow-down-solid" aria-hidden="true"></i>
                     <ul>
                         <li ng-repeat="item in ourWork.nav">
@@ -63,7 +63,7 @@
                         <a href="http://www.casedesign.com/our-work/idea-center" target="_self">Visit our Idea Center</a>
                     </div>
                 </nav>
-                <nav id="our-people-nav" class="sub-nav" ng-hide="ourPeople.collapsed" ng-mouseenter="open(ourPeople)" ng-mouseleave="close(ourPeople)">
+                <nav id="our-people-nav" class="sub-nav ng-hide" ng-hide="ourPeople.collapsed" ng-mouseenter="open(ourPeople)" ng-mouseleave="close(ourPeople)">
                     <i class="icon-arrow-down-solid" aria-hidden="true"></i>
                     <ul>
                         <li ng-repeat="item in ourPeople.nav">
@@ -77,7 +77,7 @@
                         </li>
                     </ul>
                 </nav>
-                <nav id="idea-center-nav" class="sub-nav" ng-hide="ideaCenter.collapsed" ng-mouseenter="open(ideaCenter)" ng-mouseleave="close(ideaCenter)">
+                <nav id="idea-center-nav" class="sub-nav ng-hide" ng-hide="ideaCenter.collapsed" ng-mouseenter="open(ideaCenter)" ng-mouseleave="close(ideaCenter)">
                     <i class="icon-arrow-down-solid" aria-hidden="true"></i>
                     <ul>
                         <li ng-repeat="item in ideaCenter.nav">

@@ -12,9 +12,6 @@
   position: absolute;
   top: 100%;
   width: 100%;
-  &.ng-hide {
-    @include opacity(0);
-  }
   &.ng-hide-add,
   &.ng-hide-remove {
     display: block !important;
