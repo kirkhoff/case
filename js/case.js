@@ -1,4 +1,4 @@
-angular.module('case', ['ngSanitize', 'zen.ui.select', 'ui.bootstrap', 'angular.stellar'])
+angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstrap', 'angular.stellar'])
     .config(['stellarConfig', function(stellarConfig){
         stellarConfig.horizontalScrolling = false;
         stellarConfig.verticalOffset = -300;
@@ -147,10 +147,8 @@ angular.module('case', ['ngSanitize', 'zen.ui.select', 'ui.bootstrap', 'angular.
             return $scope.slides[nextIndex].img;
         };
     })
-    .controller('subNavCtrl', function($scope, $timeout, OUR_WORK, OUR_PEOPLE, IDEA_CENTER){
-        var ourWorkTimeout,
-            ourPeopleTimeout,
-            ideaCenterTimeout;
+    .controller('subNavCtrl', function($scope, $timeout, $animate, OUR_WORK, OUR_PEOPLE, IDEA_CENTER){
+        $animate.enabled(true);
 
         $scope.ourWork = {
             nav: OUR_WORK,

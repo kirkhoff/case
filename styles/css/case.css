@@ -514,12 +514,29 @@ header > p > span:first-child {
 #main-header > nav li > a {
   text-transform: uppercase;
 }
+/* line 99, ../sass/case.scss */
+#main-header .sub-nav {
+  -webkit-transition: opacity 200ms;
+  -moz-transition: opacity 200ms;
+  -o-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+/* line 102, ../sass/case.scss */
+#main-header .ng-hide {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 106, ../sass/case.scss */
+#main-header .sub-nav.ng-hide-add,
+#main-header .sub-nav.ng-hide-remove {
+  display: block !important;
+}
 
-/* line 103, ../sass/case.scss */
+/* line 112, ../sass/case.scss */
 #external-links ul {
   display: inline-block;
 }
-/* line 106, ../sass/case.scss */
+/* line 115, ../sass/case.scss */
 #external-links li > a {
   color: #373737;
   display: block;
@@ -530,17 +547,17 @@ header > p > span:first-child {
   margin: 0 9px;
   position: relative;
 }
-/* line 115, ../sass/case.scss */
+/* line 124, ../sass/case.scss */
 #external-links li > a:hover {
   color: #db2a38;
 }
-/* line 119, ../sass/case.scss */
+/* line 128, ../sass/case.scss */
 #external-links .chat-btn {
   margin-left: 30px;
   padding: 5px 10px 4px;
   position: relative;
 }
-/* line 124, ../sass/case.scss */
+/* line 133, ../sass/case.scss */
 #external-links .chat-btn:after {
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
@@ -558,11 +575,11 @@ header > p > span:first-child {
   position: absolute;
   top: 100%;
 }
-/* line 134, ../sass/case.scss */
+/* line 143, ../sass/case.scss */
 #external-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 138, ../sass/case.scss */
+/* line 147, ../sass/case.scss */
 #external-links .icon-phone {
   bottom: -1px;
   height: 1.4em;
@@ -570,11 +587,11 @@ header > p > span:first-child {
   right: -15px;
 }
 
-/* line 146, ../sass/case.scss */
+/* line 155, ../sass/case.scss */
 #internal-links {
   margin-top: 63px;
 }
-/* line 148, ../sass/case.scss */
+/* line 157, ../sass/case.scss */
 #internal-links li > a {
   color: #db2a38;
   font-family: 'AvenirBold';
@@ -583,11 +600,11 @@ header > p > span:first-child {
   margin: 0 10px;
   position: relative;
 }
-/* line 155, ../sass/case.scss */
+/* line 164, ../sass/case.scss */
 #internal-links li > a:hover {
   color: #373737;
 }
-/* line 160, ../sass/case.scss */
+/* line 169, ../sass/case.scss */
 #internal-links li a:before {
   color: #a8a8a8;
   content: '/';
@@ -597,12 +614,12 @@ header > p > span:first-child {
   position: absolute;
   top: 0;
 }
-/* line 170, ../sass/case.scss */
+/* line 179, ../sass/case.scss */
 #internal-links li:first-child a:before,
 #internal-links li .schedule-btn:before {
   content: '';
 }
-/* line 174, ../sass/case.scss */
+/* line 183, ../sass/case.scss */
 #internal-links .schedule-btn {
   margin: 0 0 0 5px;
 }

@@ -96,7 +96,16 @@ header > p {
       }
     }
   }
-
+  .sub-nav {
+    @include transition(opacity 200ms);
+  }
+  .ng-hide {
+    @include opacity(0);
+  }
+  .sub-nav.ng-hide-add,
+  .sub-nav.ng-hide-remove {
+    display: block !important;
+  }
 }
 
 #external-links {
