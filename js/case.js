@@ -214,11 +214,9 @@ angular.module('case', ['ngSanitize', 'zen.ui.select', 'ui.bootstrap', 'angular.
         };
         $scope.canShowNext = function(){
             return ($scope.entries && ($scope.page + 1) * $scope.entriesPerPage <= $scope.entries.length);
-//            return true;
         };
         $scope.canShowPrev = function(){
             return ($scope.page - 1 > 0);
-//            return true;
         };
     })
     .directive('scrollTo', function(){
