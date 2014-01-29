@@ -60,7 +60,8 @@
       position: absolute;
       width: 10px;
     }
-    h2 {
+    h2,
+    h2 > a {
       color: $red;
       font-size: 1.1em;
       font-weight: 500;
@@ -69,7 +70,7 @@
     ul {
       margin: 0;
     }
-    a {
+    li > a {
       color: $grey-dark;
       font-size: .8em;
       font-weight: 500;

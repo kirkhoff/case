@@ -24,18 +24,18 @@
         <![endif]-->
         <div class="page">
             <header id="main-header" ng-controller="subNavCtrl">
-                <img src="/img/case-logo.png" alt="CASE - Because it's your home" class="case-logo">
+                <a href="http://www.casedesign.com" target="_self"><img src="/img/case-logo.png" alt="CASE - Because it's your home" class="case-logo"></a>
                 <nav id="external-links">
                     <ul>
-                        <li><a href="" target="_blank">Seminars</a></li>
-                        <li><a href="" target="_blank">Press</a></li>
-                        <li><a href="" target="_blank">Blog</a></li>
-                        <li><a href="" target="_blank">Napus Financing</a></li>
-                        <li><a href="" target="_blank">Remodeling Tips</a></li>
-                        <li><a href="" target="_blank">E-Newsletter</a></li>
-                        <li><a href="" target="_blank">Contact Us <img src="/img/icon-phone.png" class="icon-phone" aria-hidden="false" alt=""></a></li>
+                        <li><a href="http://www.casedesign.com/seminars" target="_self">Seminars</a></li>
+                        <li><a href="http://www.casedesign.com/press" target="_self">Press</a></li>
+                        <li><a href="http://www.casedesign.com/blog/" target="_self">Blog</a></li>
+                        <li><a href="http://www.casedesign.com/case-cares" target="_self">Case Cares</a></li>
+                        <li><a href="http://www.casedesign.com/tips-to-prepare-for-a-successful-remodel" target="_self">Remodeling Tips</a></li>
+                        <li><a href="http://www.casedesign.com/e-newsletter" target="_self">E-Newsletter</a></li>
+                        <li><a href="http://www.casedesign.com/contact-us" target="_self">Contact Us <img src="/img/icon-phone.png" class="icon-phone" aria-hidden="false" alt=""></a></li>
                     </ul>
-                    <a href="" target="_blank" class="chat-btn">Chat</a>
+                    <a href="" target="_self" class="chat-btn">Chat</a>
                 </nav>
                 <nav id="internal-links">
                     <ul>
@@ -99,7 +99,7 @@
                                 <span ng-bind-html="slide.description2"></span>
                                 <span>
                                     <span ng-bind-html="slide.description3"></span>
-                                    <a href="" target="_blank">view work »</a>
+                                    <a ng-href="{{slide.url}}" target="_self">view work »</a>
                                 </span>
                             </p>
                         </div>
@@ -118,9 +118,8 @@
                         <div class="our-promise">Our Promise</div>
                         <h1>Our Work</h1>
                         <p>
-                            <span><mark>Lorem ipsum dolor sit amet conse ctetuer adipiscing elit</mark>, sed diam</span>
-                            <span>nonummy nibh eusmod tincidunt ut laoreet dolore. Lorem ipsum dolor</span>
-                            <span>sit amet conse ctetuer adipiscing elit, sed diam nonummy nibh eusmod.</span>
+                            <span><mark>Our work is as much about character as it is about craftsmanship.</mark> It's a symbol</span>
+                            <span>of our commitment and a reflection of the lives of those who enjoy it.</span>
                         </p>
                     </header>
                     <div class="signature">
@@ -129,9 +128,9 @@
                         <p class="title">President</p>
                     </div>
                     <ul class="red-ribbon">
-                        <li><a href="" target="_blank">2013 Top 500 Remodelers</a></li>
-                        <li><a href="" target="_blank">2013 Universal Design Award Winner</a></li>
-                        <li><a href="" target="_blank">2013 National Capitol Business Ethics Award Winner</a></li>
+                        <li>2013 Contractor of the Year Award Winner</li>
+                        <li>2013 Universal Design Award Winner</li>
+                        <li>2013 National Capital Business Ethics Award Winner</li>
                     </ul>
                 </div>
                 <div class="parallax" stellar-background-ratio=".5"></div>
@@ -140,23 +139,23 @@
                 <header>
                     <h1>Our People</h1>
                     <p>
-                        <span><mark>Lorem ipsum dolor sit amet conse ctetuer adipiscing elit</mark>,</span>
-                        <span>sed diam nonummy nibh eusmod tincidunt ut laoreet dolore.</span>
+                        <span><mark>Great work comes from great teams.</mark> We believe in our mission,</span>
+                        <span>we believe in our craft, we believe in each other.</span>
                     </p>
                 </header>
                 <nav>
                     <ul>
                         <li>
-                            <a href="" target="_blank">
+                            <a href="http://www.casedesign.com/our-people/project-designers" target="_self">
                                 <div class="people-tag">
                                     <span class="the">The</span>
-                                    <span class="title">Project Developers</span>
+                                    <span class="title">Project Designers</span>
                                 </div>
-                                <div class="people-pic project-developers"></div>
+                                <div class="people-pic project-designers"></div>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank">
+                            <a href="http://www.casedesign.com/our-people/project-managers" target="_self">
                                 <div class="people-tag">
                                     <span class="the">The</span>
                                     <span class="title">Project Managers</span>
@@ -165,7 +164,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank">
+                            <a href="http://www.casedesign.com/our-people/designers" target="_self">
                                 <div class="people-tag">
                                     <span class="the">The</span>
                                     <span class="title">Designers</span>
@@ -174,7 +173,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank">
+                            <a href="http://www.casedesign.com/our-people/craftsmen" target="_self">
                                 <div class="people-tag">
                                     <span class="the">The</span>
                                     <span class="title">Craftsmen</span>
@@ -193,7 +192,7 @@
                 <div id="feed" ng-controller="blogCtrl">
                     <ul>
                         <li ng-repeat="entry in entries | startFrom:(page-1)*entriesPerPage | limitTo:entriesPerPage">
-                            <a ng-href="{{entry.link}}" target="_blank">
+                            <a ng-href="{{entry.link}}" target="_self">
                                 <div class="pic-container" aria-hidden="true">
                                     <img src="/img/magnifying-glass.png" alt="" class="hover-icon">
                                     <img ng-src="{{getImgFromContent(entry.content)}}" error-src="{{defaultImg}}" alt="" class="pic">
@@ -203,7 +202,7 @@
                             <p>{{entry.contentSnippet}}</p>
                         </li>
                     </ul>
-                    <a href="" target="_blank" class="view-all-btn">View All Articles</a>
+                    <a href="http://www.casedesign.com/blog/" target="_self" class="view-all-btn">View All Articles</a>
                     <button id="prev-btn" ng-click="page = page - 1" ng-show="canShowPrev()"><i class="icon-arrow-left" aria-hidden="true"></i></button>
                     <button id="next-btn" ng-click="page = page + 1" ng-show="canShowNext()"><i class="icon-arrow-right" aria-hidden="true"></i></button>
                 </div>
@@ -215,16 +214,15 @@
                         <img src="/img/clock.png" alt="" class="clock-o" aria-hidden="true">
                     </h1>
                     <p>
-                        <span>Lorem ipsum dolor sit amet conse ctetuer adipiscing elit</span>
-                        <span>sed diam nonummy nibh eusmod tincidunt ut laoreet dolore.</span>
+                        <span>Looking to get started? We'd love to hear from you.</span>
                     </p>
                 </header>
                 <script type="text/javascript" src="https://www.formstack.com/forms/js.php?1666367-HF9Z8iw5g4-v3"></script><noscript><a href="https://www.formstack.com/forms/?1666367-HF9Z8iw5g4" title="Online Form">Online Form - Schedule a Consultation - Case Homeage Redesign</a></noscript>
                 <footer>
                     <ul>
-                        <li>Bethesda 301-917-2273</li>
+                        <li>Bethesda 301-229-4600</li>
                         <li>Washington DC 202-556-2273</li>
-                        <li>Falls Church 703-803-2273</li>
+                        <li>Falls Church 703-241-2980</li>
                         <li>Williamsburg/VA Peninsula 757-220-9046</li>
                     </ul>
                 </footer>
@@ -234,61 +232,61 @@
                 <img src="/img/hanging-lamp.png" alt="" class="hanging-lamp">
                 <nav id="site-map">
                     <section>
-                        <h2>Portfolio</h2>
+                        <h2><a href="http://www.casedesign.com/our-work/portfolio" target="_self">Portfolio</a></h2>
                         <nav>
                             <ul>
-                                <li><a href="" target="_blank">Kitchens</a></li>
-                                <li><a href="" target="_blank">Baths</a></li>
-                                <li><a href="" target="_blank">Interiors</a></li>
-                                <li><a href="" target="_blank">Exteriors</a></li>
-                                <li><a href="" target="_blank">Additions</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/portfolio/kitchens" target="_self">Kitchens</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/portfolio/baths" target="_self">Baths</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/portfolio/interiors" target="_self">Interiors</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/portfolio/exteriors" target="_self">Exteriors</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/portfolio/additions" target="_self">Additions</a></li>
                             </ul>
                         </nav>
                     </section>
                     <section>
-                        <h2>Idea Center</h2>
+                        <h2><a href="http://www.casedesign.com/our-work/idea-center" target="_self">Idea Center</a></h2>
                         <nav>
                             <ul>
-                                <li><a href="" target="_blank">Kitchens</a></li>
-                                <li><a href="" target="_blank">Baths</a></li>
-                                <li><a href="" target="_blank">Interiors</a></li>
-                                <li><a href="" target="_blank">Exteriors</a></li>
-                                <li><a href="" target="_blank">Additions</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/idea-center/kitchens/contemporary-kitchen" target="_self">Kitchens</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/idea-center/baths/stylish-powder-room" target="_self">Baths</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/idea-center/interiors/fabulous-family-rooms" target="_self">Interiors</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/idea-center/exteriors/extending-your-home-outdoors" target="_self">Exteriors</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/idea-center/additions/additions-that-belong" target="_self">Additions</a></li>
                             </ul>
                         </nav>
                     </section>
                     <section>
-                        <h2>What to Expect</h2>
+                        <h2><a href="http://www.casedesign.com/our-work/what-to-expect" target="_self">What to Expect</a></h2>
                         <nav>
                             <ul>
-                                <li><a href="" target="_blank">Kitchens</a></li>
-                                <li><a href="" target="_blank">Baths</a></li>
-                                <li><a href="" target="_blank">Interiors</a></li>
-                                <li><a href="" target="_blank">Exteriors</a></li>
-                                <li><a href="" target="_blank">Additions</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/what-to-expect/kitchens" target="_self">Kitchens</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/what-to-expect/baths" target="_self">Baths</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/what-to-expect/interiors" target="_self">Interiors</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/what-to-expect/exteriors" target="_self">Exteriors</a></li>
+                                <li><a href="http://www.casedesign.com/our-work/what-to-expect/additions" target="_self">Additions</a></li>
                             </ul>
                         </nav>
                     </section>
                     <section>
-                        <h2>Our Promise</h2>
+                        <h2><a href="http://www.casedesign.com/our-promise" target="_self">Our Promise</a></h2>
                         <nav>
                             <ul>
-                                <li><a href="" target="_blank">Value is More than a Number</a></li>
-                                <li><a href="" target="_blank">Design for Life</a></li>
-                                <li><a href="" target="_blank">Respect for You and Your Home</a></li>
-                                <li><a href="" target="_blank">Clients for Life</a></li>
-                                <li><a href="" target="_blank">Our Community</a></li>
+                                <li><a href="http://www.casedesign.com/our-promise/we-believe/value-is-more-than-a-number" target="_self">Value is More than a Number</a></li>
+                                <li><a href="http://www.casedesign.com/our-promise/we-believe/design-for-life" target="_self">Design for Life</a></li>
+                                <li><a href="http://www.casedesign.com/our-promise/we-believe/respect-for-you-and-your-home" target="_self">Respect for You and Your Home</a></li>
+                                <li><a href="http://www.casedesign.com/our-promise/we-believe/clients-for-life" target="_self">Clients for Life</a></li>
+                                <li><a href="http://www.casedesign.com/press/case-in-the-media/351-case-cares" target="_self">Our Community</a></li>
                             </ul>
                         </nav>
                     </section>
                     <section>
-                        <h2>Our People</h2>
+                        <h2><a href="http://www.casedesign.com/our-people" target="_self">Our People</a></h2>
                         <nav>
                             <ul>
-                                <li><a href="" target="_blank">Project Developers</a></li>
-                                <li><a href="" target="_blank">Project Managers</a></li>
-                                <li><a href="" target="_blank">Designers</a></li>
-                                <li><a href="" target="_blank">Craftsmen</a></li>
+                                <li><a href="http://www.casedesign.com/our-people/project-designers" target="_self">Project Designers</a></li>
+                                <li><a href="http://www.casedesign.com/our-people/project-managers" target="_self">Project Managers</a></li>
+                                <li><a href="http://www.casedesign.com/our-people/designers" target="_self">Designers</a></li>
+                                <li><a href="http://www.casedesign.com/our-people/craftsmen" target="_self">Craftsmen</a></li>
                             </ul>
                         </nav>
                     </section>
@@ -296,24 +294,24 @@
                 <div class="brushes"><img src="/img/brushes.png" alt=""></div>
                 <nav id="footer-links">
                     <ul>
-                        <li><a href="" target="_blank">Seminars</a></li>
-                        <li><a href="" target="_blank">Press</a></li>
-                        <li><a href="" target="_blank">Blog</a></li>
-                        <li><a href="" target="_blank">Case Cares</a></li>
-                        <li><a href="" target="_blank">Remodeling Tips</a></li>
-                        <li><a href="" target="_blank">e-Newsletter</a></li>
-                        <li><a href="" target="_blank">Contact Us</a></li>
-                        <li><a href="" target="_blank">Schedule a Consultation</a></li>
-                        <li><a href="" target="_blank">Careers</a></li>
+                        <li><a href="http://www.casedesign.com/seminars" target="_self">Seminars</a></li>
+                        <li><a href="http://www.casedesign.com/press" target="_self">Press</a></li>
+                        <li><a href="http://www.casedesign.com/blog/" target="_self">Blog</a></li>
+                        <li><a href="http://www.casedesign.com/case-cares" target="_self">Case Cares</a></li>
+                        <li><a href="http://www.casedesign.com/tips-to-prepare-for-a-successful-remodel" target="_self">Remodeling Tips</a></li>
+                        <li><a href="http://www.casedesign.com/e-newsletter" target="_self">E-Newsletter</a></li>
+                        <li><a href="http://www.casedesign.com/contact-us" target="_self">Contact Us</a></li>
+                        <li><a href="http://www.casedesign.com/schedule-a-consultation" target="_self">Schedule a Consultation</a></li>
+                        <li><a href="http://www.casedesign.com/careers" target="_self">Careers</a></li>
                     </ul>
                     <ul>
-                        <li><a href="" target="_blank">Privacy Policy</a></li>
-                        <li><a href="" target="_blank">Affiliations</a></li>
-                        <li><a href="" target="_blank">Warranty</a></li>
-                        <li><a href="" target="_blank">Awards</a></li>
-                        <li><a href="" target="_blank">Rewards</a></li>
-                        <li><a href="" target="_blank">Areas We Serve</a></li>
-                        <li><a href="" target="_blank">Sitemap</a></li>
+                        <li><a href="http://www.casedesign.com/privacy-policy" target="_self">Privacy Policy</a></li>
+                        <li><a href="http://www.casedesign.com/affiliations" target="_self">Affiliations</a></li>
+                        <li><a href="http://www.casedesign.com/warranty" target="_self">Warranty</a></li>
+                        <li><a href="http://www.casedesign.com/awards" target="_self">Awards</a></li>
+                        <li><a href="http://www.casedesign.com/case-rewards" target="_self">Rewards</a></li>
+                        <li><a href="http://www.casedesign.com/areas-we-serve" target="_self">Areas We Serve</a></li>
+                        <li><a href="http://www.casedesign.com/sitemap.html" target="_self">Sitemap</a></li>
                     </ul>
                 </nav>
                 <p class="copyright">&copy; Copyright 2013 Case Design/Remodeling, Inc.</p>

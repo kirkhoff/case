@@ -7,38 +7,43 @@ angular.module('case', ['ngSanitize', 'zen.ui.select', 'ui.bootstrap', 'angular.
         {
             header: 'Kitchens',
             img: '/img/carousel/kitchens.jpg',
-            description1: '<mark>Lorem ipsum dolor sit amet conse ctetuer</mark>',
-            description2: '<mark>adipiscing elit</mark>, sed diam nonummy nibh',
-            description3: 'eusmod tincidunt ut laoreet.',
-            active: true
+            description1: "<mark>Life takes place in the kitchen.</mark>",
+            description2: "We'll help you bring the most out",
+            description3: "of yours.",
+            active: true,
+            url: 'http://www.casedesign.com/our-work/portfolio/baths'
         },{
             header: 'Baths',
             img: '/img/carousel/baths.jpg',
-            description1: '<mark>Lorem ipsum dolor sit amet conse ctetuer</mark>',
-            description2: '<mark>adipiscing elit</mark>, sed diam nonummy nibh',
-            description3: 'eusmod tincidunt ut laoreet.',
-            active: false
+            description1: "<mark>Sink into happiness.</mark> Our luxurious",
+            description2: "bathrooms brighten moments and indulge",
+            description3: "the senses.",
+            active: false,
+            url: 'http://www.casedesign.com/our-work/portfolio/baths'
         },{
             header: 'Interiors',
             img: '/img/carousel/interiors.jpg',
-            description1: '<mark>Lorem ipsum dolor sit amet conse ctetuer</mark>',
-            description2: '<mark>adipiscing elit</mark>, sed diam nonummy nibh',
-            description3: 'eusmod tincidunt ut laoreet.',
-            active: false
+            description1: "<mark>Create a space you love.</mark> We'll help you",
+            description2: "design a custom living experience that's",
+            description3: "uniquely your own.",
+            active: false,
+            url: 'http://www.casedesign.com/our-work/portfolio/interiors'
         },{
             header: 'Exteriors',
             img: '/img/carousel/exteriors.jpg',
-            description1: '<mark>Lorem ipsum dolor sit amet conse ctetuer</mark>',
-            description2: '<mark>adipiscing elit</mark>, sed diam nonummy nibh',
-            description3: 'eusmod tincidunt ut laoreet.',
-            active: false
+            description1: "<mark>Boost your curb appeal.</mark> Transform the",
+            description2: "value of your home and open up new",
+            description3: "possibilities.",
+            active: false,
+            url: 'http://www.casedesign.com/our-work/portfolio/exteriors'
         },{
             header: 'Additions',
             img: '/img/carousel/additions.jpg',
-            description1: '<mark>Lorem ipsum dolor sit amet conse ctetuer</mark>',
-            description2: '<mark>adipiscing elit</mark>, sed diam nonummy nibh',
-            description3: 'eusmod tincidunt ut laoreet.',
-            active: false
+            description1: "<mark>Expand your horizons.</mark> Our home additions",
+            description2: "transform your spaces and broaden your",
+            description3: "perspectives.",
+            active: false,
+            url: 'http://www.casedesign.com/our-work/portfolio/additions'
         }])
     .constant('OUR_WORK', [
         {

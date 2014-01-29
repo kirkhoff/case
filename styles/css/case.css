@@ -879,9 +879,6 @@ header > p > span:first-child {
 /* line 27, ../sass/imports/_our-work.scss */
 .red-ribbon > li {
   display: inline-block;
-}
-/* line 29, ../sass/imports/_our-work.scss */
-.red-ribbon > li > a {
   color: #fff;
   font-family: 'AvenirDemiBold';
   font-size: 10px;
@@ -889,7 +886,7 @@ header > p > span:first-child {
   padding: 5px 8px;
   text-transform: uppercase;
 }
-/* line 37, ../sass/imports/_our-work.scss */
+/* line 34, ../sass/imports/_our-work.scss */
 .red-ribbon > li:before {
   color: #000;
   content: '|';
@@ -897,45 +894,45 @@ header > p > span:first-child {
   position: relative;
   top: 1px;
 }
-/* line 44, ../sass/imports/_our-work.scss */
+/* line 41, ../sass/imports/_our-work.scss */
 .red-ribbon > li:first-child:before {
   content: '';
 }
 
-/* line 50, ../sass/imports/_our-work.scss */
+/* line 47, ../sass/imports/_our-work.scss */
 #our-work {
   overflow-x: hidden;
 }
-/* line 52, ../sass/imports/_our-work.scss */
+/* line 49, ../sass/imports/_our-work.scss */
 #our-work h1 {
   font-family: 'AvenirDemiBold';
   font-size: 66px;
   letter-spacing: 1px;
   margin-top: .67em;
 }
-/* line 58, ../sass/imports/_our-work.scss */
+/* line 55, ../sass/imports/_our-work.scss */
 #our-work header > p > span {
   border-top: 1px solid #b3b3b3;
 }
-/* line 60, ../sass/imports/_our-work.scss */
+/* line 57, ../sass/imports/_our-work.scss */
 #our-work header > p > span:first-child {
   border-top: 0;
 }
-/* line 64, ../sass/imports/_our-work.scss */
+/* line 61, ../sass/imports/_our-work.scss */
 #our-work .signature {
   margin: 25px auto 0;
   text-transform: uppercase;
 }
-/* line 67, ../sass/imports/_our-work.scss */
+/* line 64, ../sass/imports/_our-work.scss */
 #our-work .signature > img {
   width: 240px;
 }
-/* line 71, ../sass/imports/_our-work.scss */
+/* line 68, ../sass/imports/_our-work.scss */
 #our-work .signature .name,
 #our-work .signature .title {
   margin: 0;
 }
-/* line 74, ../sass/imports/_our-work.scss */
+/* line 71, ../sass/imports/_our-work.scss */
 #our-work .signature .name {
   color: #db2a38;
   font-family: 'SentinelBlack';
@@ -943,14 +940,14 @@ header > p > span:first-child {
   letter-spacing: 3px;
   margin-top: 10px;
 }
-/* line 81, ../sass/imports/_our-work.scss */
+/* line 78, ../sass/imports/_our-work.scss */
 #our-work .signature .title {
   font-family: 'AvenirDemiBold';
   font-size: 9px;
   letter-spacing: 2px;
   line-height: 2em;
 }
-/* line 88, ../sass/imports/_our-work.scss */
+/* line 85, ../sass/imports/_our-work.scss */
 #our-work .parallax {
   background: url(/img/parallax-our-work.jpg) 90% 0 no-repeat fixed;
   height: 560px;
@@ -1029,7 +1026,7 @@ header > p > span:first-child {
   width: 100%;
 }
 /* line 25, ../sass/imports/_our-people.scss */
-#our-people nav li .people-pic.project-developers {
+#our-people nav li .people-pic.project-designers {
   background-image: url(/img/our-people-project-developers.jpg);
 }
 /* line 26, ../sass/imports/_our-people.scss */
@@ -1643,49 +1640,50 @@ header > p > span:first-child {
   position: absolute;
   width: 10px;
 }
-/* line 63, ../sass/imports/_footer.scss */
-#site-map > section h2 {
+/* line 64, ../sass/imports/_footer.scss */
+#site-map > section h2,
+#site-map > section h2 > a {
   color: #db2a38;
   font-size: 1.1em;
   font-weight: 500;
   margin: 0 0 .5em 0;
 }
-/* line 69, ../sass/imports/_footer.scss */
+/* line 70, ../sass/imports/_footer.scss */
 #site-map > section ul {
   margin: 0;
 }
-/* line 72, ../sass/imports/_footer.scss */
-#site-map > section a {
+/* line 73, ../sass/imports/_footer.scss */
+#site-map > section li > a {
   color: #373737;
   font-size: .8em;
   font-weight: 500;
   line-height: 2em;
 }
-/* line 77, ../sass/imports/_footer.scss */
-#site-map > section a:hover {
+/* line 78, ../sass/imports/_footer.scss */
+#site-map > section li > a:hover {
   color: #db2a38;
 }
 
-/* line 84, ../sass/imports/_footer.scss */
+/* line 85, ../sass/imports/_footer.scss */
 #footer-links {
   margin-top: 60px;
   text-align: center;
 }
-/* line 87, ../sass/imports/_footer.scss */
+/* line 88, ../sass/imports/_footer.scss */
 #footer-links ul {
   display: block;
   margin: 2px 0;
 }
-/* line 91, ../sass/imports/_footer.scss */
+/* line 92, ../sass/imports/_footer.scss */
 #footer-links li {
   display: inline-block;
   margin-right: -2px;
 }
-/* line 95, ../sass/imports/_footer.scss */
+/* line 96, ../sass/imports/_footer.scss */
 #footer-links li:first-child a:before {
   content: '';
 }
-/* line 98, ../sass/imports/_footer.scss */
+/* line 99, ../sass/imports/_footer.scss */
 #footer-links a {
   color: #db2a38;
   font-family: 'Avenir';
@@ -1693,11 +1691,11 @@ header > p > span:first-child {
   font-weight: 500;
   padding: 0 4px;
 }
-/* line 104, ../sass/imports/_footer.scss */
+/* line 105, ../sass/imports/_footer.scss */
 #footer-links a:hover {
   color: #373737;
 }
-/* line 107, ../sass/imports/_footer.scss */
+/* line 108, ../sass/imports/_footer.scss */
 #footer-links a:before {
   color: #555555;
   content: '|';

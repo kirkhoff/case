@@ -25,15 +25,12 @@
   margin-top: 140px;
   padding: 7px 0;
   > li {
-    display: inline-block;
-    > a {
-      color: #fff;
-      font-family: 'AvenirDemiBold';
-      font-size: 10px;
-      letter-spacing: 2px;
-      padding: 5px 8px;
-      text-transform: uppercase;
-    }
+    display: inline-block;color: #fff;
+    font-family: 'AvenirDemiBold';
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 5px 8px;
+    text-transform: uppercase;
     &:before {
       color: #000;
       content: '|';
