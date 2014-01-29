@@ -454,7 +454,7 @@ header > p {
   font-size: 17px;
   line-height: 1.7em;
   margin: 0 auto;
-  max-width: 570px;
+  max-width: 38em;
 }
 /* line 58, ../sass/case.scss */
 header > p > span {
@@ -912,27 +912,23 @@ header > p > span:first-child {
 }
 /* line 55, ../sass/imports/_our-work.scss */
 #our-work header > p > span {
-  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
 }
-/* line 57, ../sass/imports/_our-work.scss */
-#our-work header > p > span:first-child {
-  border-top: 0;
-}
-/* line 61, ../sass/imports/_our-work.scss */
+/* line 58, ../sass/imports/_our-work.scss */
 #our-work .signature {
   margin: 25px auto 0;
   text-transform: uppercase;
 }
-/* line 64, ../sass/imports/_our-work.scss */
+/* line 61, ../sass/imports/_our-work.scss */
 #our-work .signature > img {
   width: 240px;
 }
-/* line 68, ../sass/imports/_our-work.scss */
+/* line 65, ../sass/imports/_our-work.scss */
 #our-work .signature .name,
 #our-work .signature .title {
   margin: 0;
 }
-/* line 71, ../sass/imports/_our-work.scss */
+/* line 68, ../sass/imports/_our-work.scss */
 #our-work .signature .name {
   color: #db2a38;
   font-family: 'SentinelBlack';
@@ -940,14 +936,14 @@ header > p > span:first-child {
   letter-spacing: 3px;
   margin-top: 10px;
 }
-/* line 78, ../sass/imports/_our-work.scss */
+/* line 75, ../sass/imports/_our-work.scss */
 #our-work .signature .title {
   font-family: 'AvenirDemiBold';
   font-size: 9px;
   letter-spacing: 2px;
   line-height: 2em;
 }
-/* line 85, ../sass/imports/_our-work.scss */
+/* line 82, ../sass/imports/_our-work.scss */
 #our-work .parallax {
   background: url(/img/parallax-our-work.jpg) 90% 0 no-repeat fixed;
   height: 560px;
