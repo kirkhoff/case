@@ -32,8 +32,9 @@
       background-color: $red;
       bottom: 25px;
       color: #fff;
-      font-family: 'SentinelBook';
+      font-family: 'adelle',serif;
       font-size: 18px;
+      font-weight: bold;
       left: 0;
       letter-spacing: -.03em;
       line-height: 2em;
@@ -43,7 +44,7 @@
       width: 93%;
       z-index: 1;
       > .the {
-        font-family: 'Avenir';
+        font-family: 'proxima-nova', sans-serif;
         font-size: .65em;
         text-transform: uppercase;
         &:after {

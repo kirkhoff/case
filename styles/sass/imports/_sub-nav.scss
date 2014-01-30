@@ -24,7 +24,7 @@
     width: 100%;
     > p {
       color: $grey-dark;
-      font-family: 'SentinelLightItalic';
+      font-family: 'adelle',serif;
       margin: .5em 0;
     }
     > a {
@@ -48,8 +48,9 @@
   span {
     color: $red;
     display: block;
-    font-family: 'AvenirBold';
+    font-family: 'proxima-nova', sans-serif;
     font-size: .85em;
+    font-weight: bold;
     letter-spacing: .03em;
     margin: .5em 0 0;
     text-transform: uppercase;

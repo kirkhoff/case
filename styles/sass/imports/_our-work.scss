@@ -11,8 +11,9 @@
   background: $red;
   color: #fff;
   display: inline-block;
-  font-family: 'AvenirBold';
+  font-family: 'proxima-nova', sans-serif;
   font-size: 11px;
+  font-weight: bold;
   letter-spacing: 3px;
   padding: 8px 35px;
   margin: 170px 0 0;
@@ -26,8 +27,9 @@
   padding: 7px 0;
   > li {
     display: inline-block;color: #fff;
-    font-family: 'AvenirDemiBold';
+    font-family: 'proxima-nova', sans-serif;
     font-size: 10px;
+    font-weight: 500;
     letter-spacing: 2px;
     padding: 5px 8px;
     text-transform: uppercase;
@@ -47,8 +49,9 @@
 #our-work {
   overflow-x: hidden;
   h1 {
-    font-family: 'AvenirDemiBold';
+    font-family: 'proxima-nova', sans-serif;
     font-size: 66px;
+    font-weight: 500;
     letter-spacing: 1px;
     margin-top: .67em;
   }
@@ -67,14 +70,16 @@
     }
     .name {
       color: $red;
-      font-family: 'SentinelBlack';
+      font-family: 'adelle',serif;
       font-size: 12px;
+      font-weight: bold;
       letter-spacing: 3px;
       margin-top: 10px;
     }
     .title {
-      font-family: 'AvenirDemiBold';
+      font-family: 'proxima-nova', sans-serif;
       font-size: 9px;
+      font-weight: 500;
       letter-spacing: 2px;
       line-height: 2em;
     }

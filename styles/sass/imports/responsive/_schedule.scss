@@ -9,7 +9,7 @@ and (max-device-width : 1024px) {
     color: #fff;
     display: inline-block !important;
     float: left;
-    font-family: 'SentinelBook';
+    font-family: 'adelle',serif;
     font-size: 16px;
     height: 45px;
     position: relative;
@@ -30,7 +30,8 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
   #schedule {
     header h1 img.clock-o {
-      right: 5.75em;
+      right: 5.8em;
+      top: .37em;
     }
     footer ul {
       margin: auto;
@@ -81,7 +82,8 @@ and (max-device-width : 568px) {
       padding-top: 1em;
       h1 {
         img.clock-o {
-          right: 5.7em;
+          right: 5.8em;
+          top: .37em;
         }
       }
       p {

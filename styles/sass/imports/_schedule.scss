@@ -16,8 +16,8 @@
       }
       img.clock-o {
         position: absolute;
-        right: 6em;
-        top: .28em;
+        right: 5.9em;
+        top: .35em;
         width: .75em;
       }
     }
@@ -28,8 +28,9 @@
   footer {
     background-color: $grey-black;
     color: #fff;
-    font-family: 'AvenirDemiBold';
+    font-family: 'proxima-nova', sans-serif;
     font-size: 11px;
+    font-weight: bold;
     letter-spacing: .05em;
     text-align: center;
     text-transform: uppercase;
@@ -122,7 +123,7 @@
     label,
     legend {
       color: #fff;
-      font-family: 'SentinelBook';
+      font-family: 'adelle',serif;
       font-size: 15px;
       width: 25%;
       &.required:after {
@@ -141,7 +142,7 @@
       @include transition(box-shadow 200ms);
       border-left: 1px solid $red-dark;
       color: #fff;
-      font-family: 'SentinelLightItalic';
+      font-family: 'adelle',serif;
       font-size: 17px;
       width: 75%;
       &:focus {
@@ -167,7 +168,7 @@
     input[type='checkbox'] + label {
       color: $red-black;
       display: inline-block;
-      font-family: 'Avenir';
+      font-family: 'proxima-nova', sans-serif;
       font-size: 12px;
       font-weight: 500;
       position: relative;
@@ -189,7 +190,7 @@
       clear: right;
       color: $grey-dark;
       float: right;
-      font-family: 'SentinelBook';
+      font-family: 'adelle',serif;
       font-size: 22px;
       letter-spacing: -.04em;
       outline: 0;

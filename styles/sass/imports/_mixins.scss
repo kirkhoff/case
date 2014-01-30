@@ -2,8 +2,9 @@
   background-color: $background-color;
   color: $color;
   display: inline-block;
-  font-family: 'AvenirBold';
+  font-family: 'proxima-nova', sans-serif;
   font-size: .75em;
+  font-weight: bold;
   letter-spacing: 0;
   line-height: 100%;
   padding: 6px 10px 5px;
@@ -48,7 +49,7 @@
 
 @mixin placeholder-styles() {
   color: $red-black;
-  font-family: 'SentinelLightItalic';
+  font-family: 'adelle',serif;
 }
 
 @mixin clearfix {

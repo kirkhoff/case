@@ -15,7 +15,7 @@
       line-height: 1em;
     }
     p {
-      font-family: 'Sentinel';
+      font-family: 'adelle',serif;
       font-size: 1.5em;
       line-height: 1em;
       .and {
@@ -48,13 +48,13 @@
   h2 {
     @extend %ellipsis;
     color: $red;
-    font-family: 'SentinelMedium';
+    font-family: 'adelle',serif;
     font-size: 1.2em;
-    font-weight: normal;
+    font-weight: 500;
   }
   p {
     color: $grey-dark;
-    font-family: 'Avenir';
+    font-family: 'proxima-nova', sans-serif;
     font-size: .8em;
     font-weight: 500;
     letter-spacing: -.03em;
@@ -62,7 +62,8 @@
   }
   .view-all-btn {
     @extend %block-btn-black;
-    font-family: 'AvenirDemiBold';
+    font-family: 'proxima-nova', sans-serif;
+    font-weight: 500;
     font-size: .9em;
   }
 }

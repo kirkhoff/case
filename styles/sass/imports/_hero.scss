@@ -18,9 +18,9 @@
     @include block-btn(#fff, #fff, $red, $red);
     @include box-sizing(none);
     border: .7em solid transparent;
-    font-family: 'AvenirDemiBold';
+    font-family: 'proxima-nova', sans-serif;
     font-size: .8em;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: .05em;
     line-height: 2em;
     padding: 0 1.5em;
@@ -84,7 +84,7 @@
       background-color: $grey-black;
       color: #fff;
       display: block;
-      font-family: 'Avenir';
+      font-family: 'proxima-nova', sans-serif;
       font-size: 1.2em;
       line-height: 1.5em;
       margin: 3px 0;

@@ -63,8 +63,9 @@ and (max-device-width : 1024px) {
           }
           a {
             color: $red;
-            font-family: 'AvenirDemiBold';
+            font-family: 'proxima-nova', sans-serif;
             font-size: 1.8em;
+            font-weight: 500;
             line-height: 2em;
             text-transform: uppercase;
           }
