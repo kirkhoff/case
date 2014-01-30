@@ -64,6 +64,10 @@
   }
 }
 
+.lt-ie9 #hero {
+  display: none;
+}
+
 #hero {
   .content {
     position: absolute;

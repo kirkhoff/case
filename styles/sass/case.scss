@@ -107,10 +107,20 @@ header > p {
   display: none;
 }
 
+.lt-ie9 #utility-links {
+  position: absolute;
+  right: 90px;
+  top: 0;
+}
+
 #utility-links,
 .utility-links {
   ul {
     display: inline-block;
+    > li {
+      display: inline-block;
+      list-style: none;
+    }
   }
   li > a {
     color: $grey-dark;

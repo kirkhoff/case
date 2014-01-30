@@ -453,12 +453,25 @@ header > p > span:first-child {
   display: none;
 }
 
-/* line 112, ../sass/case.scss */
+/* line 110, ../sass/case.scss */
+.lt-ie9 #utility-links {
+  position: absolute;
+  right: 90px;
+  top: 0;
+}
+
+/* line 118, ../sass/case.scss */
 #utility-links ul,
 .utility-links ul {
   display: inline-block;
 }
-/* line 115, ../sass/case.scss */
+/* line 120, ../sass/case.scss */
+#utility-links ul > li,
+.utility-links ul > li {
+  display: inline-block;
+  list-style: none;
+}
+/* line 125, ../sass/case.scss */
 #utility-links li > a,
 .utility-links li > a {
   color: #373737;
@@ -472,19 +485,19 @@ header > p > span:first-child {
   position: relative;
   text-transform: uppercase;
 }
-/* line 126, ../sass/case.scss */
+/* line 136, ../sass/case.scss */
 #utility-links li > a:hover,
 .utility-links li > a:hover {
   color: #db2a38;
 }
-/* line 130, ../sass/case.scss */
+/* line 140, ../sass/case.scss */
 #utility-links .chat-btn,
 .utility-links .chat-btn {
   margin-left: 30px;
   padding: 5px 10px 4px;
   position: relative;
 }
-/* line 135, ../sass/case.scss */
+/* line 145, ../sass/case.scss */
 #utility-links .chat-btn:after,
 .utility-links .chat-btn:after {
   border-left: 2px solid transparent;
@@ -503,12 +516,12 @@ header > p > span:first-child {
   position: absolute;
   top: 100%;
 }
-/* line 145, ../sass/case.scss */
+/* line 155, ../sass/case.scss */
 #utility-links .chat-btn:hover:after,
 .utility-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 149, ../sass/case.scss */
+/* line 159, ../sass/case.scss */
 #utility-links .icon-phone,
 .utility-links .icon-phone {
   bottom: -1px;
@@ -517,11 +530,11 @@ header > p > span:first-child {
   right: -15px;
 }
 
-/* line 157, ../sass/case.scss */
+/* line 167, ../sass/case.scss */
 #primary-links {
   margin-top: 63px;
 }
-/* line 159, ../sass/case.scss */
+/* line 169, ../sass/case.scss */
 #primary-links li > a {
   color: #db2a38;
   font-family: 'proxima-nova', sans-serif;
@@ -530,11 +543,11 @@ header > p > span:first-child {
   margin: 0 10px;
   position: relative;
 }
-/* line 166, ../sass/case.scss */
+/* line 176, ../sass/case.scss */
 #primary-links li > a:hover {
   color: #373737;
 }
-/* line 171, ../sass/case.scss */
+/* line 181, ../sass/case.scss */
 #primary-links li a:before {
   color: #a8a8a8;
   content: '/';
@@ -544,12 +557,12 @@ header > p > span:first-child {
   position: absolute;
   top: 0;
 }
-/* line 181, ../sass/case.scss */
+/* line 191, ../sass/case.scss */
 #primary-links li:first-child a:before,
 #primary-links li .schedule-btn:before {
   content: '';
 }
-/* line 185, ../sass/case.scss */
+/* line 195, ../sass/case.scss */
 #primary-links .schedule-btn {
   color: #fff !important;
   margin: 0 0 0 5px;
@@ -567,25 +580,26 @@ header > p > span:first-child {
   -moz-transition: opacity 200ms;
   -o-transition: opacity 200ms;
   transition: opacity 200ms;
+  -webkit-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.3);
+  background-color: #f1f1f1;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d6d6d6), color-stop(100%, #f1f1f1));
   background: -webkit-linear-gradient(#d6d6d6, #f1f1f1);
   background: -moz-linear-gradient(#d6d6d6, #f1f1f1);
   background: -o-linear-gradient(#d6d6d6, #f1f1f1);
   background: linear-gradient(#d6d6d6, #f1f1f1);
-  -webkit-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.3);
   left: 0;
   padding: 3em 0;
   position: absolute;
   top: 100%;
   width: 100%;
 }
-/* line 16, ../sass/imports/_sub-nav.scss */
+/* line 17, ../sass/imports/_sub-nav.scss */
 .sub-nav.ng-hide-add, .sub-nav.ng-hide-remove {
   display: block !important;
 }
-/* line 19, ../sass/imports/_sub-nav.scss */
+/* line 20, ../sass/imports/_sub-nav.scss */
 .sub-nav .cta {
   border-top: 1px solid lightgrey;
   margin-top: .5em;
@@ -593,29 +607,29 @@ header > p > span:first-child {
   text-align: center;
   width: 100%;
 }
-/* line 25, ../sass/imports/_sub-nav.scss */
+/* line 26, ../sass/imports/_sub-nav.scss */
 .sub-nav .cta > p {
   color: #373737;
   font-family: 'adelle',serif;
   margin: .5em 0;
 }
-/* line 30, ../sass/imports/_sub-nav.scss */
+/* line 31, ../sass/imports/_sub-nav.scss */
 .sub-nav .cta > a {
   font-size: .85em;
   padding: 8px 22px;
 }
-/* line 39, ../sass/imports/_sub-nav.scss */
+/* line 40, ../sass/imports/_sub-nav.scss */
 .sub-nav ul {
   margin: auto;
   text-align: center;
 }
-/* line 43, ../sass/imports/_sub-nav.scss */
+/* line 44, ../sass/imports/_sub-nav.scss */
 .sub-nav li {
   display: inline-block;
   margin: 0 .8em;
   width: 14em;
 }
-/* line 48, ../sass/imports/_sub-nav.scss */
+/* line 49, ../sass/imports/_sub-nav.scss */
 .sub-nav span {
   color: #db2a38;
   display: block;
@@ -626,7 +640,7 @@ header > p > span:first-child {
   margin: .5em 0 0;
   text-transform: uppercase;
 }
-/* line 58, ../sass/imports/_sub-nav.scss */
+/* line 59, ../sass/imports/_sub-nav.scss */
 .sub-nav > i {
   color: white;
   font-size: 20px;
@@ -634,17 +648,17 @@ header > p > span:first-child {
   top: -6px;
 }
 
-/* line 66, ../sass/imports/_sub-nav.scss */
+/* line 67, ../sass/imports/_sub-nav.scss */
 #our-work-nav > i {
   right: 525px;
 }
 
-/* line 67, ../sass/imports/_sub-nav.scss */
+/* line 68, ../sass/imports/_sub-nav.scss */
 #idea-center-nav > i {
   right: 425px;
 }
 
-/* line 68, ../sass/imports/_sub-nav.scss */
+/* line 69, ../sass/imports/_sub-nav.scss */
 #our-people-nav > i {
   right: 320px;
 }
@@ -753,26 +767,31 @@ header > p > span:first-child {
   left: -9%;
 }
 
-/* line 68, ../sass/imports/_hero.scss */
+/* line 67, ../sass/imports/_hero.scss */
+.lt-ie9 #hero {
+  display: none;
+}
+
+/* line 72, ../sass/imports/_hero.scss */
 #hero .content {
   position: absolute;
   left: 59.3%;
   top: 40.8%;
 }
-/* line 73, ../sass/imports/_hero.scss */
+/* line 77, ../sass/imports/_hero.scss */
 #hero h1 {
   color: #fff;
   font-size: 6em;
   letter-spacing: -.06em;
   line-height: 1em;
 }
-/* line 79, ../sass/imports/_hero.scss */
+/* line 83, ../sass/imports/_hero.scss */
 #hero .highlighted-lines {
   margin: 0;
   padding-left: 5px;
   width: 513px;
 }
-/* line 83, ../sass/imports/_hero.scss */
+/* line 87, ../sass/imports/_hero.scss */
 #hero .highlighted-lines > span {
   background-color: #232323;
   color: #fff;
@@ -783,34 +802,34 @@ header > p > span:first-child {
   margin: 3px 0;
   padding: .4em 1em;
 }
-/* line 92, ../sass/imports/_hero.scss */
+/* line 96, ../sass/imports/_hero.scss */
 #hero .highlighted-lines > span > mark {
   color: #fff;
 }
-/* line 95, ../sass/imports/_hero.scss */
+/* line 99, ../sass/imports/_hero.scss */
 #hero .highlighted-lines > span a {
   color: #e42f3e;
 }
-/* line 97, ../sass/imports/_hero.scss */
+/* line 101, ../sass/imports/_hero.scss */
 #hero .highlighted-lines > span a:hover {
   color: #fff;
 }
-/* line 103, ../sass/imports/_hero.scss */
+/* line 107, ../sass/imports/_hero.scss */
 #hero .continue-btn {
   margin: .5em 0;
   text-align: center;
 }
-/* line 106, ../sass/imports/_hero.scss */
+/* line 110, ../sass/imports/_hero.scss */
 #hero .continue-btn > button {
   background: transparent;
   color: #db2a38;
   font-size: 1.75em;
 }
-/* line 110, ../sass/imports/_hero.scss */
+/* line 114, ../sass/imports/_hero.scss */
 #hero .continue-btn > button:hover {
   color: #bd2d39;
 }
-/* line 115, ../sass/imports/_hero.scss */
+/* line 119, ../sass/imports/_hero.scss */
 #hero .mobile-read-more {
   display: none !important;
 }
