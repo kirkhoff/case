@@ -1,0 +1,35 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  #main-footer {
+    .hanging-lamp {
+      display: none;
+    }
+    .brushes > img {
+      height: 80px;
+      top: 33px;
+    }
+    .copyright {
+      font-size: 13px;
+      padding-bottom: 60px;
+    }
+    .footer-logo {
+      right: 30px;
+      width: 100px;
+    }
+  }
+  #site-map {
+    padding-top: 30px;
+    text-align: center;
+    nav,
+    section:before {
+      display: none;
+    }
+    section {
+      padding-right: 0;
+    }
+  }
+  #footer-links {
+    display: none;
+  }
+}

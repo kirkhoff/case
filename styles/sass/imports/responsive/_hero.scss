@@ -14,3 +14,57 @@ and (max-device-width : 1024px) {
     }
   }
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .carousel-indicators,
+  .continue-btn,
+  .preview,
+  .content > p {
+    display: none;
+  }
+  #hero .content {
+    left: 0;
+    text-align: center;
+    top: 39%;
+    width: 100%;
+    > h1 {
+      font-size: 3em;
+    }
+    .mobile-read-more {
+      display: block !important;
+      margin: .5em auto;
+      width: 40%;
+    }
+  }
+  .carousel {
+    height: 14em;
+    img {
+      max-height: 100%;
+      max-width: none !important;
+    }
+  }
+  .carousel-control.right,
+  .carousel-control.left {
+    @include opacity(1);
+  }
+  .carousel-control {
+    background-color: $grey-black;
+    height: 1.6em;
+    margin-top: -.8em;
+    top: 50%;
+    width: auto;
+    padding: 0 .8em;
+    line-height: 0;
+    text-align: center;
+    > i {
+      color: $red-light;
+      font-family: 'CaseIcons' !important;
+      font-size: 1.5em;
+      font-weight: normal !important;
+      line-height: 30%;
+      left: 50%;
+    }
+  }
+}

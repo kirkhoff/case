@@ -112,6 +112,10 @@
       }
     }
   }
+  .mobile-read-more {
+    @extend %block-btn-black;
+    display: none !important;
+  }
 }
 
 @import 'responsive/hero';

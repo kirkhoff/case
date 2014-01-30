@@ -27,3 +27,42 @@ and (max-device-width : 1024px) {
     left: -15.1%;
   }
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  #blog {
+    header {
+      font-size: .8em;
+      width: 15em;
+    }
+  }
+  #feed {
+    li {
+      margin: 1em 0;
+      width: 100%;
+      h2 {
+        font-size: 1.4em;
+        line-height: 1.3em;
+        overflow: visible;
+        white-space: normal;
+      }
+      p {
+        font-size: 1em;
+      }
+      h2,
+      p {
+        padding-left: .5em;
+        padding-right: .5em;
+      }
+    }
+    .view-all-btn {
+      font-size: 1.25em !important;
+    }
+  }
+
+  #next-btn,
+  #prev-btn {
+    display: none;
+  }
+}

@@ -140,7 +140,8 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
         // The default choice for the Best Time select input
         $scope.bestTime = $scope.timeOptions[0];
     })
-    .controller('heroCtrl', function($scope, HERO_SLIDES){
+    .controller('heroCtrl', function($scope, $animate, HERO_SLIDES){
+        $animate.enabled(false);
         $scope.slides = HERO_SLIDES;
         $scope.nextImage = function(index){
             var nextIndex = (index + 1) % $scope.slides.length;
@@ -186,13 +187,13 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
             section.collapsed = false;
         }
     })
-    .controller('mobileMenuCtrl', function($scope){
+    .controller('mobileMenuCtrl', function($scope, $animate){
+        $animate.enabled(true);
         $scope.showMenu = false;
     })
     .controller('blogCtrl', function($scope, $window, $document, BlogService){
         BlogService.fetch().then(
             function(rsp){
-                console.log(rsp);
                 $scope.entries = rsp.data.responseData.feed.entries;
             });
 
@@ -238,6 +239,41 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
                         easing: 'easeInOutCubic'
                     });
                     return false;
+                });
+            }
+        }
+    })
+    .directive('mobileMenuTrigger', function($document){
+        return {
+            link: function(scope, element, attrs){
+                var $body = $document.find('body').eq(0),
+                    $menu = element.parent().find('menu').eq(0).hide(),
+                    leftOffset = 0;
+                scope.toggled = false;
+                $body.css({
+                    position: 'relative',
+                    left: '0%'
+                });
+                element.on('click', function(){
+                    switch (scope.toggled) {
+                        case true:
+                            leftOffset = '0%';
+                            break;
+                        case false:
+                            leftOffset = '-85%';
+                            $menu.show();
+                            break;
+                    }
+                    $body.animate({
+                        left: leftOffset
+                    }, {
+                        duration: 500,
+                        easing: 'easeInOutCubic',
+                        complete: function(){
+                            scope.toggled = !scope.toggled;
+                            if (!scope.toggled) $menu.hide();
+                        }
+                    });
                 });
             }
         }

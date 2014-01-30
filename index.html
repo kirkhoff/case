@@ -8,7 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -96,6 +97,7 @@
                                     <a ng-href="{{slide.url}}" target="_self">view work »</a>
                                 </span>
                             </p>
+                            <a ng-href="{{slide.url}}" target="_self" class="mobile-read-more">Read More</a>
                         </div>
                         <div class="preview">
                             <img ng-src="{{nextImage($index)}}" alt="">

@@ -1,0 +1,21 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  #our-people {
+    background-color: #fff;
+    padding-bottom: 0;
+    header {
+      padding-top: 1em;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    nav li {
+      margin: 2px 0;
+      width: 100%;
+      .people-pic {
+        background-size: cover;
+      }
+    }
+  }
+}

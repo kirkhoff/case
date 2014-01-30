@@ -28,3 +28,36 @@ and (max-device-width : 1024px) {
     }
   }
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  #our-work {
+    h1 {
+      display: none;
+    }
+    .our-promise {
+      font-size: 12px;
+      margin-top: 55px;
+      padding: 3px 8px;
+    }
+    .our-work-content {
+      background: url(/img/our-work-bg-sm.jpg) no-repeat 40% -40px;
+      background-size: 230%;
+      height: 400px;
+      header > p {
+        margin-top: 1.5em;
+        max-width: 17em;
+        > span {
+          border: 0;
+        }
+      }
+      .red-ribbon {
+        display: none;
+      }
+    }
+    .parallax {
+      display: none;
+    }
+  }
+}
