@@ -38,7 +38,7 @@ input[type="reset"]::-moz-focus-inner {
 h1 {
   color: #000;
   font-family: 'brandon-grotesque', sans-serif;
-  font-weight: normal;
+  font-weight: 700;
   line-height: 1.5em;
   text-transform: uppercase;
 }
@@ -52,6 +52,7 @@ header > p {
   color: #000;
   font-family: 'proxima-nova', sans-serif;
   font-size: 17px;
+  font-style: none;
   line-height: 1.7em;
   margin: 0 auto;
   max-width: 38em;
@@ -126,7 +127,7 @@ header > p {
     color: $grey-dark;
     display: block;
     font-family: 'adelle',serif;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 100%;
@@ -170,6 +171,7 @@ header > p {
     color: $red;
     font-family: 'proxima-nova', sans-serif;
     font-size: 12px;
+    font-weight: 700;
     letter-spacing: .5px;
     margin: 0 10px;
     position: relative;
@@ -202,6 +204,14 @@ header > p {
   @extend %block-btn-red;
 }
 
+.mobile-only {
+  display: none;
+}
+
+.web-only {
+  display: block;
+}
+
 @import 'imports/sub-nav';
 @import 'imports/hero';
 @import 'imports/our-work';
@@ -209,4 +219,5 @@ header > p {
 @import 'imports/blog';
 @import 'imports/schedule';
 @import 'imports/footer';
+@import 'imports/responsive/case';
 @import 'imports/responsive/menu';

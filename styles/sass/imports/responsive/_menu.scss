@@ -75,7 +75,7 @@ and (max-device-width : 1024px) {
           > ul {
             font-size: .7em;
             font-weight: 400;
-            list-style: square url(/img/mobile/square.png);
+            list-style: square url(../../img/mobile/square.png);
             margin: 0 0 0 3.5em;
             > li {
               margin: 1em 0;
@@ -85,11 +85,14 @@ and (max-device-width : 1024px) {
         }
       }
     }
-    .utility-links li > a{
-      font-size: 1.2em;
-      margin: 1.1em 0;
-      .icon-phone {
-        display: none;
+    .utility-links li {
+      display: block;
+      > a {
+        font-size: 1.2em;
+        margin: 1.1em 0;
+        .icon-phone {
+          display: none;
+        }
       }
     }
   }

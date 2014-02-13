@@ -1,74 +1,66 @@
-.carousel-indicators {
-  bottom: 5.3em;
-  margin-left: -27em;
-  width: 54em;
-  /* Reset from bootstrap.css */
-  > li,
-  > li.active {
-    background-color: $red;
-    border: 0;
-    border-radius: 0;
-    cursor: pointer;
-    height: auto;
-    margin: 0;
-    width: auto;
-    text-indent: 0;
-  }
-  > li {
-    @include block-btn(#fff, #fff, $red, $red);
-    @include box-sizing(none);
-    border: .7em solid transparent;
-    font-family: 'proxima-nova', sans-serif;
-    font-size: .8em;
-    font-weight: 500;
-    letter-spacing: .05em;
-    line-height: 2em;
-    padding: 0 1.5em;
-    &.active {
-      border: .7em solid #fff;
-      line-height: 3em;
-    }
-    &:hover {
-      background-color: $red-light;
-    }
-  }
-}
-
-.carousel-control.right,
-.carousel-control.left, {
-  &:hover {
-    @include opacity(1);
-  }
-}
-.carousel-control.right,
-.carousel-control.left {
-  @include transition(opacity 1s);
-  @include opacity(0);
-}
-
-.carousel .preview {
-  @include transform(rotate(12deg));
-  background-color: #fff;
-  border-left: 7px solid #fff;
-  overflow: hidden;
-  position: absolute;
-  right: -91%;
-  top: 0;
-  width: 100%;
-  > img {
-    @include opacity(.9);
-    @include transform(rotate(-12deg));
-    -webkit-filter: blur(5px);
-    position: relative;
-    left: -9%;
-  }
-}
-
 .lt-ie9 #hero {
   display: none;
 }
 
+#hero #promo {
+  @include transition(opacity 1000ms);
+  @include opacity(1);
+  background-color: $red-light;
+  color: #fff;
+  display: block;
+  left: 0;
+  padding: 60px 50px 75px 30px;
+  position: absolute;
+  top: 60px;
+  width: 315px;
+  z-index: 1;
+  &.ng-animate {
+    display: block !important;
+  }
+  &.ng-hide {
+    @include opacity(0);
+  }
+  &.ng-show {
+    @include opacity(1);
+  }
+  > h1 {
+    font-size: 4em;
+  }
+  > p {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 5px 0 25px;
+    > mark {
+      color: #fff;
+    }
+  }
+  > a {
+    background-color: $grey-black;
+    color: #fff;
+    display: inline-block;
+    font-family: 'adelle',serif;
+    font-size: 1.25em;
+    padding: .3em 2em;
+    &:hover {
+      background-color: $grey-dark;
+    }
+  }
+  .close-btn {
+    background: transparent;
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
 #hero {
+  position: relative;
   .content {
     position: absolute;
     left: 59.3%;
@@ -76,7 +68,7 @@
   }
   h1 {
     color: #fff;
-    font-size: 6em;
+    font-size: 5.5em;
     letter-spacing: -.06em;
     line-height: 1em;
   }
@@ -119,6 +111,71 @@
   .mobile-read-more {
     @extend %block-btn-black;
     display: none !important;
+  }
+  .carousel-indicators {
+    bottom: 5.3em;
+    margin-left: -27em;
+    width: 54em;
+    /* Reset from bootstrap.css */
+    > li,
+    > li.active {
+      background-color: $red;
+      border: 0;
+      border-radius: 0;
+      cursor: pointer;
+      height: auto;
+      margin: 0;
+      width: auto;
+      text-indent: 0;
+    }
+    > li {
+      @include block-btn(#fff, #fff, $red, $red);
+      @include box-sizing(none);
+      border: .7em solid transparent;
+      font-family: 'proxima-nova', sans-serif;
+      font-size: .8em;
+      font-weight: 700;
+      letter-spacing: .05em;
+      line-height: 2em;
+      padding: 0 1.5em;
+      &.active {
+        border: .7em solid #fff;
+        line-height: 3em;
+      }
+      &:hover {
+        background-color: $red-light;
+      }
+    }
+  }
+
+  .carousel-control.right,
+  .carousel-control.left, {
+    &:hover {
+      @include opacity(1);
+    }
+  }
+  .carousel-control.right,
+  .carousel-control.left {
+    @include transition(opacity 1s);
+    @include opacity(0);
+  }
+
+  .carousel .preview {
+    @include transform(rotate(12deg));
+    background-color: #fff;
+    border-left: 7px solid #fff;
+    overflow: hidden;
+    position: absolute;
+    right: -91%;
+    top: -5%;
+    width: 100%;
+    > img {
+      @include opacity(.9);
+      @include transform(rotate(-12deg));
+      -webkit-filter: blur(5px);
+      position: relative;
+      left: -9%;
+    }
   }
 }
 

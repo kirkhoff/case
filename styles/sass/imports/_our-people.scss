@@ -22,10 +22,10 @@
       @include transition(opacity 400ms);
       height: 100%;
       width: 100%;
-      &.project-designers { background-image: url(/img/our-people-project-developers.jpg); }
-      &.project-managers { background-image: url(/img/our-people-project-managers.jpg); }
-      &.designers { background-image: url(/img/our-people-designers.jpg); }
-      &.craftsmen { background-image: url(/img/our-people-craftsmen.jpg); }
+      &.project-developers { background-image: url(../../img/our-people-project-developers.jpg); }
+      &.project-managers { background-image: url(../../img/our-people-project-managers.jpg); }
+      &.designers { background-image: url(../../img/our-people-designers.jpg); }
+      &.craftsmen { background-image: url(../../img/our-people-craftsmen.jpg); }
     }
     .people-tag {
       @include box-sizing(border-box);
@@ -33,8 +33,8 @@
       bottom: 25px;
       color: #fff;
       font-family: 'adelle',serif;
-      font-size: 18px;
-      font-weight: bold;
+      font-size: 16px;
+      font-weight: 500;
       left: 0;
       letter-spacing: -.03em;
       line-height: 2em;
@@ -51,8 +51,9 @@
           @include opacity(.25);
           color: #000;
           content: ' | ';
-          font-size: 22px;
-          font-weight: 100
+          font-size: 16px;
+          font-weight: 100;
+          margin: 0 3px;
         }
       }
     }

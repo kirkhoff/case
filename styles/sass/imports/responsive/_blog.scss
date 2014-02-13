@@ -15,6 +15,12 @@ and (max-device-width : 1024px) {
         height: 12.75em;
       }
     }
+    .left.carousel-control {
+      left: -60px;
+    }
+    .right.carousel-control {
+      right: -60px;
+    }
   }
   #feed {
     margin: auto;

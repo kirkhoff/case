@@ -1,6 +1,6 @@
 .our-work-content {
   @include box-shadow(0 10px 50px rgba(0,0,0,.75));
-  background: url(/img/our-work-bg-sm.jpg) no-repeat 0 0;
+  background: url(../../img/our-work-bg-sm.jpg) no-repeat 0 0;
   height: 788px;
   position: relative;
   text-align: center;
@@ -29,14 +29,14 @@
     display: inline-block;color: #fff;
     font-family: 'proxima-nova', sans-serif;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 2px;
     padding: 5px 8px;
     text-transform: uppercase;
     &:before {
       color: #000;
       content: '|';
-      margin-right: 5px;
+      margin-right: 16px;
       position: relative;
       top: 1px;
     }
@@ -51,7 +51,6 @@
   h1 {
     font-family: 'proxima-nova', sans-serif;
     font-size: 66px;
-    font-weight: 500;
     letter-spacing: 1px;
     margin-top: .67em;
   }
@@ -85,8 +84,8 @@
     }
   }
   .parallax {
-    background: url(/img/parallax-our-work.jpg) 90% 0 no-repeat fixed;;
-    height: 560px;
+    background: url(../../img/parallax-our-work.jpg) 50% 0 no-repeat fixed;;
+    height: 500px;
     overflow-y: hidden;
     width: 100%;
   }

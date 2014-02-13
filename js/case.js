@@ -1,12 +1,12 @@
 angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstrap', 'angular.stellar'])
-    .config(['stellarConfig', function(stellarConfig){
+    .config(function(stellarConfig){
         stellarConfig.horizontalScrolling = false;
-        stellarConfig.verticalOffset = -300;
-    }])
+        stellarConfig.verticalOffset = -500;
+    })
     .constant('HERO_SLIDES', [
         {
             header: 'Kitchens',
-            img: '/img/carousel/kitchens.jpg',
+            img: 'img/carousel/kitchens.jpg',
             description1: "<mark>Life takes place in the kitchen.</mark>",
             description2: "We'll help you bring the most out",
             description3: "of yours.",
@@ -14,7 +14,7 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
             url: 'http://www.casedesign.com/our-work/portfolio/baths'
         },{
             header: 'Baths',
-            img: '/img/carousel/baths.jpg',
+            img: 'img/carousel/baths.jpg',
             description1: "<mark>Sink into happiness.</mark> Our luxurious",
             description2: "bathrooms brighten moments and indulge",
             description3: "the senses.",
@@ -22,7 +22,7 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
             url: 'http://www.casedesign.com/our-work/portfolio/baths'
         },{
             header: 'Interiors',
-            img: '/img/carousel/interiors.jpg',
+            img: 'img/carousel/interiors.jpg',
             description1: "<mark>Create a space you love.</mark> We'll help you",
             description2: "design a custom living experience that's",
             description3: "uniquely your own.",
@@ -30,7 +30,7 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
             url: 'http://www.casedesign.com/our-work/portfolio/interiors'
         },{
             header: 'Exteriors',
-            img: '/img/carousel/exteriors.jpg',
+            img: 'img/carousel/exteriors.jpg',
             description1: "<mark>Boost your curb appeal.</mark> Transform the",
             description2: "value of your home and open up new",
             description3: "possibilities.",
@@ -38,7 +38,7 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
             url: 'http://www.casedesign.com/our-work/portfolio/exteriors'
         },{
             header: 'Additions',
-            img: '/img/carousel/additions.jpg',
+            img: 'img/carousel/additions.jpg',
             description1: "<mark>Expand your horizons.</mark> Our home additions",
             description2: "transform your spaces and broaden your",
             description3: "perspectives.",
@@ -48,64 +48,64 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
     .constant('OUR_WORK', [
         {
             name: 'Kitchens',
-            url: '#',
-            img: '/img/sub-nav/kitchens.jpg'
+            url: 'http://www.casedesign.com/our-work/portfolio/kitchens',
+            img: 'img/sub-nav/our-work/kitchens.jpg'
         },{
             name: 'Baths',
-            url: '#',
-            img: '/img/sub-nav/baths.jpg'
+            url: 'http://www.casedesign.com/our-work/portfolio/baths',
+            img: 'img/sub-nav/our-work/baths.jpg'
         },{
             name: 'Interiors',
-            url: '#',
-            img: '/img/sub-nav/interiors.jpg'
+            url: 'http://www.casedesign.com/our-work/portfolio/interiors',
+            img: 'img/sub-nav/our-work/interiors.jpg'
         },{
             name: 'Exteriors',
-            url: '#',
-            img: '/img/sub-nav/exteriors.jpg'
+            url: 'http://www.casedesign.com/our-work/portfolio/exteriors',
+            img: 'img/sub-nav/our-work/exteriors.jpg'
         },{
             name: 'Additions',
-            url: '#',
-            img: '/img/sub-nav/additions.jpg'
+            url: 'http://www.casedesign.com/our-work/portfolio/additions',
+            img: 'img/sub-nav/our-work/additions.jpg'
         }])
     .constant('OUR_PEOPLE', [
         {
-            name: 'Craftsmen',
-            url: '#',
-            img: '/img/sub-nav/baths.jpg'
-        },{
-            name: 'Designers',
-            url: '#',
-            img: '/img/sub-nav/interiors.jpg'
+            name: 'Project Developers',
+            url: 'http://www.casedesign.com/our-people/project-designers',
+            img: 'img/sub-nav/our-people/project-developers.jpg'
         },{
             name: 'Project Managers',
-            url: '#',
-            img: '/img/sub-nav/exteriors.jpg'
+            url: 'http://www.casedesign.com/our-people/project-managers',
+            img: 'img/sub-nav/our-people/project-managers.jpg'
         },{
-            name: 'Project Developers',
-            url: '#',
-            img: '/img/sub-nav/additions.jpg'
+            name: 'Designers',
+            url: 'http://www.casedesign.com/our-people/designers',
+            img: 'img/sub-nav/our-people/designers.jpg'
+        },{
+            name: 'Craftsmen',
+            url: 'http://www.casedesign.com/our-people/craftsmen',
+            img: 'img/sub-nav/our-people/craftsmen.jpg'
         }])
-    .constant('IDEA_CENTER', [
+    .constant('WHAT_TO_EXPECT', [
         {
             name: 'Kitchens',
-            url: '#',
-            img: '/img/sub-nav/kitchens.jpg'
+            url: 'http://www.casedesign.com/our-work/what-to-expect/kitchens',
+            img: 'img/sub-nav/what-to-expect/kitchens.jpg'
         },{
             name: 'Baths',
-            url: '#',
-            img: '/img/sub-nav/baths.jpg'
+            url: 'http://www.casedesign.com/our-work/what-to-expect/baths',
+            img: 'img/sub-nav/what-to-expect/baths.jpg'
         },{
             name: 'Interiors',
-            url: '#',
-            img: '/img/sub-nav/interiors.jpg'
+            url: 'http://www.casedesign.com/our-work/what-to-expect/interiors',
+            img: 'img/sub-nav/what-to-expect/interiors.jpg'
         },{
             name: 'Exteriors',
-            url: '#',
-            img: '/img/sub-nav/exteriors.jpg'
+            url: 'http://www.casedesign.com/our-work/what-to-expect/exteriors',
+            img: 'img/sub-nav/what-to-expect/exteriors.jpg'
         },{
             name: 'Additions',
-            url: '#',
-            img: '/img/sub-nav/additions.jpg'
+            url: 'http://www.casedesign.com/our-work/what-to-expect/additions',
+            img: 'img/sub-nav/what-to-expect/additions.jpg'
         }])
     .factory('BlogService', function($http){
         var url = 'http://www.casedesign.com/blog/feed',
@@ -117,8 +117,25 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
                     'callback=JSON_CALLBACK&' +
                     'num=' + num + '&' +
                     'q=' + encodeURIComponent(url));
+            },
+            getSlides: function(feedArr, numPerPage){
+                var slides = [],
+                    slide = {};
+                while (feedArr.length) {
+                    slide = {
+                        'entries': feedArr.splice(0, numPerPage),
+                        'active': false
+                    }
+                    slides.push(slide);
+                }
+                if (slides.length) slides[0]['active'] = true;
+                return slides;
             }
         }
+    })
+    .run(function($document, $animate){
+        // Disable ngAnimate for carousel items
+        $animate.enabled(false, $document.find('carousel'));
     })
     .controller('caseCtrl', function($scope, $location, $anchorScroll){
         $scope.scrollTo = function(elementId){
@@ -141,16 +158,22 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
         $scope.bestTime = $scope.timeOptions[0];
     })
     .controller('heroCtrl', function($scope, $animate, HERO_SLIDES){
-        $animate.enabled(false);
         $scope.slides = HERO_SLIDES;
         $scope.nextImage = function(index){
             var nextIndex = (index + 1) % $scope.slides.length;
             return $scope.slides[nextIndex].img;
         };
     })
-    .controller('subNavCtrl', function($scope, $timeout, $animate, OUR_WORK, OUR_PEOPLE, IDEA_CENTER){
-        $animate.enabled(true);
+    .controller('promoCtrl', function($scope, $animate, $timeout, $document){
+        var isTouch = $document.find('html').eq(0).hasClass('touch');
+        if (!isTouch) {
+            $timeout(function(){
+                $scope.showPromo = true;
+            }, 1000);
+        } else $scope.showPromo = false;
 
+    })
+    .controller('subNavCtrl', function($scope, $timeout, $animate, OUR_WORK, OUR_PEOPLE, WHAT_TO_EXPECT){
         $scope.ourWork = {
             nav: OUR_WORK,
             collapsed: true
@@ -159,14 +182,14 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
             nav: OUR_PEOPLE,
             collapsed: true
         };
-        $scope.ideaCenter = {
-            nav: IDEA_CENTER,
+        $scope.whatToExpect = {
+            nav: WHAT_TO_EXPECT,
             collapsed: true
         };
 
         $scope.ourWorkCollapsed = true;
         $scope.ourPeopleCollapsed = true;
-        $scope.ideaCenterCollapsed = true;
+        $scope.whatToExpectCollapsed = true;
 
         $scope.open = function(section){
             closeAllExcept(section)
@@ -182,21 +205,15 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
         function closeAllExcept(section){
             $scope.ourWork.collapsed = ($scope.ourWork.collapse != section);
             $scope.ourPeople.collapsed = ($scope.ourPeople.collapse != section);
-            $scope.ideaCenter.collapsed = ($scope.ideaCenter.collapse != section);
+            $scope.whatToExpect.collapsed = ($scope.whatToExpect.collapse != section);
 
             section.collapsed = false;
         }
     })
     .controller('mobileMenuCtrl', function($scope, $animate){
-        $animate.enabled(true);
         $scope.showMenu = false;
     })
-    .controller('blogCtrl', function($scope, $window, $document, BlogService){
-        BlogService.fetch().then(
-            function(rsp){
-                $scope.entries = rsp.data.responseData.feed.entries;
-            });
-
+    .controller('blogCtrl', function($scope, $animate, $window, $document, BlogService){
         // Check to see if we're on a touch device
         if ($document.find('html').eq(0).hasClass('touch')) {
             if ($window.innerWidth && $window.innerWidth >= 768) {
@@ -205,27 +222,29 @@ angular.module('case', ['ngSanitize', 'ngAnimate', 'zen.ui.select', 'ui.bootstra
                 $scope.showBlogNav = true;
             } else {
                 // Phone
-                $scope.entriesPerPage = 3;
+                $scope.entriesPerPage = 2;
                 $scope.showBlogNav = false;
             }
         } else {
             $scope.entriesPerPage = 3;
             $scope.showBlogNav = true;
         }
-        $scope.page = 1;
-        $scope.defaultImg = '/img/default-article.jpg';
+        $scope.defaultImg = 'img/default-article.jpg';
         $scope.getImgFromContent = function(content){
             var element = angular.element('<div>' + content + '</div>');
             var firstImg = element.find('img').eq(0);
             var src = firstImg.attr('src');
             return src || $scope.defaultImg;
         };
-        $scope.canShowNext = function(){
-            return ($scope.entries && ($scope.page + 1) * $scope.entriesPerPage <= $scope.entries.length);
-        };
-        $scope.canShowPrev = function(){
-            return ($scope.page - 1 > 0);
-        };
+
+        // Get Blog items and construct slides
+        BlogService.fetch().then(
+            function(rsp){
+                var entries = rsp.data.responseData.feed.entries,
+                    slideEntries = angular.copy(entries);
+                $scope.entries = entries;
+                $scope.slides = BlogService.getSlides(slideEntries, $scope.entriesPerPage);
+            });
     })
     .directive('scrollTo', function(){
         return {

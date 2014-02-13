@@ -2,7 +2,7 @@
 and (min-device-width : 320px)
 and (max-device-width : 1024px) {
   select {
-    background: url(/img/mobile/select-arrow.png) no-repeat right;
+    background: url(../../img/mobile/select-arrow.png) no-repeat right;
     background-size: contain;
     border: 1px solid shade($red-dark, 20);
     border-radius: 0;
@@ -20,8 +20,35 @@ and (max-device-width : 1024px) {
   .zen-ui-select {
     display: none;
   }
-  #schedule form {
-    width: 100%;
+  #schedule {
+    header p {
+      padding: 0 10px;
+    }
+    header h1 img.clock-o {
+      margin: 0;
+      top: .37em;
+    }
+    form {
+      width: 100%;
+      .fsOptionLabel,
+      input[type='checkbox'] + label {
+        font-size: 15px;
+      }
+    }
+    footer {
+      ul {
+        padding: 10px 0;
+      }
+      li {
+        display: inline;
+        padding-bottom: 0;
+        padding-top: 0;
+        &:first-child + li:after {
+          content: '\A';
+          white-space: pre;
+        }
+      }
+    }
   }
 }
 
@@ -29,10 +56,6 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
   #schedule {
-    header h1 img.clock-o {
-      right: 5.8em;
-      top: .37em;
-    }
     footer ul {
       margin: auto;
       width: 70%;
@@ -80,12 +103,6 @@ and (max-device-width : 568px) {
     header {
       font-size: .65em;
       padding-top: 1em;
-      h1 {
-        img.clock-o {
-          right: 5.8em;
-          top: .37em;
-        }
-      }
       p {
         line-height: 1.2em;
       }
@@ -94,15 +111,20 @@ and (max-device-width : 568px) {
       padding-bottom: 0;
       label {
         padding-right: 0;
-        width: 37%;
+        width: 35%;
       }
       input[type='text'],
       input[type='tel'],
       input[type='email'] {
-        width: 62%;
+        font-size: 14px;
+        padding-right: 0;
+        width: 64%;
       }
       legend {
         display: block;
+        width: 100%;
+      }
+      .fieldset-content {
         width: 100%;
       }
       .fsOptionLabel,

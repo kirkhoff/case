@@ -1,18 +1,14 @@
 @font-face {
   font-family: 'CaseIcons';
-  src: url("fonts/CaseIcons.eot");
-}
-
-@font-face {
-  font-family: 'CaseIcons';
-  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,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) format("woff");
+  src: url("../fonts/CaseIcons.eot?g8eyes");
+  src: url("../fonts/CaseIcons.eot?#iefixg8eyes") format("embedded-opentype"), url("../fonts/CaseIcons.woff?g8eyes") format("woff"), url("../fonts/CaseIcons.ttf?g8eyes") format("truetype"), url("../fonts/CaseIcons.svg?g8eyes#CaseIcons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 13, ../sass/imports/_fonts.scss */
+/* line 12, ../sass/imports/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'CaseIcons';
+  font-family: 'CaseIcons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -25,36 +21,38 @@
 }
 
 /* line 27, ../sass/imports/_fonts.scss */
+.icon-prev:before,
 .icon-arrow-left:before {
-  content: "\3c";
+  content: "\3c" !important;
 }
 
-/* line 30, ../sass/imports/_fonts.scss */
+/* line 31, ../sass/imports/_fonts.scss */
+.icon-next:before,
 .icon-arrow-right:before {
-  content: "\3e";
+  content: "\3e" !important;
 }
 
-/* line 33, ../sass/imports/_fonts.scss */
+/* line 34, ../sass/imports/_fonts.scss */
 .icon-warning:before {
   content: "\26a0";
 }
 
-/* line 36, ../sass/imports/_fonts.scss */
+/* line 37, ../sass/imports/_fonts.scss */
 .icon-x:before {
   content: "\78";
 }
 
-/* line 39, ../sass/imports/_fonts.scss */
+/* line 40, ../sass/imports/_fonts.scss */
 .icon-square:before {
   content: "\e600";
 }
 
-/* line 42, ../sass/imports/_fonts.scss */
+/* line 43, ../sass/imports/_fonts.scss */
 .icon-arrow-down:before {
   content: "\2228";
 }
 
-/* line 45, ../sass/imports/_fonts.scss */
+/* line 46, ../sass/imports/_fonts.scss */
 .icon-arrow-down-solid:before {
   content: "\e601";
 }
@@ -81,8 +79,8 @@
 }
 
 /* line 3, ../sass/imports/_placeholders.scss */
-#hero .mobile-read-more, #feed .view-all-btn, #prev-btn,
-#next-btn {
+#hero .mobile-read-more, #blog .left.carousel-control,
+#blog .right.carousel-control, #feed .view-all-btn {
   background-color: black;
   color: #db2a38;
   display: inline-block;
@@ -95,15 +93,15 @@
   text-transform: uppercase;
 }
 /* line 12, ../sass/imports/_mixins.scss */
-#hero .mobile-read-more:hover, #feed .view-all-btn:hover, #prev-btn:hover,
-#next-btn:hover {
+#hero .mobile-read-more:hover, #blog .left.carousel-control:hover,
+#blog .right.carousel-control:hover, #feed .view-all-btn:hover {
   background-color: black;
   color: white;
 }
 
 /* line 4, ../sass/imports/_placeholders.scss */
-#hero .mobile-read-more, #feed .view-all-btn, #prev-btn,
-#next-btn {
+#hero .mobile-read-more, #blog .left.carousel-control,
+#blog .right.carousel-control, #feed .view-all-btn {
   background-color: black;
   color: #db2a38;
   display: inline-block;
@@ -116,8 +114,8 @@
   text-transform: uppercase;
 }
 /* line 12, ../sass/imports/_mixins.scss */
-#hero .mobile-read-more:hover, #feed .view-all-btn:hover, #prev-btn:hover,
-#next-btn:hover {
+#hero .mobile-read-more:hover, #blog .left.carousel-control:hover,
+#blog .right.carousel-control:hover, #feed .view-all-btn:hover {
   background-color: #db2a38;
   color: white;
 }
@@ -362,7 +360,7 @@ input[type="reset"]::-moz-focus-inner {
 h1 {
   color: #000;
   font-family: 'brandon-grotesque', sans-serif;
-  font-weight: normal;
+  font-weight: 700;
   line-height: 1.5em;
   text-transform: uppercase;
 }
@@ -378,28 +376,29 @@ header > p {
   color: #000;
   font-family: 'proxima-nova', sans-serif;
   font-size: 17px;
+  font-style: none;
   line-height: 1.7em;
   margin: 0 auto;
   max-width: 38em;
 }
-/* line 58, ../sass/case.scss */
+/* line 59, ../sass/case.scss */
 header > p > span {
   display: block;
   margin: auto;
 }
-/* line 61, ../sass/case.scss */
+/* line 62, ../sass/case.scss */
 header > p > span:first-child {
   border-top: 0;
 }
 
-/* line 71, ../sass/case.scss */
+/* line 72, ../sass/case.scss */
 .ng-hide {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   display: none;
 }
 
-/* line 76, ../sass/case.scss */
+/* line 77, ../sass/case.scss */
 .page {
   *zoom: 1;
   max-width: 90em;
@@ -416,68 +415,68 @@ header > p > span:first-child {
   clear: both;
 }
 
-/* line 80, ../sass/case.scss */
+/* line 81, ../sass/case.scss */
 #main-header {
   height: 150px;
   padding: 20px 90px;
   position: relative;
 }
-/* line 84, ../sass/case.scss */
+/* line 85, ../sass/case.scss */
 #main-header .case-logo {
   float: left;
   height: 62px;
   margin: 40px 0 0;
   vertical-align: bottom;
 }
-/* line 90, ../sass/case.scss */
+/* line 91, ../sass/case.scss */
 #main-header > nav {
   clear: right;
   float: right;
   text-align: right;
 }
-/* line 94, ../sass/case.scss */
+/* line 95, ../sass/case.scss */
 #main-header > nav ul {
   margin: 0;
 }
-/* line 97, ../sass/case.scss */
+/* line 98, ../sass/case.scss */
 #main-header > nav li {
   display: inline-block;
 }
-/* line 99, ../sass/case.scss */
+/* line 100, ../sass/case.scss */
 #main-header > nav li > a {
   text-transform: uppercase;
 }
 
-/* line 106, ../sass/case.scss */
+/* line 107, ../sass/case.scss */
 #mobile-menu {
   display: none;
 }
 
-/* line 110, ../sass/case.scss */
+/* line 111, ../sass/case.scss */
 .lt-ie9 #utility-links {
   position: absolute;
   right: 90px;
   top: 0;
 }
 
-/* line 118, ../sass/case.scss */
+/* line 119, ../sass/case.scss */
 #utility-links ul,
 .utility-links ul {
   display: inline-block;
 }
-/* line 120, ../sass/case.scss */
+/* line 121, ../sass/case.scss */
 #utility-links ul > li,
 .utility-links ul > li {
   display: inline-block;
   list-style: none;
 }
-/* line 125, ../sass/case.scss */
+/* line 126, ../sass/case.scss */
 #utility-links li > a,
 .utility-links li > a {
   color: #373737;
   display: block;
   font-family: 'adelle',serif;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 100%;
@@ -485,19 +484,19 @@ header > p > span:first-child {
   position: relative;
   text-transform: uppercase;
 }
-/* line 136, ../sass/case.scss */
+/* line 137, ../sass/case.scss */
 #utility-links li > a:hover,
 .utility-links li > a:hover {
   color: #db2a38;
 }
-/* line 140, ../sass/case.scss */
+/* line 141, ../sass/case.scss */
 #utility-links .chat-btn,
 .utility-links .chat-btn {
   margin-left: 30px;
   padding: 5px 10px 4px;
   position: relative;
 }
-/* line 145, ../sass/case.scss */
+/* line 146, ../sass/case.scss */
 #utility-links .chat-btn:after,
 .utility-links .chat-btn:after {
   border-left: 2px solid transparent;
@@ -516,12 +515,12 @@ header > p > span:first-child {
   position: absolute;
   top: 100%;
 }
-/* line 155, ../sass/case.scss */
+/* line 156, ../sass/case.scss */
 #utility-links .chat-btn:hover:after,
 .utility-links .chat-btn:hover:after {
   border-top-color: #db2a38;
 }
-/* line 159, ../sass/case.scss */
+/* line 160, ../sass/case.scss */
 #utility-links .icon-phone,
 .utility-links .icon-phone {
   bottom: -1px;
@@ -530,24 +529,25 @@ header > p > span:first-child {
   right: -15px;
 }
 
-/* line 167, ../sass/case.scss */
+/* line 168, ../sass/case.scss */
 #primary-links {
   margin-top: 63px;
 }
-/* line 169, ../sass/case.scss */
+/* line 170, ../sass/case.scss */
 #primary-links li > a {
   color: #db2a38;
   font-family: 'proxima-nova', sans-serif;
   font-size: 12px;
+  font-weight: 700;
   letter-spacing: .5px;
   margin: 0 10px;
   position: relative;
 }
-/* line 176, ../sass/case.scss */
+/* line 178, ../sass/case.scss */
 #primary-links li > a:hover {
   color: #373737;
 }
-/* line 181, ../sass/case.scss */
+/* line 183, ../sass/case.scss */
 #primary-links li a:before {
   color: #a8a8a8;
   content: '/';
@@ -557,15 +557,25 @@ header > p > span:first-child {
   position: absolute;
   top: 0;
 }
-/* line 191, ../sass/case.scss */
+/* line 193, ../sass/case.scss */
 #primary-links li:first-child a:before,
 #primary-links li .schedule-btn:before {
   content: '';
 }
-/* line 195, ../sass/case.scss */
+/* line 197, ../sass/case.scss */
 #primary-links .schedule-btn {
   color: #fff !important;
   margin: 0 0 0 5px;
+}
+
+/* line 207, ../sass/case.scss */
+.mobile-only {
+  display: none;
+}
+
+/* line 211, ../sass/case.scss */
+.web-only {
+  display: block;
 }
 
 /* line 1, ../sass/imports/_sub-nav.scss */
@@ -611,25 +621,27 @@ header > p > span:first-child {
 .sub-nav .cta > p {
   color: #373737;
   font-family: 'adelle',serif;
+  font-size: .9em;
+  font-style: italic;
   margin: .5em 0;
 }
-/* line 31, ../sass/imports/_sub-nav.scss */
+/* line 33, ../sass/imports/_sub-nav.scss */
 .sub-nav .cta > a {
   font-size: .85em;
   padding: 8px 22px;
 }
-/* line 40, ../sass/imports/_sub-nav.scss */
+/* line 42, ../sass/imports/_sub-nav.scss */
 .sub-nav ul {
   margin: auto;
   text-align: center;
 }
-/* line 44, ../sass/imports/_sub-nav.scss */
+/* line 46, ../sass/imports/_sub-nav.scss */
 .sub-nav li {
   display: inline-block;
   margin: 0 .8em;
   width: 14em;
 }
-/* line 49, ../sass/imports/_sub-nav.scss */
+/* line 51, ../sass/imports/_sub-nav.scss */
 .sub-nav span {
   color: #db2a38;
   display: block;
@@ -640,7 +652,7 @@ header > p > span:first-child {
   margin: .5em 0 0;
   text-transform: uppercase;
 }
-/* line 59, ../sass/imports/_sub-nav.scss */
+/* line 61, ../sass/imports/_sub-nav.scss */
 .sub-nav > i {
   color: white;
   font-size: 20px;
@@ -648,31 +660,175 @@ header > p > span:first-child {
   top: -6px;
 }
 
-/* line 67, ../sass/imports/_sub-nav.scss */
-#our-work-nav > i {
-  right: 525px;
-}
-
-/* line 68, ../sass/imports/_sub-nav.scss */
-#idea-center-nav > i {
-  right: 425px;
-}
-
 /* line 69, ../sass/imports/_sub-nav.scss */
+#our-work-nav > i {
+  right: 585px;
+}
+
+/* line 70, ../sass/imports/_sub-nav.scss */
 #our-people-nav > i {
-  right: 320px;
+  right: 485px;
+}
+
+/* line 71, ../sass/imports/_sub-nav.scss */
+#what-to-expect-nav > i {
+  right: 365px;
 }
 
 /* line 1, ../sass/imports/_hero.scss */
-.carousel-indicators {
+.lt-ie9 #hero {
+  display: none;
+}
+
+/* line 5, ../sass/imports/_hero.scss */
+#hero #promo {
+  -webkit-transition: opacity 1000ms;
+  -moz-transition: opacity 1000ms;
+  -o-transition: opacity 1000ms;
+  transition: opacity 1000ms;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  background-color: #e42f3e;
+  color: #fff;
+  display: block;
+  left: 0;
+  padding: 60px 50px 75px 30px;
+  position: absolute;
+  top: 60px;
+  width: 315px;
+  z-index: 1;
+}
+/* line 17, ../sass/imports/_hero.scss */
+#hero #promo.ng-animate {
+  display: block !important;
+}
+/* line 20, ../sass/imports/_hero.scss */
+#hero #promo.ng-hide {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 23, ../sass/imports/_hero.scss */
+#hero #promo.ng-show {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 26, ../sass/imports/_hero.scss */
+#hero #promo > h1 {
+  font-size: 4em;
+}
+/* line 29, ../sass/imports/_hero.scss */
+#hero #promo > p {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 5px 0 25px;
+}
+/* line 34, ../sass/imports/_hero.scss */
+#hero #promo > p > mark {
+  color: #fff;
+}
+/* line 38, ../sass/imports/_hero.scss */
+#hero #promo > a {
+  background-color: #232323;
+  color: #fff;
+  display: inline-block;
+  font-family: 'adelle',serif;
+  font-size: 1.25em;
+  padding: .3em 2em;
+}
+/* line 45, ../sass/imports/_hero.scss */
+#hero #promo > a:hover {
+  background-color: #373737;
+}
+/* line 49, ../sass/imports/_hero.scss */
+#hero #promo .close-btn {
+  background: transparent;
+  color: #fff;
+  font-size: 2em;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+/* line 56, ../sass/imports/_hero.scss */
+#hero #promo .close-btn:hover {
+  color: #000;
+}
+
+/* line 62, ../sass/imports/_hero.scss */
+#hero {
+  position: relative;
+}
+/* line 64, ../sass/imports/_hero.scss */
+#hero .content {
+  position: absolute;
+  left: 59.3%;
+  top: 40.8%;
+}
+/* line 69, ../sass/imports/_hero.scss */
+#hero h1 {
+  color: #fff;
+  font-size: 5.5em;
+  letter-spacing: -.06em;
+  line-height: 1em;
+}
+/* line 75, ../sass/imports/_hero.scss */
+#hero .highlighted-lines {
+  margin: 0;
+  padding-left: 5px;
+  width: 513px;
+}
+/* line 79, ../sass/imports/_hero.scss */
+#hero .highlighted-lines > span {
+  background-color: #232323;
+  color: #fff;
+  display: block;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 3px 0;
+  padding: .4em 1em;
+}
+/* line 88, ../sass/imports/_hero.scss */
+#hero .highlighted-lines > span > mark {
+  color: #fff;
+}
+/* line 91, ../sass/imports/_hero.scss */
+#hero .highlighted-lines > span a {
+  color: #e42f3e;
+}
+/* line 93, ../sass/imports/_hero.scss */
+#hero .highlighted-lines > span a:hover {
+  color: #fff;
+}
+/* line 99, ../sass/imports/_hero.scss */
+#hero .continue-btn {
+  margin: .5em 0;
+  text-align: center;
+}
+/* line 102, ../sass/imports/_hero.scss */
+#hero .continue-btn > button {
+  background: transparent;
+  color: #db2a38;
+  font-size: 1.75em;
+}
+/* line 106, ../sass/imports/_hero.scss */
+#hero .continue-btn > button:hover {
+  color: #bd2d39;
+}
+/* line 111, ../sass/imports/_hero.scss */
+#hero .mobile-read-more {
+  display: none !important;
+}
+/* line 115, ../sass/imports/_hero.scss */
+#hero .carousel-indicators {
   bottom: 5.3em;
   margin-left: -27em;
   width: 54em;
   /* Reset from bootstrap.css */
 }
-/* line 7, ../sass/imports/_hero.scss */
-.carousel-indicators > li,
-.carousel-indicators > li.active {
+/* line 121, ../sass/imports/_hero.scss */
+#hero .carousel-indicators > li,
+#hero .carousel-indicators > li.active {
   background-color: #db2a38;
   border: 0;
   border-radius: 0;
@@ -682,8 +838,8 @@ header > p > span:first-child {
   width: auto;
   text-indent: 0;
 }
-/* line 17, ../sass/imports/_hero.scss */
-.carousel-indicators > li {
+/* line 131, ../sass/imports/_hero.scss */
+#hero .carousel-indicators > li {
   background-color: #db2a38;
   color: white;
   display: inline-block;
@@ -700,36 +856,34 @@ header > p > span:first-child {
   border: .7em solid transparent;
   font-family: 'proxima-nova', sans-serif;
   font-size: .8em;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: .05em;
   line-height: 2em;
   padding: 0 1.5em;
 }
 /* line 12, ../sass/imports/_mixins.scss */
-.carousel-indicators > li:hover {
+#hero .carousel-indicators > li:hover {
   background-color: #db2a38;
   color: white;
 }
-/* line 27, ../sass/imports/_hero.scss */
-.carousel-indicators > li.active {
+/* line 141, ../sass/imports/_hero.scss */
+#hero .carousel-indicators > li.active {
   border: .7em solid #fff;
   line-height: 3em;
 }
-/* line 31, ../sass/imports/_hero.scss */
-.carousel-indicators > li:hover {
+/* line 145, ../sass/imports/_hero.scss */
+#hero .carousel-indicators > li:hover {
   background-color: #e42f3e;
 }
-
-/* line 39, ../sass/imports/_hero.scss */
-.carousel-control.right:hover,
-.carousel-control.left:hover {
+/* line 153, ../sass/imports/_hero.scss */
+#hero .carousel-control.right:hover,
+#hero .carousel-control.left:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-
-/* line 44, ../sass/imports/_hero.scss */
-.carousel-control.right,
-.carousel-control.left {
+/* line 158, ../sass/imports/_hero.scss */
+#hero .carousel-control.right,
+#hero .carousel-control.left {
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
@@ -737,9 +891,8 @@ header > p > span:first-child {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-
-/* line 49, ../sass/imports/_hero.scss */
-.carousel .preview {
+/* line 163, ../sass/imports/_hero.scss */
+#hero .carousel .preview {
   -webkit-transform: rotate(12deg);
   -moz-transform: rotate(12deg);
   -ms-transform: rotate(12deg);
@@ -750,11 +903,11 @@ header > p > span:first-child {
   overflow: hidden;
   position: absolute;
   right: -91%;
-  top: 0;
+  top: -5%;
   width: 100%;
 }
-/* line 58, ../sass/imports/_hero.scss */
-.carousel .preview > img {
+/* line 172, ../sass/imports/_hero.scss */
+#hero .carousel .preview > img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
   -webkit-transform: rotate(-12deg);
@@ -767,79 +920,11 @@ header > p > span:first-child {
   left: -9%;
 }
 
-/* line 67, ../sass/imports/_hero.scss */
-.lt-ie9 #hero {
-  display: none;
-}
-
-/* line 72, ../sass/imports/_hero.scss */
-#hero .content {
-  position: absolute;
-  left: 59.3%;
-  top: 40.8%;
-}
-/* line 77, ../sass/imports/_hero.scss */
-#hero h1 {
-  color: #fff;
-  font-size: 6em;
-  letter-spacing: -.06em;
-  line-height: 1em;
-}
-/* line 83, ../sass/imports/_hero.scss */
-#hero .highlighted-lines {
-  margin: 0;
-  padding-left: 5px;
-  width: 513px;
-}
-/* line 87, ../sass/imports/_hero.scss */
-#hero .highlighted-lines > span {
-  background-color: #232323;
-  color: #fff;
-  display: block;
-  font-family: 'proxima-nova', sans-serif;
-  font-size: 1.2em;
-  line-height: 1.5em;
-  margin: 3px 0;
-  padding: .4em 1em;
-}
-/* line 96, ../sass/imports/_hero.scss */
-#hero .highlighted-lines > span > mark {
-  color: #fff;
-}
-/* line 99, ../sass/imports/_hero.scss */
-#hero .highlighted-lines > span a {
-  color: #e42f3e;
-}
-/* line 101, ../sass/imports/_hero.scss */
-#hero .highlighted-lines > span a:hover {
-  color: #fff;
-}
-/* line 107, ../sass/imports/_hero.scss */
-#hero .continue-btn {
-  margin: .5em 0;
-  text-align: center;
-}
-/* line 110, ../sass/imports/_hero.scss */
-#hero .continue-btn > button {
-  background: transparent;
-  color: #db2a38;
-  font-size: 1.75em;
-}
-/* line 114, ../sass/imports/_hero.scss */
-#hero .continue-btn > button:hover {
-  color: #bd2d39;
-}
-/* line 119, ../sass/imports/_hero.scss */
-#hero .mobile-read-more {
-  display: none !important;
-}
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 4, ../sass/imports/responsive/_hero.scss */
-  .carousel-indicators {
+  /* line 5, ../sass/imports/responsive/_hero.scss */
+  #hero .carousel-indicators {
     bottom: .75em;
   }
-
   /* line 8, ../sass/imports/responsive/_hero.scss */
   #hero .carousel-control {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -916,12 +1001,19 @@ header > p > span:first-child {
     left: 50%;
   }
 }
+@media only screen and (min-width: 321px) {
+  /* line 74, ../sass/imports/responsive/_hero.scss */
+  .carousel .item > img {
+    max-height: none !important;
+    max-width: 100% !important;
+  }
+}
 /* line 1, ../sass/imports/_our-work.scss */
 .our-work-content {
   -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.75);
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.75);
-  background: url(/img/our-work-bg-sm.jpg) no-repeat 0 0;
+  background: url(../../img/our-work-bg-sm.jpg) no-repeat 0 0;
   height: 788px;
   position: relative;
   text-align: center;
@@ -955,7 +1047,7 @@ header > p > span:first-child {
   color: #fff;
   font-family: 'proxima-nova', sans-serif;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
   padding: 5px 8px;
   text-transform: uppercase;
@@ -964,7 +1056,7 @@ header > p > span:first-child {
 .red-ribbon > li:before {
   color: #000;
   content: '|';
-  margin-right: 5px;
+  margin-right: 16px;
   position: relative;
   top: 1px;
 }
@@ -981,29 +1073,28 @@ header > p > span:first-child {
 #our-work h1 {
   font-family: 'proxima-nova', sans-serif;
   font-size: 66px;
-  font-weight: 500;
   letter-spacing: 1px;
   margin-top: .67em;
 }
-/* line 58, ../sass/imports/_our-work.scss */
+/* line 57, ../sass/imports/_our-work.scss */
 #our-work header > p > span {
   border-bottom: 1px solid #b3b3b3;
 }
-/* line 61, ../sass/imports/_our-work.scss */
+/* line 60, ../sass/imports/_our-work.scss */
 #our-work .signature {
   margin: 25px auto 0;
   text-transform: uppercase;
 }
-/* line 64, ../sass/imports/_our-work.scss */
+/* line 63, ../sass/imports/_our-work.scss */
 #our-work .signature > img {
   width: 240px;
 }
-/* line 68, ../sass/imports/_our-work.scss */
+/* line 67, ../sass/imports/_our-work.scss */
 #our-work .signature .name,
 #our-work .signature .title {
   margin: 0;
 }
-/* line 71, ../sass/imports/_our-work.scss */
+/* line 70, ../sass/imports/_our-work.scss */
 #our-work .signature .name {
   color: #db2a38;
   font-family: 'adelle',serif;
@@ -1012,7 +1103,7 @@ header > p > span:first-child {
   letter-spacing: 3px;
   margin-top: 10px;
 }
-/* line 79, ../sass/imports/_our-work.scss */
+/* line 78, ../sass/imports/_our-work.scss */
 #our-work .signature .title {
   font-family: 'proxima-nova', sans-serif;
   font-size: 9px;
@@ -1020,10 +1111,10 @@ header > p > span:first-child {
   letter-spacing: 2px;
   line-height: 2em;
 }
-/* line 87, ../sass/imports/_our-work.scss */
+/* line 86, ../sass/imports/_our-work.scss */
 #our-work .parallax {
-  background: url(/img/parallax-our-work.jpg) 90% 0 no-repeat fixed;
-  height: 560px;
+  background: url(../../img/parallax-our-work.jpg) 50% 0 no-repeat fixed;
+  height: 500px;
   overflow-y: hidden;
   width: 100%;
 }
@@ -1074,7 +1165,7 @@ header > p > span:first-child {
   }
   /* line 44, ../sass/imports/responsive/_our-work.scss */
   #our-work .our-work-content {
-    background: url(/img/our-work-bg-sm.jpg) no-repeat 40% -40px;
+    background: url(../../img/our-work-bg-sm.jpg) no-repeat 40% -40px;
     background-size: 230%;
     height: 400px;
   }
@@ -1134,20 +1225,20 @@ header > p > span:first-child {
   width: 100%;
 }
 /* line 25, ../sass/imports/_our-people.scss */
-#our-people nav li .people-pic.project-designers {
-  background-image: url(/img/our-people-project-developers.jpg);
+#our-people nav li .people-pic.project-developers {
+  background-image: url(../../img/our-people-project-developers.jpg);
 }
 /* line 26, ../sass/imports/_our-people.scss */
 #our-people nav li .people-pic.project-managers {
-  background-image: url(/img/our-people-project-managers.jpg);
+  background-image: url(../../img/our-people-project-managers.jpg);
 }
 /* line 27, ../sass/imports/_our-people.scss */
 #our-people nav li .people-pic.designers {
-  background-image: url(/img/our-people-designers.jpg);
+  background-image: url(../../img/our-people-designers.jpg);
 }
 /* line 28, ../sass/imports/_our-people.scss */
 #our-people nav li .people-pic.craftsmen {
-  background-image: url(/img/our-people-craftsmen.jpg);
+  background-image: url(../../img/our-people-craftsmen.jpg);
 }
 /* line 30, ../sass/imports/_our-people.scss */
 #our-people nav li .people-tag {
@@ -1158,8 +1249,8 @@ header > p > span:first-child {
   bottom: 25px;
   color: #fff;
   font-family: 'adelle',serif;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
   left: 0;
   letter-spacing: -.03em;
   line-height: 2em;
@@ -1181,8 +1272,9 @@ header > p > span:first-child {
   opacity: 0.25;
   color: #000;
   content: ' | ';
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 100;
+  margin: 0 3px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
@@ -1195,16 +1287,30 @@ header > p > span:first-child {
   #our-people header {
     padding-top: 1em;
   }
-  /* line 10, ../sass/imports/responsive/_our-people.scss */
+  /* line 9, ../sass/imports/responsive/_our-people.scss */
+  #our-people header > p {
+    max-width: 17em;
+  }
+  /* line 13, ../sass/imports/responsive/_our-people.scss */
   #our-people h1 {
     font-size: 3em;
   }
-  /* line 13, ../sass/imports/responsive/_our-people.scss */
+  /* line 16, ../sass/imports/responsive/_our-people.scss */
   #our-people nav li {
     margin: 2px 0;
     width: 100%;
   }
-  /* line 16, ../sass/imports/responsive/_our-people.scss */
+  /* line 19, ../sass/imports/responsive/_our-people.scss */
+  #our-people nav li .people-pic {
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 30, ../sass/imports/responsive/_our-people.scss */
+  #our-people nav li {
+    width: 45%;
+  }
+  /* line 32, ../sass/imports/responsive/_our-people.scss */
   #our-people nav li .people-pic {
     background-size: cover;
   }
@@ -1243,51 +1349,17 @@ header > p > span:first-child {
   font-weight: lighter;
   margin: 0 .1em;
 }
-
-/* line 31, ../sass/imports/_blog.scss */
-#feed {
-  border-top: 1px solid lightgrey;
-  padding-top: 2.7em;
-  position: relative;
-  top: -2.7em;
+/* line 29, ../sass/imports/_blog.scss */
+#blog .carousel-indicators {
+  display: none;
 }
-/* line 36, ../sass/imports/_blog.scss */
-#feed li {
-  display: inline-block;
-  margin: 1em;
-  vertical-align: top;
-  width: 24.3em;
-}
-/* line 45, ../sass/imports/_blog.scss */
-#feed .pic-container {
-  height: 15.2em;
-}
-/* line 48, ../sass/imports/_blog.scss */
-#feed h2 {
-  color: #db2a38;
-  font-family: 'adelle',serif;
-  font-size: 1.2em;
-  font-weight: 500;
-}
-/* line 55, ../sass/imports/_blog.scss */
-#feed p {
-  color: #373737;
-  font-family: 'proxima-nova', sans-serif;
-  font-size: .8em;
-  font-weight: 500;
-  letter-spacing: -.03em;
-  line-height: 1.5em;
-}
-/* line 63, ../sass/imports/_blog.scss */
-#feed .view-all-btn {
-  font-family: 'proxima-nova', sans-serif;
-  font-weight: 500;
-  font-size: .9em;
-}
-
-/* line 72, ../sass/imports/_blog.scss */
-#prev-btn,
-#next-btn {
+/* line 33, ../sass/imports/_blog.scss */
+#blog .left.carousel-control,
+#blog .right.carousel-control {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  background-image: none;
+  background-repeat: no-repeat;
   font-family: Arial;
   font-size: 24px;
   font-weight: 100;
@@ -1297,21 +1369,75 @@ header > p > span:first-child {
   position: absolute;
   top: 50%;
   width: 40px;
+  z-index: 99;
 }
-/* line 83, ../sass/imports/_blog.scss */
-#prev-btn > i,
-#next-btn > i {
+/* line 48, ../sass/imports/_blog.scss */
+#blog .left.carousel-control > i,
+#blog .right.carousel-control > i {
+  height: auto;
   line-height: 40px;
+  margin: -18px -15px;
+  text-shadow: none;
+  width: auto;
 }
-
-/* line 87, ../sass/imports/_blog.scss */
-#prev-btn {
+/* line 56, ../sass/imports/_blog.scss */
+#blog .left.carousel-control {
   left: 0;
 }
-
-/* line 90, ../sass/imports/_blog.scss */
-#next-btn {
+/* line 59, ../sass/imports/_blog.scss */
+#blog .right.carousel-control {
   right: 0;
+}
+
+/* line 64, ../sass/imports/_blog.scss */
+#feed {
+  border-top: 1px solid lightgrey;
+  padding-top: 2.7em;
+  position: relative;
+  top: -2.7em;
+}
+/* line 69, ../sass/imports/_blog.scss */
+#feed li {
+  display: inline-block;
+  margin: 1em;
+  vertical-align: top;
+  width: 24.3em;
+}
+/* line 78, ../sass/imports/_blog.scss */
+#feed .pic-container {
+  height: 15.2em;
+}
+/* line 81, ../sass/imports/_blog.scss */
+#feed h2 {
+  color: #db2a38;
+  font-family: 'adelle',serif;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+/* line 88, ../sass/imports/_blog.scss */
+#feed p {
+  color: #373737;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: -.03em;
+  line-height: 1.5em;
+}
+/* line 96, ../sass/imports/_blog.scss */
+#feed .view-all-btn {
+  color: #fff;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 500;
+  font-size: .9em;
+}
+
+/* line 106, ../sass/imports/_blog.scss */
+.lt-ie9 #blog #feed .carousel {
+  display: none;
+}
+/* line 109, ../sass/imports/_blog.scss */
+.lt-ie9 #blog #feed > ul {
+  display: block !important;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -1332,58 +1458,66 @@ header > p > span:first-child {
   #blog li .pic-container {
     height: 12.75em;
   }
+  /* line 18, ../sass/imports/responsive/_blog.scss */
+  #blog .left.carousel-control {
+    left: -60px;
+  }
+  /* line 21, ../sass/imports/responsive/_blog.scss */
+  #blog .right.carousel-control {
+    right: -60px;
+  }
 
-  /* line 19, ../sass/imports/responsive/_blog.scss */
+  /* line 25, ../sass/imports/responsive/_blog.scss */
   #feed {
     margin: auto;
     width: 77%;
   }
 
-  /* line 23, ../sass/imports/responsive/_blog.scss */
+  /* line 29, ../sass/imports/responsive/_blog.scss */
   #next-btn {
     right: -15.1%;
   }
 
-  /* line 26, ../sass/imports/responsive/_blog.scss */
+  /* line 32, ../sass/imports/responsive/_blog.scss */
   #prev-btn {
     left: -15.1%;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 35, ../sass/imports/responsive/_blog.scss */
+  /* line 41, ../sass/imports/responsive/_blog.scss */
   #blog header {
     font-size: .8em;
     width: 15em;
   }
 
-  /* line 41, ../sass/imports/responsive/_blog.scss */
+  /* line 47, ../sass/imports/responsive/_blog.scss */
   #feed li {
     margin: 1em 0;
     width: 100%;
   }
-  /* line 44, ../sass/imports/responsive/_blog.scss */
+  /* line 50, ../sass/imports/responsive/_blog.scss */
   #feed li h2 {
     font-size: 1.4em;
     line-height: 1.3em;
     overflow: visible;
     white-space: normal;
   }
-  /* line 50, ../sass/imports/responsive/_blog.scss */
+  /* line 56, ../sass/imports/responsive/_blog.scss */
   #feed li p {
     font-size: 1em;
   }
-  /* line 54, ../sass/imports/responsive/_blog.scss */
+  /* line 60, ../sass/imports/responsive/_blog.scss */
   #feed li h2,
   #feed li p {
     padding-left: .5em;
     padding-right: .5em;
   }
-  /* line 59, ../sass/imports/responsive/_blog.scss */
+  /* line 65, ../sass/imports/responsive/_blog.scss */
   #feed .view-all-btn {
     font-size: 1.25em !important;
   }
 
-  /* line 65, ../sass/imports/responsive/_blog.scss */
+  /* line 71, ../sass/imports/responsive/_blog.scss */
   #next-btn,
   #prev-btn {
     display: none;
@@ -1411,21 +1545,23 @@ header > p > span:first-child {
 }
 /* line 13, ../sass/imports/_schedule.scss */
 #schedule header h1 span.clock-o {
-  color: #db2a38;
+  color: #e42f3e;
+  letter-spacing: .05em;
   position: relative;
 }
-/* line 17, ../sass/imports/_schedule.scss */
+/* line 18, ../sass/imports/_schedule.scss */
 #schedule header h1 img.clock-o {
+  height: .8em;
+  left: .05em;
+  margin: .33em 0;
   position: absolute;
-  right: 5.9em;
-  top: .35em;
-  width: .75em;
+  top: 0;
 }
-/* line 24, ../sass/imports/_schedule.scss */
+/* line 26, ../sass/imports/_schedule.scss */
 #schedule header p {
   color: #000;
 }
-/* line 28, ../sass/imports/_schedule.scss */
+/* line 30, ../sass/imports/_schedule.scss */
 #schedule footer {
   background-color: #232323;
   color: #fff;
@@ -1436,16 +1572,16 @@ header > p > span:first-child {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 37, ../sass/imports/_schedule.scss */
+/* line 39, ../sass/imports/_schedule.scss */
 #schedule footer li {
   display: inline-block;
   padding: 13px 10px;
 }
-/* line 40, ../sass/imports/_schedule.scss */
+/* line 42, ../sass/imports/_schedule.scss */
 #schedule footer li:first-child:before {
   content: '';
 }
-/* line 43, ../sass/imports/_schedule.scss */
+/* line 45, ../sass/imports/_schedule.scss */
 #schedule footer li:before {
   color: #e42f3e;
   content: '\e600';
@@ -1455,13 +1591,13 @@ header > p > span:first-child {
   speak: none;
   vertical-align: middle;
 }
-/* line 56, ../sass/imports/_schedule.scss */
+/* line 58, ../sass/imports/_schedule.scss */
 #schedule form {
   margin: 2em auto;
   padding-bottom: 100px;
   width: 590px;
 }
-/* line 60, ../sass/imports/_schedule.scss */
+/* line 62, ../sass/imports/_schedule.scss */
 #schedule form .fsError {
   -webkit-box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -1469,12 +1605,12 @@ header > p > span:first-child {
   background-color: #fff;
   padding: 10px 15px;
 }
-/* line 66, ../sass/imports/_schedule.scss */
+/* line 68, ../sass/imports/_schedule.scss */
 #schedule form .fsError,
 #schedule form .fsValidationError {
   position: relative;
 }
-/* line 68, ../sass/imports/_schedule.scss */
+/* line 70, ../sass/imports/_schedule.scss */
 #schedule form .fsError:after,
 #schedule form .fsValidationError:after {
   content: '\26a0';
@@ -1486,17 +1622,17 @@ header > p > span:first-child {
   right: 15px;
   top: 50%;
 }
-/* line 79, ../sass/imports/_schedule.scss */
+/* line 81, ../sass/imports/_schedule.scss */
 #schedule form .fsRow {
   border-bottom: 1px solid #bd2d39;
   margin-top: 25px;
 }
-/* line 83, ../sass/imports/_schedule.scss */
+/* line 85, ../sass/imports/_schedule.scss */
 #schedule form fieldset {
   background-color: #bd2d39;
   margin-top: 15px;
 }
-/* line 88, ../sass/imports/_schedule.scss */
+/* line 90, ../sass/imports/_schedule.scss */
 #schedule form .fieldset-content,
 #schedule form legend {
   -webkit-box-sizing: border-box;
@@ -1505,12 +1641,12 @@ header > p > span:first-child {
   display: block;
   float: left;
 }
-/* line 93, ../sass/imports/_schedule.scss */
+/* line 95, ../sass/imports/_schedule.scss */
 #schedule form .fieldset-content {
   padding: 18px 0 18px 35px;
   width: 75%;
 }
-/* line 97, ../sass/imports/_schedule.scss */
+/* line 99, ../sass/imports/_schedule.scss */
 #schedule form .submit-row {
   zoom: 1;
   margin: 20px 0 0;
@@ -1524,19 +1660,19 @@ header > p > span:first-child {
 #schedule form .submit-row:after {
   clear: both;
 }
-/* line 100, ../sass/imports/_schedule.scss */
+/* line 102, ../sass/imports/_schedule.scss */
 #schedule form .submit-row .zen-ui-select {
   float: left;
 }
-/* line 104, ../sass/imports/_schedule.scss */
+/* line 106, ../sass/imports/_schedule.scss */
 #schedule form .zen-ui-select-toggle {
   width: 370px !important;
 }
-/* line 107, ../sass/imports/_schedule.scss */
+/* line 109, ../sass/imports/_schedule.scss */
 #schedule form .zen-ui-select-list-container {
   width: 100% !important;
 }
-/* line 113, ../sass/imports/_schedule.scss */
+/* line 115, ../sass/imports/_schedule.scss */
 #schedule form label,
 #schedule form input[type='text'],
 #schedule form input[type='tel'],
@@ -1552,7 +1688,7 @@ header > p > span:first-child {
   outline: none;
   padding: 0 15px 8px;
 }
-/* line 124, ../sass/imports/_schedule.scss */
+/* line 126, ../sass/imports/_schedule.scss */
 #schedule form label,
 #schedule form legend {
   color: #fff;
@@ -1560,19 +1696,19 @@ header > p > span:first-child {
   font-size: 15px;
   width: 25%;
 }
-/* line 129, ../sass/imports/_schedule.scss */
+/* line 131, ../sass/imports/_schedule.scss */
 #schedule form label.required:after,
 #schedule form legend.required:after {
   content: '*';
   margin-left: .2em;
 }
-/* line 134, ../sass/imports/_schedule.scss */
+/* line 136, ../sass/imports/_schedule.scss */
 #schedule form legend {
   display: inline-block;
   padding-left: 13px;
   padding-top: 18px;
 }
-/* line 141, ../sass/imports/_schedule.scss */
+/* line 143, ../sass/imports/_schedule.scss */
 #schedule form input[type='text'],
 #schedule form input[type='tel'],
 #schedule form input[type='email'] {
@@ -1584,9 +1720,10 @@ header > p > span:first-child {
   color: #fff;
   font-family: 'adelle',serif;
   font-size: 17px;
+  font-style: italic;
   width: 75%;
 }
-/* line 148, ../sass/imports/_schedule.scss */
+/* line 151, ../sass/imports/_schedule.scss */
 #schedule form input[type='text']:focus,
 #schedule form input[type='tel']:focus,
 #schedule form input[type='email']:focus {
@@ -1594,7 +1731,7 @@ header > p > span:first-child {
   -moz-box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.3);
   box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.3);
 }
-/* line 156, ../sass/imports/_schedule.scss */
+/* line 159, ../sass/imports/_schedule.scss */
 #schedule form input[type='checkbox']:checked + label:before,
 #schedule form .fsOptionLabel:checked:before {
   background: #000;
@@ -1607,18 +1744,18 @@ header > p > span:first-child {
   speak: none;
   text-align: center;
 }
-/* line 168, ../sass/imports/_schedule.scss */
+/* line 171, ../sass/imports/_schedule.scss */
 #schedule form .fsOptionLabel,
 #schedule form input[type='checkbox'] + label {
   color: #5c2629;
   display: inline-block;
   font-family: 'proxima-nova', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   position: relative;
   width: 47%;
 }
-/* line 176, ../sass/imports/_schedule.scss */
+/* line 179, ../sass/imports/_schedule.scss */
 #schedule form .fsOptionLabel:before,
 #schedule form input[type='checkbox'] + label:before {
   background: white;
@@ -1626,11 +1763,11 @@ header > p > span:first-child {
   display: inline-block;
   height: 15px;
   margin-left: -25px;
-  margin-top: -3px;
+  margin-top: -1px;
   position: absolute;
   width: 15px;
 }
-/* line 187, ../sass/imports/_schedule.scss */
+/* line 190, ../sass/imports/_schedule.scss */
 #schedule form input[type='submit'] {
   background-color: #fff;
   border: 0;
@@ -1643,34 +1780,34 @@ header > p > span:first-child {
   outline: 0;
   padding: 7px 40px;
 }
-/* line 198, ../sass/imports/_schedule.scss */
+/* line 201, ../sass/imports/_schedule.scss */
 #schedule form input[type='submit']:hover {
   background-color: #000;
   color: #fff;
 }
 
-/* line 206, ../sass/imports/_schedule.scss */
+/* line 209, ../sass/imports/_schedule.scss */
 ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #5c2629;
   font-family: 'adelle',serif;
 }
 
-/* line 209, ../sass/imports/_schedule.scss */
+/* line 212, ../sass/imports/_schedule.scss */
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #5c2629;
   font-family: 'adelle',serif;
 }
 
-/* line 212, ../sass/imports/_schedule.scss */
+/* line 215, ../sass/imports/_schedule.scss */
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #5c2629;
   font-family: 'adelle',serif;
 }
 
-/* line 215, ../sass/imports/_schedule.scss */
+/* line 218, ../sass/imports/_schedule.scss */
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #5c2629;
@@ -1680,7 +1817,7 @@ header > p > span:first-child {
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   /* line 4, ../sass/imports/responsive/_schedule.scss */
   select {
-    background: url(/img/mobile/select-arrow.png) no-repeat right;
+    background: url(../../img/mobile/select-arrow.png) no-repeat right;
     background-size: contain;
     border: 1px solid #97242d;
     border-radius: 0;
@@ -1703,58 +1840,82 @@ header > p > span:first-child {
     display: none;
   }
 
-  /* line 23, ../sass/imports/responsive/_schedule.scss */
+  /* line 24, ../sass/imports/responsive/_schedule.scss */
+  #schedule header p {
+    padding: 0 10px;
+  }
+  /* line 27, ../sass/imports/responsive/_schedule.scss */
+  #schedule header h1 img.clock-o {
+    margin: 0;
+    top: .37em;
+  }
+  /* line 31, ../sass/imports/responsive/_schedule.scss */
   #schedule form {
     width: 100%;
   }
+  /* line 34, ../sass/imports/responsive/_schedule.scss */
+  #schedule form .fsOptionLabel,
+  #schedule form input[type='checkbox'] + label {
+    font-size: 15px;
+  }
+  /* line 39, ../sass/imports/responsive/_schedule.scss */
+  #schedule footer ul {
+    padding: 10px 0;
+  }
+  /* line 42, ../sass/imports/responsive/_schedule.scss */
+  #schedule footer li {
+    display: inline;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  /* line 46, ../sass/imports/responsive/_schedule.scss */
+  #schedule footer li:first-child + li:after {
+    content: '\A';
+    white-space: pre;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 32, ../sass/imports/responsive/_schedule.scss */
-  #schedule header h1 img.clock-o {
-    right: 5.8em;
-    top: .37em;
-  }
-  /* line 36, ../sass/imports/responsive/_schedule.scss */
+  /* line 59, ../sass/imports/responsive/_schedule.scss */
   #schedule footer ul {
     margin: auto;
     width: 70%;
   }
-  /* line 39, ../sass/imports/responsive/_schedule.scss */
+  /* line 62, ../sass/imports/responsive/_schedule.scss */
   #schedule footer ul a {
     color: #fff;
   }
-  /* line 42, ../sass/imports/responsive/_schedule.scss */
+  /* line 65, ../sass/imports/responsive/_schedule.scss */
   #schedule footer ul li {
     padding-left: 5px;
     padding-right: 5px;
   }
-  /* line 45, ../sass/imports/responsive/_schedule.scss */
+  /* line 68, ../sass/imports/responsive/_schedule.scss */
   #schedule footer ul li:before {
     margin-right: 15px;
   }
-  /* line 49, ../sass/imports/responsive/_schedule.scss */
+  /* line 72, ../sass/imports/responsive/_schedule.scss */
   #schedule footer ul li:first-child + li + li:before {
     content: '';
   }
-  /* line 53, ../sass/imports/responsive/_schedule.scss */
+  /* line 76, ../sass/imports/responsive/_schedule.scss */
   #schedule form {
     width: 75%;
   }
-  /* line 55, ../sass/imports/responsive/_schedule.scss */
+  /* line 78, ../sass/imports/responsive/_schedule.scss */
   #schedule form select {
     width: 370px;
   }
 
-  /* line 61, ../sass/imports/responsive/_schedule.scss */
+  /* line 84, ../sass/imports/responsive/_schedule.scss */
   #site-map > section {
     display: block !important;
     margin-bottom: 10px;
   }
-  /* line 64, ../sass/imports/responsive/_schedule.scss */
+  /* line 87, ../sass/imports/responsive/_schedule.scss */
   #site-map > section h2 {
     margin-bottom: 0 !important;
   }
-  /* line 68, ../sass/imports/responsive/_schedule.scss */
+  /* line 91, ../sass/imports/responsive/_schedule.scss */
   #site-map nav li {
     display: inline-block;
     font-size: 1.2em;
@@ -1762,71 +1923,72 @@ header > p > span:first-child {
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 80, ../sass/imports/responsive/_schedule.scss */
+  /* line 103, ../sass/imports/responsive/_schedule.scss */
   #schedule header {
     font-size: .65em;
     padding-top: 1em;
   }
-  /* line 84, ../sass/imports/responsive/_schedule.scss */
-  #schedule header h1 img.clock-o {
-    right: 5.8em;
-    top: .37em;
-  }
-  /* line 89, ../sass/imports/responsive/_schedule.scss */
+  /* line 106, ../sass/imports/responsive/_schedule.scss */
   #schedule header p {
     line-height: 1.2em;
   }
-  /* line 93, ../sass/imports/responsive/_schedule.scss */
+  /* line 110, ../sass/imports/responsive/_schedule.scss */
   #schedule form {
     padding-bottom: 0;
   }
-  /* line 95, ../sass/imports/responsive/_schedule.scss */
+  /* line 112, ../sass/imports/responsive/_schedule.scss */
   #schedule form label {
     padding-right: 0;
-    width: 37%;
+    width: 35%;
   }
-  /* line 101, ../sass/imports/responsive/_schedule.scss */
+  /* line 118, ../sass/imports/responsive/_schedule.scss */
   #schedule form input[type='text'],
   #schedule form input[type='tel'],
   #schedule form input[type='email'] {
-    width: 62%;
+    font-size: 14px;
+    padding-right: 0;
+    width: 64%;
   }
-  /* line 104, ../sass/imports/responsive/_schedule.scss */
+  /* line 123, ../sass/imports/responsive/_schedule.scss */
   #schedule form legend {
     display: block;
     width: 100%;
   }
-  /* line 109, ../sass/imports/responsive/_schedule.scss */
+  /* line 127, ../sass/imports/responsive/_schedule.scss */
+  #schedule form .fieldset-content {
+    width: 100%;
+  }
+  /* line 131, ../sass/imports/responsive/_schedule.scss */
   #schedule form .fsOptionLabel,
   #schedule form input[type='checkbox'] + label {
     width: 68%;
   }
-  /* line 112, ../sass/imports/responsive/_schedule.scss */
+  /* line 134, ../sass/imports/responsive/_schedule.scss */
   #schedule form select {
     display: block !important;
     float: none;
     margin: auto;
     width: 90%;
   }
-  /* line 118, ../sass/imports/responsive/_schedule.scss */
+  /* line 140, ../sass/imports/responsive/_schedule.scss */
   #schedule form input[type='submit'] {
     display: block;
     float: none;
     margin: 1em auto;
   }
-  /* line 124, ../sass/imports/responsive/_schedule.scss */
+  /* line 146, ../sass/imports/responsive/_schedule.scss */
   #schedule footer {
     padding: .4em 0;
   }
-  /* line 126, ../sass/imports/responsive/_schedule.scss */
+  /* line 148, ../sass/imports/responsive/_schedule.scss */
   #schedule footer li {
     padding: .3em 0;
   }
-  /* line 128, ../sass/imports/responsive/_schedule.scss */
+  /* line 150, ../sass/imports/responsive/_schedule.scss */
   #schedule footer li:before {
     display: none;
   }
-  /* line 131, ../sass/imports/responsive/_schedule.scss */
+  /* line 153, ../sass/imports/responsive/_schedule.scss */
   #schedule footer li > a {
     color: #fff;
   }
@@ -1888,7 +2050,7 @@ header > p > span:first-child {
 /* line 49, ../sass/imports/_footer.scss */
 #site-map > section {
   display: inline-block;
-  min-width: 160px;
+  min-width: 190px;
   padding-right: 35px;
   position: relative;
 }
@@ -1906,7 +2068,7 @@ header > p > span:first-child {
 #site-map > section h2,
 #site-map > section h2 > a {
   color: #db2a38;
-  font-size: 1.1em;
+  font-size: 1.15em;
   font-weight: 500;
   margin: 0 0 .5em 0;
 }
@@ -1917,7 +2079,7 @@ header > p > span:first-child {
 /* line 73, ../sass/imports/_footer.scss */
 #site-map > section li > a {
   color: #373737;
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 500;
   line-height: 2em;
 }
@@ -1949,7 +2111,7 @@ header > p > span:first-child {
 #footer-links a {
   color: #db2a38;
   font-family: 'proxima-nova', sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   padding: 0 4px;
 }
@@ -1961,7 +2123,7 @@ header > p > span:first-child {
 #footer-links a:before {
   color: #555555;
   content: '|';
-  font-size: 9px;
+  font-size: 13px;
   margin-right: 8px;
 }
 
@@ -2004,6 +2166,34 @@ header > p > span:first-child {
   /* line 32, ../sass/imports/responsive/_footer.scss */
   #footer-links {
     display: none;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  /* line 4, ../sass/imports/responsive/_case.scss */
+  .web-only {
+    display: none !important;
+  }
+
+  /* line 7, ../sass/imports/responsive/_case.scss */
+  header > p > span {
+    display: inline;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 15, ../sass/imports/responsive/_case.scss */
+  .tablet {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* line 23, ../sass/imports/responsive/_case.scss */
+  .tablet {
+    display: none;
+  }
+
+  /* line 26, ../sass/imports/responsive/_case.scss */
+  .mobile-only {
+    display: block;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
@@ -2099,7 +2289,7 @@ header > p > span:first-child {
   #mobile-menu nav > ul > li > ul {
     font-size: .7em;
     font-weight: 400;
-    list-style: square url(/img/mobile/square.png);
+    list-style: square url(../../img/mobile/square.png);
     margin: 0 0 0 3.5em;
   }
   /* line 80, ../sass/imports/responsive/_menu.scss */
@@ -2108,51 +2298,55 @@ header > p > span:first-child {
     padding: 0 0 0 .4em;
   }
   /* line 88, ../sass/imports/responsive/_menu.scss */
+  #mobile-menu .utility-links li {
+    display: block;
+  }
+  /* line 90, ../sass/imports/responsive/_menu.scss */
   #mobile-menu .utility-links li > a {
     font-size: 1.2em;
     margin: 1.1em 0;
   }
-  /* line 91, ../sass/imports/responsive/_menu.scss */
+  /* line 93, ../sass/imports/responsive/_menu.scss */
   #mobile-menu .utility-links li > a .icon-phone {
     display: none;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 101, ../sass/imports/responsive/_menu.scss */
+  /* line 104, ../sass/imports/responsive/_menu.scss */
   #main-header {
     height: 125px;
     padding-left: 40px;
   }
-  /* line 104, ../sass/imports/responsive/_menu.scss */
+  /* line 107, ../sass/imports/responsive/_menu.scss */
   #main-header .case-logo {
     margin-top: 10px;
   }
 
-  /* line 108, ../sass/imports/responsive/_menu.scss */
+  /* line 111, ../sass/imports/responsive/_menu.scss */
   #menu-btn {
     position: absolute;
     right: 40px;
     top: 40px;
     z-index: 15;
   }
-  /* line 113, ../sass/imports/responsive/_menu.scss */
+  /* line 116, ../sass/imports/responsive/_menu.scss */
   #menu-btn > img {
     width: 150%;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 122, ../sass/imports/responsive/_menu.scss */
+  /* line 125, ../sass/imports/responsive/_menu.scss */
   #main-header {
     height: 70px;
     padding: 15px 20px;
   }
-  /* line 125, ../sass/imports/responsive/_menu.scss */
+  /* line 128, ../sass/imports/responsive/_menu.scss */
   #main-header .case-logo {
     height: 40px;
     margin: 0;
   }
 
-  /* line 130, ../sass/imports/responsive/_menu.scss */
+  /* line 133, ../sass/imports/responsive/_menu.scss */
   #menu-btn {
     position: absolute;
     right: 0;

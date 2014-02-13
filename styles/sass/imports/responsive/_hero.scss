@@ -1,10 +1,10 @@
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
-  .carousel-indicators {
-    bottom: .75em;
-  }
   #hero {
+    .carousel-indicators {
+      bottom: .75em;
+    }
     .carousel-control {
       @include opacity(0);
     }
@@ -66,5 +66,13 @@ and (max-device-width : 568px) {
       line-height: 30%;
       left: 50%;
     }
+  }
+}
+
+@media only screen
+and (min-width : 321px) {
+  .carousel .item > img {
+    max-height: none !important;
+    max-width: 100% !important;
   }
 }

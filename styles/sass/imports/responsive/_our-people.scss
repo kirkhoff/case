@@ -6,6 +6,9 @@ and (max-device-width : 568px) {
     padding-bottom: 0;
     header {
       padding-top: 1em;
+      > p {
+        max-width: 17em;
+      }
     }
     h1 {
       font-size: 3em;
@@ -13,6 +16,19 @@ and (max-device-width : 568px) {
     nav li {
       margin: 2px 0;
       width: 100%;
+      .people-pic {
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  #our-people {
+    nav li {
+      width: 45%;
       .people-pic {
         background-size: cover;
       }

@@ -26,6 +26,8 @@
     > p {
       color: $grey-dark;
       font-family: 'adelle',serif;
+      font-size: .9em;
+      font-style: italic;
       margin: .5em 0;
     }
     > a {
@@ -64,6 +66,6 @@
   }
 }
 
-#our-work-nav > i { right: 525px }
-#idea-center-nav > i { right: 425px }
-#our-people-nav > i { right: 320px }
+#our-work-nav > i { right: 585px }
+#our-people-nav > i { right: 485px }
+#what-to-expect-nav > i { right: 365px }
